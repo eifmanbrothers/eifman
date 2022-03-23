@@ -13,7 +13,7 @@ const Users = ({ users }) => {
     // req()
   }, [])
 
-  console.log(users)
+  // console.log(users)
 
   return (
     <div>
