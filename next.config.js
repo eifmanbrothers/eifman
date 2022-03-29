@@ -1,3 +1,12 @@
+const nextTranslate = require('next-translate')
+
 module.exports = {
-  reactStrictMode: true,
+  ...nextTranslate(),
+  // reactStrictMode: true,
+  // i18n: {
+  //   locales: ['en', 'ru'],
+  //   defaultLocale: 'en',
+  //   localeDetection: true,
+  // },
+  // trailingSlash: true,
 }

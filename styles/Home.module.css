@@ -1,5 +1,7 @@
 .container {
   padding: 0 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .main {
@@ -113,4 +115,11 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
 }
