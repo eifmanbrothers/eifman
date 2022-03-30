@@ -1,8 +1,12 @@
 import Link from "next/link"
 import { useEffect, useState } from "react"
+import useTranslation from "next-translate/useTranslation"
+import styles from './styles.module.css'
 
 const Users = ({ users }) => {
   // const [users, setUsers] = useState([])
+
+  const { t } = useTranslation()
 
   useEffect(() => {
     // const req = async () => {
@@ -16,10 +20,8 @@ const Users = ({ users }) => {
   // console.log(users)
 
   return (
-    <div>
-      <h1>
-        Страница пользователей
-      </h1>
+    <div className={styles.users}>
+      <h1>{t('users:pageName')}</h1>
       <Link href="/">
         <a>Главная</a>
       </Link>

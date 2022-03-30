@@ -1,11 +1,20 @@
 import styles from './style.module.css'
 import Image from 'next/image'
-import logo from '/images/logo-ru.svg'
+import logoRu from '/images/logo-ru.svg'
+import logoEn from '/images/logo-en.svg'
+import { useRouter } from 'next/router'
 
 const Logo = () => {
+  const { locale } = useRouter()
 
   return (
-    <Image src={logo} alt="Логотип" />
+    <div className={styles.logo}>
+      {
+        locale === "ru" ?
+          <Image src={logoRu} alt="Логотип" /> :
+          <Image src={logoEn} alt="Logo" />
+      }
+    </div>
   )
 }
 
