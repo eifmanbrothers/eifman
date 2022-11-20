@@ -1,16 +1,18 @@
 import styles from './style.module.css'
-import { Icon } from '/components'
-import Logo from '../logo'
+// import { Icon } from '/components'
+import { Logo, BuyBilet, SocialLinks, SwitcherLang } from '/components'
 
 const Header = () => {
 
-  // console.log(Icon)
+  // console.log(SocialLinks)
   return (
     <header className={styles.header}>
       <Logo />
-      html gheader
+      <BuyBilet />
+      <SocialLinks />
+      <SwitcherLang />
       {/* <Icon.ExclamationMark /> */}
-      <Icon.ExclamationMark />
+      {/* <Icon.ExclamationMark /> */}
     </header>
   )
 }
