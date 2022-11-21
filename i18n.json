@@ -10,6 +10,9 @@
     ],
     "/users": [
       "users"
+    ],
+    "/ensemble": [
+      "ensemble"
     ]
   }
 }

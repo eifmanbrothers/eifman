@@ -6,6 +6,8 @@ import Logo from "./logo"
 import SocialLinks from "./socialLinks"
 import SwitcherLang from "./switcherLang"
 import GosWidget from "./gosWidget"
+import Nav from "./nav"
+import NavItem from "./navItem"
 
 export {
   Header,
@@ -15,5 +17,7 @@ export {
   Logo,
   SocialLinks,
   SwitcherLang,
-  GosWidget
+  GosWidget,
+  Nav,
+  NavItem
 }

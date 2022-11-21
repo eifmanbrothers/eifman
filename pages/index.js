@@ -16,11 +16,8 @@ export default function Home() {
 
       <h1>{t('common:namePage')}</h1>
       <nav className={styles.nav}>
-        <Link href="/users">
-          <a>Cтраница пользователей</a>
-        </Link>
-        <Link href="/">
-          <a>Главная</a>
+        <Link href="/ensemble">
+          Труппа
         </Link>
       </nav>
     </div>

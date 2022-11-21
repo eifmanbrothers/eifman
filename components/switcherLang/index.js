@@ -12,12 +12,12 @@ const SwitcherLang = () => {
         <li key={el}>
           <Link
             href={router.asPath}
-            locale={el}>
-            <a className={cn(styles.switcher__link, {
+            locale={el}
+            className={cn(styles.switcher__link, {
               [styles.switcher__link_active]: router.locale === el
-            })}>
-              {el === 'ru' ? "Русский" : "English"}
-            </a>
+            })}
+          >
+            {el === 'ru' ? "Русский" : "English"}
           </Link>
         </li>)
       }
