@@ -15,9 +15,9 @@ class Api {
       .then(handlerResponse)
   }
 
-  getMember(member, locale) {
+  getMember(id) {
     // console.log(locale)
-    return fetch(`${this.address}/ensembles/${member}?locale=${locale}`, {
+    return fetch(`${this.address}/ensembles/${id}?populate=localizations`, {
       // return fetch(`${this.address}/ensembles/${id}?locale=${locale}`, {
       method: "GET",
       headers: this.headres,
