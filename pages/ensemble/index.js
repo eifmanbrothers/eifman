@@ -12,11 +12,11 @@ const Ensemble = ({ data }) => {
       {
         data.map((el) =>
           <Link key={el.attributes.firstName}
-            // href={`/ensemble/${el.id}`}
-            href={{
-              pathname: `/ensemble/[member]`,
-              query: { member: el.id },
-            }}
+            href={`/ensemble/${encodeURIComponent(el.id)}`}
+          // href={{
+          //   pathname: `/ensemble/[id]`,
+          //   query: { id: el.id },
+          // }}
           >
             {el.attributes.secondName}
           </Link>)
