@@ -1,25 +1,24 @@
 import styles from './styles.module.scss'
 import api from 'utils/ApiEnsemble'
-import useTranslation from "next-translate/useTranslation"
-import Link from 'next/link'
+import { ListMembers } from 'components'
 
 const Ensemble = ({ data }) => {
-  const { t } = useTranslation()
   // console.log(data)
+  const arrPositions = data.reduce((arr, el) => {
+    const pos = el.attributes.position.data?.attributes.position
+    if (!arr.includes(pos)) arr.push(pos)
+    return arr
+  }, [])
+  // console.log(1, arrPositions)
   return (
     <section className={styles.ensemble}>
-      <h3>{t('ensemble:pageName')}</h3>
       {
-        data.map((el) =>
-          <Link key={el.attributes.firstName}
-            href={`/ensemble/${encodeURIComponent(el.id)}`}
-          // href={{
-          //   pathname: `/ensemble/[id]`,
-          //   query: { id: el.id },
-          // }}
-          >
-            {el.attributes.secondName}
-          </Link>)
+        arrPositions.map((pos) =>
+          <ListMembers
+            key={pos}
+            position={pos}
+            list={data.filter((el) => el.attributes.position.data?.attributes.position === pos)}
+          />)
       }
     </section>
   )

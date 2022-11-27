@@ -3,7 +3,7 @@ import api from 'utils/ApiEnsemble'
 import useTranslation from 'next-translate/useTranslation'
 import ReactMarkdown from 'react-markdown'
 import Image from 'next/image'
-import { MenuMemberPage } from 'components'
+import { MenuMemberPage, MyCarousel } from 'components'
 
 const Member = ({ data }) => {
 
@@ -21,6 +21,7 @@ const Member = ({ data }) => {
       <MenuMemberPage nameMember={fullName} />
       <div className={styles.member__content}>
         <Image
+          priority
           src={`http://localhost:1337${firstData.avatar.data.attributes.url}`}
           alt={`${t('common:photoMember')} ${fullName}`}
           width={firstData.avatar.data.attributes.width}
@@ -31,6 +32,7 @@ const Member = ({ data }) => {
           <ReactMarkdown>{currentData.description}</ReactMarkdown>
         </div>
       </div>
+      <MyCarousel arrImg={arrImg} />
     </section>
   )
 }

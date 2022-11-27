@@ -8,7 +8,7 @@ class Api {
   }
 
   getEnsembles(locale) {
-    return fetch(`${this.address}/api/ensembles?locale=${locale}`, {
+    return fetch(`${this.address}/api/ensembles?populate=position&populate=avatar&locale=${locale}`, {
       method: "GET",
       headers: this.headres,
     })

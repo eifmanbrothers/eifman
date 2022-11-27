@@ -10,6 +10,10 @@ import Nav from "./nav"
 import NavItem from "./navItem"
 import MenuMemberPage from "./menuMemberPage"
 import Line from "./line"
+import MyCarousel from "./myCarousel"
+import ItemMember from "./itemMember"
+import ListMembers from "./listMembers"
+import Member from './member'
 
 export {
   Header,
@@ -23,5 +27,9 @@ export {
   Nav,
   NavItem,
   MenuMemberPage,
-  Line
+  Line,
+  MyCarousel,
+  ItemMember,
+  ListMembers,
+  Member
 }
