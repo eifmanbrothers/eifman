@@ -1,5 +1,7 @@
 {
   "namePage": "Главная страница",
   "nameButtonBuy": "купить билеты",
-  "spanButtonBuy": "на спектакли в Санкт-Петербурге"
+  "spanButtonBuy": "на спектакли в Санкт-Петербурге",
+  "nameLinkMemberPage": "Труппа",
+  "photoMember": "Фотография"
 }

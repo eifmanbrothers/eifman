@@ -6,10 +6,11 @@
   "defaultLocale": "en",
   "pages": {
     "*": [
-      "common"
+      "common",
+      "member"
     ],
-    "/users": [
-      "users"
+    "/ensemble": [
+      "ensemble"
     ]
   }
 }

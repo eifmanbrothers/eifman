@@ -1,11 +1,12 @@
 .buyBilet {
-  margin-left: 40px;
+  margin-left: 15px;
   margin-right: auto;
+  margin-top: 10px;
 }
 
 .buyBilet__btn {
   width: 185px;
-  height: 50px;
+  height: 40px;
   font-family: "PT Sans", sans-serif;
   background-color: #fff;
   color: #1E1E1E;

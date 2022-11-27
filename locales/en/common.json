@@ -1,5 +1,7 @@
 {
   "namePage": "Main Page",
   "nameButtonBuy": "buy Tickets",
-  "spanButtonBuy": "for shows in St. Petersburg"
+  "spanButtonBuy": "for shows in St. Petersburg",
+  "nameLinkMemberPage": "Ensemble",
+  "photoMember": "Photo"
 }

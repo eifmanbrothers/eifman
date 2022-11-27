@@ -1,10 +1,13 @@
-import styles from './style.module.css'
+import styles from './styles.module.scss'
 
 const Footer = () => {
   // console.log(router.asPath)
   return (
     <footer className={styles.footer}>
-      this is footer
+      <div className={styles.footer__container}>
+        this is footer
+      </div>
+
     </footer>
   )
 }
