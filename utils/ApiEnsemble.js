@@ -8,7 +8,7 @@ class Api {
   }
 
   getEnsembles(locale) {
-    return fetch(`${this.address}/ensembles?locale=${locale}`, {
+    return fetch(`${this.address}/api/ensembles?locale=${locale}`, {
       method: "GET",
       headers: this.headres,
     })
@@ -17,7 +17,7 @@ class Api {
 
   getMember(id) {
     // console.log(locale)
-    return fetch(`${this.address}/ensembles/${id}?populate=localizations`, {
+    return fetch(`${this.address}/api/ensembles/${id}?populate=*`, {
       // return fetch(`${this.address}/ensembles/${id}?locale=${locale}`, {
       method: "GET",
       headers: this.headres,

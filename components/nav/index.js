@@ -9,8 +9,13 @@ const Nav = () => {
   return (
     <nav className={styles.nav}>
       <ul className={styles.nav__list}>
-        {navList.map((el) => <NavItem key={el.path} {...el} locale={router.locale} />)}
+        {
+          navList.map((el) => <NavItem key={el.path} {...el}
+            locale={router.locale}
+          />)
+        }
       </ul>
+
     </nav>
   )
 }

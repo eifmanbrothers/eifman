@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import { Header, Footer, GosWidget, Nav } from 'components'
+import { Header, Footer, GosWidget, Nav, Line } from 'components'
 import Head from 'next/head'
 import Script from 'next/script'
 
@@ -11,6 +11,7 @@ function MyApp({ Component, pageProps }) {
       {/* <Script src="/widget.js" strategy='afterInteractive' type='text/javascript'/>       */}
       <Header />
       <Nav />
+      <Line />
       <Component {...pageProps} />
       {/* <GosWidget /> */}
       <Footer />

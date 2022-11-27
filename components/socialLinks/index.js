@@ -1,4 +1,4 @@
-import styles from './styles.module.css'
+import styles from './styles.module.scss'
 import SocialLink from '/components/socialLink'
 import { links } from '/configs/socialLinks'
 

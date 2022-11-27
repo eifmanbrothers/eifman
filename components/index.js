@@ -8,6 +8,8 @@ import SwitcherLang from "./switcherLang"
 import GosWidget from "./gosWidget"
 import Nav from "./nav"
 import NavItem from "./navItem"
+import MenuMemberPage from "./menuMemberPage"
+import Line from "./line"
 
 export {
   Header,
@@ -19,5 +21,7 @@ export {
   SwitcherLang,
   GosWidget,
   Nav,
-  NavItem
+  NavItem,
+  MenuMemberPage,
+  Line
 }

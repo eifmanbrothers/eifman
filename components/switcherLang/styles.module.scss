@@ -4,11 +4,19 @@
   justify-content: space-between;
   width: 130px;
   padding: 0;
-  margin: 0;
+  margin: 3px 0 0 0;
+}
+
+.switcher__item {
+  margin-right: 20px;
+}
+
+.switcher__item:last-of-type {
+  margin-right: 0;
 }
 
 .switcher__link {
-  
+  font: 16px "PT Serif", serif;
 }
 
 .switcher__link:hover {
@@ -16,8 +24,9 @@
 }
 
 .switcher__link_active {
-  opacity: .3;
+  font: 16px "PT Serif", serif;
   cursor: default;
+  color: #2B2B2B;
 }
 
 .switcher__link_active:hover {
