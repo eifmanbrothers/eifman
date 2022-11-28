@@ -7,12 +7,17 @@ const MyCarousel = ({ arrImg }) => {
   // console.log(arrImg)
 
   return (
-    <Carousel autoPlay={false} showStatus={false} showThumbs={false} dynamicHeight={false}
+    <Carousel
+      autoPlay={false}
+      showStatus={false}
+      showThumbs={false}
+      dynamicHeight={false}
+      infiniteLoop={true}
       className={styles.carousel}
     >
       {
         arrImg.map((img) => <div key={img.id} className={styles.carousel__imgCont}>
-          <Image src={`http://localhost:1337${img.attributes.url}`} alt="#"
+          <Image src={`http://localhost:1332${img.attributes.url}`} alt="#"
             fill
             priority
             sizes='(max-width: 2000px) 100%,'

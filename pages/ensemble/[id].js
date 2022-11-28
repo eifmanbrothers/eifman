@@ -22,7 +22,7 @@ const Member = ({ data }) => {
       <div className={styles.member__content}>
         <Image
           priority
-          src={`http://localhost:1337${firstData.avatar.data.attributes.url}`}
+          src={`http://localhost:1332${firstData.avatar.data.attributes.url}`}
           alt={`${t('common:photoMember')} ${fullName}`}
           width={firstData.avatar.data.attributes.width}
           height={firstData.avatar.data.attributes.height}

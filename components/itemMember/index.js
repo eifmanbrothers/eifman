@@ -1,5 +1,4 @@
 import styles from './styles.module.scss'
-import Link from 'next/link'
 import { Member } from 'components'
 
 const ItemMember = ({ member, position }) => {
@@ -11,7 +10,6 @@ const ItemMember = ({ member, position }) => {
           <Member.MemberLink member={member} /> :
           <Member.MemberItem member={member} />
       }
-      {/* <Member.MemberLink member={member} /> */}
     </li>
   )
 }

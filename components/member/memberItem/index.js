@@ -8,7 +8,7 @@ const MemberItem = ({ member }) => {
   return (
     <figure className={styles.memberItem}>
       <Image
-        src={`http://localhost:1337` + url}
+        src={`http://localhost:1332` + url}
         alt="#"
         width={width}
         height={height}
