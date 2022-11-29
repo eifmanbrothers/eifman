@@ -1,4 +1,6 @@
 import handlerResponse from './handlerRes'
+import { API_URL } from 'constants/variables'
+// const API_URL = process.env.API_URL
 
 class Api {
   constructor({ address, headers }) {
@@ -27,7 +29,8 @@ class Api {
 
 //создаем экземпляр
 const api = new Api({
-  address: "https://api.eifmanballet.space",
+  address: API_URL,
+  // address: "https://api.eifmanballet.space",
   headers: {
     // "Contetnt-Type": "multipart/form-data",
     "Content-Type": "application/json",
