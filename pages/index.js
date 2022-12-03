@@ -15,10 +15,10 @@ const Home = ({ data }) => {
   )
 }
 
-export async function getServerSideProps({ locale }) {
+// export async function getServerSideProps({ locale }) {
 
-  const res = await apiNews.getNewsPart(locale)
-  return { props: { data: res.data } }
-}
+//   const res = await apiNews.getNewsPart(locale)
+//   return { props: { data: res.data } }
+// }
 
 export default Home
