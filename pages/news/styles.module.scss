@@ -1,0 +1,40 @@
+.news {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto 100px;
+}
+
+.news__title {
+  margin: 0 0 30px 0;
+  font: 20px "PT Sans", sans-serif;
+}
+
+.newsPage {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto 100px;
+}
+
+.newsPage__title {
+  font: 20px "PT Sans", sans-serif;
+}
+
+.newsPage__container {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.newsPage__imgWrapper {
+  // position: relative;
+  // width: 620px;
+  // height: 413px;
+  // object-fit: cover;
+}
+
+.newsPage__link {
+  color: #707070;
+  font: 20px "PT Serif", serif;
+}
+
+.newsPage__image {}

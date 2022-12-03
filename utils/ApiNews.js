@@ -7,19 +7,26 @@ class Api {
     this.headres = headers;
   }
 
-  getEnsembles(locale) {
+  getNewsPart(locale) {
     // console.log(locale)
-    return fetch(`${this.address}/api/ensembles?populate=position,avatar&locale=${locale}`, {
+    return fetch(`${this.address}/api/news?locale=${locale}&pagination[start]=0&pagination[limit]=3`, {
       method: "GET",
       headers: this.headres,
     })
       .then(handlerResponse)
   }
 
-  getMember(id) {
+  getNews(locale) {
     // console.log(locale)
-    return fetch(`${this.address}/api/ensembles/${id}?populate=*`, {
-      // return fetch(`${this.address}/ensembles/${id}?locale=${locale}`, {
+    return fetch(`${this.address}/api/news?locale=${locale}&populate=image`, {
+      method: "GET",
+      headers: this.headres,
+    })
+      .then(handlerResponse)
+  }
+
+  getNewsSingle(id) {
+    return fetch(`${this.address}/api/news/${id}?populate=*`, {
       method: "GET",
       headers: this.headres,
     })
@@ -27,12 +34,9 @@ class Api {
   }
 }
 
-//создаем экземпляр
 const api = new Api({
   address: API_URL,
-  // address: "https://api.eifmanballet.space",
   headers: {
-    // "Contetnt-Type": "multipart/form-data",
     "Content-Type": "application/json",
   },
 });

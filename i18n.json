@@ -7,10 +7,14 @@
   "pages": {
     "*": [
       "common",
-      "member"
+      "member",
+      "news"
     ],
     "/ensemble": [
       "ensemble"
+    ],
+    "/news": [
+      "news"
     ]
   }
 }
