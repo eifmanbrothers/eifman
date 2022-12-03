@@ -18,9 +18,14 @@
 .newsItem__description {
   max-width: 460px;
   font: 16px "PT Sans", sans-serif;
+
+  p {
+    margin: 0;
+  }
 }
 
 .itemNews__link {
+  display: block;
   font: 20px "PT Sans", sans-serif;
   margin: 0 0 20px 0;
 }

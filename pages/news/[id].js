@@ -5,22 +5,28 @@ import api from 'utils/ApiNews'
 import Image from 'next/image'
 import Link from 'next/link'
 import { API_URL } from 'constants/variables'
+import { NeededDate } from 'components'
+import { useRouter } from 'next/router'
 
 const NewsPage = ({ data }) => {
   const { t } = useTranslation()
+  const router = useRouter()
   const firstData = data.attributes
   const secondData = data.attributes.localizations.data[0].attributes
   const currentData = data.reqLocation === firstData.locale ? firstData : secondData
-
-  // console.log(currentData)
-  // console.log(API_URL + firstData.image.data.attributes.url)
 
   return (
     <div className={styles.newsPage}>
       <Link href="/news" className={styles.newsPage__link}>{t('common:nameLinkNewsPage')}</Link>
       <section className={styles.newsPage__container}>
         <h3 className={styles.newsPage__title}>{currentData.title}</h3>
-        <time datetime={currentData.date} className={styles.newsPage__date}>{currentData.date}</time>
+        <NeededDate
+          date={currentData.date}
+          time={currentData.publishedAt}
+          locale={router.locale}
+          format='LL'
+          place="newsPage"
+        />
         {/* <div className={styles.newsPage__imgWrapper}> */}
         <Image
           src={API_URL + firstData.image.data.attributes.url}
