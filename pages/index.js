@@ -10,7 +10,7 @@ const Home = ({ data }) => {
   return (
     <div className={styles.container}>
       <h1>{t('common:namePage')}</h1>
-      <Main listNewsArr={data} />
+      {/* <Main listNewsArr={data} /> */}
     </div>
   )
 }
