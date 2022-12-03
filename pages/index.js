@@ -10,15 +10,15 @@ const Home = ({ data }) => {
   return (
     <div className={styles.container}>
       <h1>{t('common:namePage')}</h1>
-      {/* <Main listNewsArr={data} /> */}
+      <Main listNewsArr={data} />
     </div>
   )
 }
 
-// export async function getServerSideProps({ locale }) {
+export async function getServerSideProps({ locale }) {
 
-//   const res = await apiNews.getNewsPart(locale)
-//   return { props: { data: res.data } }
-// }
+  const res = await apiNews.getNewsPart(locale)
+  return { props: { data: res.data } }
+}
 
 export default Home
