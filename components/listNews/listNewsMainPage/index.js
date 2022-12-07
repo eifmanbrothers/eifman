@@ -16,7 +16,7 @@ const ListNewsMainPage = ({ listNews }) => {
               data={item.attributes} />)
         }
       </ul>
-      <Link href='/news' className={styles.listNews__link}>{t('common:nameLinkToAllNews')}</Link>
+      <Link href='/news?page=1' className={styles.listNews__link}>{t('common:nameLinkToAllNews')}</Link>
     </div>
 
   )

@@ -1,0 +1,20 @@
+.navNews {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.navNews__item {
+  font: 15px "PT Sans", sans-serif;
+  margin: 0 6px 0 0;
+  color: #969696;
+}
+
+.navNews__item:hover {
+  text-decoration: underline;
+}
+
+.navNews__link_active {
+  color: #fff;
+}

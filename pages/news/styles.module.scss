@@ -32,9 +32,26 @@
   // object-fit: cover;
 }
 
-.newsPage__link {
+// .newsPage__link {
+//   color: #707070;
+//   font: 20px "PT Serif", serif;
+// }
+.newsPage__button {
   color: #707070;
   font: 20px "PT Serif", serif;
+  border: none;
+  background: transparent;
 }
 
+.newsPage__button:hover {
+  cursor: pointer;
+}
+
+
 .newsPage__image {}
+
+.newsPage__description {
+  a {
+    text-decoration: underline;
+  }
+}

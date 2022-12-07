@@ -20,6 +20,7 @@ import ListMembers from "./listMembers"
 import Member from './member'
 import Main from "./main"
 import NeededDate from "./neededDate"
+import NavNewsPages from "./navNewsPages"
 
 
 
@@ -45,5 +46,6 @@ export {
   ListMembers,
   Member,
   Main,
-  NeededDate
+  NeededDate,
+  NavNewsPages
 }

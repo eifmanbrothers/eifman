@@ -9,6 +9,7 @@ import { NeededDate } from 'components'
 import { useRouter } from 'next/router'
 
 const NewsPage = ({ data }) => {
+
   const { t } = useTranslation()
   const router = useRouter()
   const firstData = data.attributes
@@ -16,8 +17,10 @@ const NewsPage = ({ data }) => {
   const currentData = data.reqLocation === firstData.locale ? firstData : secondData
 
   return (
+
     <div className={styles.newsPage}>
-      <Link href="/news" className={styles.newsPage__link}>{t('common:nameLinkNewsPage')}</Link>
+      <button className={styles.newsPage__button} onClick={() => router.back()}>{t('common:nameBtnNewsPage')}</button>
+      {/* <Link href="/news" className={styles.newsPage__link}>{t('common:nameLinkNewsPage')}</Link> */}
       <section className={styles.newsPage__container}>
         <h3 className={styles.newsPage__title}>{currentData.title}</h3>
         <NeededDate
@@ -27,7 +30,6 @@ const NewsPage = ({ data }) => {
           format='LL'
           place="newsPage"
         />
-        {/* <div className={styles.newsPage__imgWrapper}> */}
         <Image
           src={API_URL + firstData.image.data.attributes.url}
           alt="#"
@@ -36,13 +38,13 @@ const NewsPage = ({ data }) => {
           className={styles.newsPage__image}
           priority
         />
-        {/* </div> */}
         <div className={styles.newsPage__description}>
           <ReactMarkdown>{currentData.news}</ReactMarkdown>
         </div>
-
       </section>
     </div>
+
+
 
   )
 }
