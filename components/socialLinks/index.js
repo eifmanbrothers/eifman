@@ -1,6 +1,6 @@
 import styles from './styles.module.scss'
 import SocialLink from '/components/socialLink'
-import { links } from '/configs/socialLinks'
+import { links } from '/constants/socialLinks'
 
 const SocialLinks = () => {
   // console.log(links)

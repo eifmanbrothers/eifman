@@ -1,5 +1,5 @@
 import handlerResponse from './handlerRes'
-import { API_URL } from 'constants/variables'
+import { API_URL } from 'configs/variables'
 
 class Api {
   constructor({ address, headers }) {

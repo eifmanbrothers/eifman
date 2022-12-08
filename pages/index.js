@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
 import useTranslation from 'next-translate/useTranslation'
-import { Main } from 'components'
+import { Main, Gallery } from 'components'
 import apiNews from 'utils/ApiNews'
 
 const Home = ({ data }) => {
@@ -9,7 +9,8 @@ const Home = ({ data }) => {
   // console.log(data)
   return (
     <div className={styles.container}>
-      <h1>{t('common:namePage')}</h1>
+      {/* <h1>{t('common:namePage')}</h1> */}
+      {/* <Gallery /> */}
       <Main listNewsArr={data} />
     </div>
   )

@@ -4,7 +4,7 @@ import useTranslation from 'next-translate/useTranslation'
 import api from 'utils/ApiNews'
 import Image from 'next/image'
 import Link from 'next/link'
-import { API_URL } from 'constants/variables'
+import { API_URL } from 'configs/variables'
 import { NeededDate } from 'components'
 import { useRouter } from 'next/router'
 

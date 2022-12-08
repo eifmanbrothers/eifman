@@ -22,6 +22,9 @@ import Main from "./main"
 import NeededDate from "./neededDate"
 import NavNewsPages from "./navNewsPages"
 
+import EventImagine from "./eventImagine"
+import Gallery from "./gallery"
+
 
 
 export {
@@ -47,5 +50,7 @@ export {
   Member,
   Main,
   NeededDate,
-  NavNewsPages
+  NavNewsPages,
+  EventImagine,
+  Gallery
 }

@@ -1,0 +1,12 @@
+.eventImagine__imageWrapper {
+  position: relative;
+}
+
+.eventImagine__image {
+  filter: blur(3px);
+  transition: all .5s ease;
+}
+
+.eventImagine__image:hover {
+  filter: blur(0);
+}

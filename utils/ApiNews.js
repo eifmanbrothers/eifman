@@ -1,5 +1,5 @@
 import handlerResponse from './handlerRes'
-import { API_URL, AMOUNT_NEWS } from 'constants/variables'
+import { API_URL, AMOUNT_NEWS } from 'configs/variables'
 
 class Api {
   constructor({ address, headers }) {
