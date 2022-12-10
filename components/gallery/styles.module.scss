@@ -1,5 +1,16 @@
 .gallery {
+  // max-width: 100vw;
+  overflow: hidden;
+}
+
+.gallery__list {
+  position: relative;
+  // width: 1900px;
   list-style: none;
   padding: 0;
+  margin: 0 0 20px 0;
   display: flex;
+  align-items: flex-end;
+  // need to check trasform3d working
+  // transition: all 1s ease-in;
 }

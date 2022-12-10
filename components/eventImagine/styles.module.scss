@@ -1,10 +1,19 @@
+.eventImagine {
+  padding: 0 0 0 0;
+}
+
+.eventImagine:last-of-type {
+  padding: 0 200px 0 0;
+}
+
 .eventImagine__imageWrapper {
   position: relative;
 }
 
 .eventImagine__image {
-  filter: blur(3px);
+  filter: blur(4px);
   transition: all .5s ease;
+  transition-delay: 450ms;
 }
 
 .eventImagine__image:hover {
