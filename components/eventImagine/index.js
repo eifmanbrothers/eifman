@@ -15,17 +15,20 @@ const EventImagine = ({ href, image, imageAlt, name, place }) => {
       <div className={styles.eventImagine__imageWrapper}>
         <Link href={href}
           className={cn(styles.eventImagine__link, styles[place])}
-          onMouseOver={() => setIsOver(true)}
-          onMouseLeave={() => setIsOver(false)}
+          onMouseOver={() => setTimeout(() => setIsOver(true), 1000)}
+          onMouseLeave={() => setTimeout(() => setIsOver(false), 1000)}
         />
-        <Image src={image} alt={imageAlt[router.locale]} className={styles.eventImagine__image} priority />
+        <Image
+          src={image}
+          alt={imageAlt[router.locale]}
+          className={styles.eventImagine__image}
+          priority />
         <EventName
           name={name[router.locale]}
           place={place}
           isOver={isOver}
         />
       </div>
-
     </li >
   )
 }

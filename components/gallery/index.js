@@ -3,7 +3,6 @@ import { useRef, useEffect, useState } from 'react'
 import { EventImagine } from 'components'
 import { items } from 'constants/itemsGallery'
 import useWindowSize from 'helpers/windowsWidth'
-// import usePosMouseX from 'helpers/windowMouseMove'
 
 const Gallery = () => {
   const container = useRef(null)
@@ -62,9 +61,9 @@ const Gallery = () => {
           />)
         }
       </ul>
-      <p>{useWindowSize()}</p>
-      <p>{widthGallery}</p>
-      <p>{widthGalleryFront}</p>
+      {/* <p>{useWindowSize()}</p> */}
+      {/* <p>{widthGallery}</p>
+      <p>{widthGalleryFront}</p> */}
     </div>
 
   )

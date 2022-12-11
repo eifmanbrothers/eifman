@@ -15,6 +15,9 @@
     ],
     "/news": [
       "news"
+    ],
+    "/repertoire": [
+      "repertoire"
     ]
   }
 }
