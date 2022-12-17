@@ -16,7 +16,10 @@ import jerusalem from '../images/events/jerusalem.jpg'
 
 export const items = [
   {
-    id: 1,
+    id: {
+      en: 100,
+      ru: 100
+    },
     name: {
       en: "The Seagull. A Ballet Story",
       ru: "Чайка. Балетная история"
@@ -30,12 +33,15 @@ export const items = [
     place: "chayka"
   },
   {
-    id: 2,
+    id: {
+      en: 3,
+      ru: 2
+    },
     name: {
       en: "Up & Down",
       ru: "Вверх и вниз"
     },
-    path: '/repertoire/up-and-down',
+    // path: '/repertoire/up-and-down',
     imageAlt: {
       en: "Photo ballet up-and-down",
       ru: "Фотография спектакля Вверх и вниз"
@@ -44,7 +50,10 @@ export const items = [
     place: "down"
   },
   {
-    id: 3,
+    id: {
+      en: 300,
+      ru: 400
+    },
     name: {
       en: "Red Giselle",
       ru: "Красная Жизель"
@@ -58,12 +67,15 @@ export const items = [
     place: "jiselle"
   },
   {
-    id: 4,
+    id: {
+      en: 5,
+      ru: 4
+    },
     name: {
       en: "Roden, her Eternal Idol",
       ru: "Роден, ее вечный идол"
     },
-    path: '/repertoire/roden',
+    // path: '/repertoire/roden',
     imageAlt: {
       en: "Photo ballet Roden, her Eternal Idol",
       ru: "Фотография спектакля Красная Жизель"
@@ -72,7 +84,10 @@ export const items = [
     place: "roden"
   },
   {
-    id: 5,
+    id: {
+      en: 111,
+      ru: 112
+    },
     name: {
       en: "Eugene Onegin",
       ru: "Евгений Онегин"
@@ -86,7 +101,10 @@ export const items = [
     place: "onegin"
   },
   {
-    id: 6,
+    id: {
+      en: 113,
+      ru: 114
+    },
     name: {
       en: "Beyond Sin",
       ru: "По ту сторону греха"
@@ -100,7 +118,10 @@ export const items = [
     place: "beyond"
   },
   {
-    id: 7,
+    id: {
+      en: 115,
+      ru: 116
+    },
     name: {
       en: "Anna Karenina",
       ru: "Анна Каренина"
@@ -114,7 +135,10 @@ export const items = [
     place: "karenina"
   },
   {
-    id: 8,
+    id: {
+      en: 117,
+      ru: 118
+    },
     name: {
       en: "Tchaikovsky. PRO et CONTRA",
       ru: "Чайковский. PRO et CONTRA"
@@ -128,7 +152,10 @@ export const items = [
     place: "chaikovsky"
   },
   {
-    id: 9,
+    id: {
+      en: 119,
+      ru: 120
+    },
     name: {
       en: "Russian Hamlet",
       ru: "Русский Гамлет"
@@ -142,7 +169,10 @@ export const items = [
     place: "hamlet"
   },
   {
-    id: 10,
+    id: {
+      en: 121,
+      ru: 122
+    },
     name: {
       en: "Musagete",
       ru: "Мусагет"
@@ -156,7 +186,10 @@ export const items = [
     place: "musagette"
   },
   {
-    id: 11,
+    id: {
+      en: 123,
+      ru: 124
+    },
     name: {
       en: "Moliere Passion, or The Mask of Don Juan",
       ru: "Страсти по Мольеру, или Маска Дон Дуана"
@@ -170,7 +203,10 @@ export const items = [
     place: "moliere"
   },
   {
-    id: 12,
+    id: {
+      en: 125,
+      ru: 126
+    },
     name: {
       en: "Moliere Passion, or The Mask of Don Juan",
       ru: "Эффект Пигмалеона"
@@ -184,7 +220,10 @@ export const items = [
     place: "effect"
   },
   {
-    id: 13,
+    id: {
+      en: 127,
+      ru: 128
+    },
     name: {
       en: "Requiem",
       ru: "Реквием"
@@ -198,7 +237,10 @@ export const items = [
     place: "requiem"
   },
   {
-    id: 14,
+    id: {
+      en: 129,
+      ru: 130
+    },
     name: {
       en: "I, Don Quixote",
       ru: "Я - Дон Кихот"
@@ -212,7 +254,10 @@ export const items = [
     place: "donKihot"
   },
   {
-    id: 15,
+    id: {
+      en: 131,
+      ru: 132
+    },
     name: {
       en: "My Jerusalem",
       ru: "Мой Иерусалим"

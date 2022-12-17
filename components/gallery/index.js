@@ -37,7 +37,8 @@ const Gallery = () => {
         style={{ left: `-${value}px` }}>
         {
           items.slice(7).map((el) => <EventImagine
-            key={el.id}
+            id={el.id}
+            key={el.id.ru}
             href={el.path}
             imageAlt={el.imageAlt}
             name={el.name}
@@ -52,7 +53,8 @@ const Gallery = () => {
         style={{ left: `-${valueFront}px` }}>
         {
           items.slice(0, 7).map((el) => <EventImagine
-            key={el.id}
+            id={el.id}
+            key={el.id.ru}
             href={el.path}
             imageAlt={el.imageAlt}
             name={el.name}

@@ -3,7 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from 'react-responsive-carousel'
 import Image from 'next/image'
 
-const MyCarousel = ({ arrImg }) => {
+const MyCarousel = ({ arrImg, place }) => {
   // console.log(arrImg)
 
   return (
@@ -14,9 +14,10 @@ const MyCarousel = ({ arrImg }) => {
       dynamicHeight={false}
       infiniteLoop={true}
       className={styles.carousel}
+    // onClickThumb={onClickThumb}
     >
       {
-        arrImg.map((img) => <div key={img.id} className={styles.carousel__imgCont}>
+        arrImg.map((img, index) => <div key={index} className={styles.carousel__imgCont}>
           <Image src={`http://localhost:1332${img.attributes.url}`} alt="#"
             fill
             priority

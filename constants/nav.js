@@ -25,6 +25,6 @@ export const navList = [
       ru: "Репертуар",
       en: "Repertoire",
     },
-    path: "/repertoire"
+    path: "/performances"
   }
 ]

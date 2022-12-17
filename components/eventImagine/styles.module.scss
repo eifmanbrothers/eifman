@@ -21,6 +21,17 @@
   z-index: 1;
 }
 
+.eventImagine__image {
+  filter: blur(4px);
+  transition: all 1s ease;
+  transition-delay: 450ms;
+}
+
+.eventImagine__link:hover+.eventImagine__image {
+  // cursor: default;
+  filter: blur(0);
+}
+
 // current position link
 .chayka {
   left: 80px;
@@ -138,16 +149,4 @@
   top: 70px;
   height: 340px;
   width: 140px;
-}
-
-
-.eventImagine__image {
-  filter: blur(4px);
-  transition: all .5s ease;
-  transition-delay: 450ms;
-}
-
-.eventImagine__link:hover+.eventImagine__image {
-  // cursor: default;
-  filter: blur(0);
 }

@@ -1,6 +1,8 @@
 import Header from "./header"
 import Footer from './footer'
+
 import Icon from './icons'
+
 import BuyBilet from "./buyBilet"
 import Logo from "./logo"
 import SocialLinks from "./socialLinks"
@@ -15,7 +17,9 @@ import ItemMember from "./itemMember"
 import listNews from "./listNews"
 import itemNews from "./itemNews"
 import ListMembers from "./listMembers"
+
 import Member from './member'
+
 import Main from "./main"
 import NeededDate from "./neededDate"
 import NavNewsPages from "./navNewsPages"
@@ -25,6 +29,7 @@ import EventNameWord from './eventNameWord'
 import EventNameLetter from "./eventNameLetter"
 import Gallery from "./gallery"
 import Layout from "./layout"
+import nextEvents from "./nextEvents"
 
 export {
   Header,
@@ -53,5 +58,6 @@ export {
   EventNameWord,
   EventNameLetter,
   Gallery,
-  Layout
+  Layout,
+  nextEvents
 }

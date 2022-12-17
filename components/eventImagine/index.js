@@ -6,14 +6,14 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { EventName } from 'components'
 
-const EventImagine = ({ href, image, imageAlt, name, place }) => {
+const EventImagine = ({ id, image, imageAlt, name, place }) => {
   const router = useRouter()
   const [isOver, setIsOver] = useState(false)
-
+  // console.log(router.locale)
   return (
     <li className={styles.eventImagine}>
       <div className={styles.eventImagine__imageWrapper}>
-        <Link href={href}
+        <Link href={`/performances/${id[router.locale]}`}
           className={cn(styles.eventImagine__link, styles[place])}
           onMouseOver={() => setTimeout(() => setIsOver(true), 1000)}
           onMouseLeave={() => setTimeout(() => setIsOver(false), 1000)}

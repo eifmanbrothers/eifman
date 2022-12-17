@@ -6,7 +6,7 @@ export default function Layout({ children }) {
   return (
     <div className='root'>
       <Header />
-      {router.asPath === '/' && <Gallery />}
+      {/* {router.asPath === '/' && <Gallery />} */}
       <Nav />
       <main>{children}</main>
       <Footer />

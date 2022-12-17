@@ -8,7 +8,7 @@ class Api {
   }
 
   getData() {
-    return fetch(`${this.address}/42d9de71f65cd840b11c96e24de087a5/afisha?json=1&to=2023-12-31`, {
+    return fetch(`${this.address}/42d9de71f65cd840b11c96e24de087a5/afisha?json=1&from=2022-09-01&to=2023-12-31`, {
       method: 'GET',
       headers: this.headers
     })
@@ -25,3 +25,4 @@ const api = new Api({
 
 export default api
 // &month=2022-01
+// &to=2023-12-31
