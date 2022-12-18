@@ -2,7 +2,7 @@ import styles from './styles.module.scss'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import apiPerformance from 'utils/ApiPerformance'
-import { MyCarousel } from 'components'
+import { myCarousel } from 'components'
 
 const PerformancePage = ({ data }) => {
   const router = useRouter()
@@ -16,7 +16,7 @@ const PerformancePage = ({ data }) => {
     <div className={styles.performancePage}>
 
       <p>page performance</p>
-      <MyCarousel arrImg={arrImg} />
+      <myCarousel.React arrImg={arrImg} />
 
     </div>
   )

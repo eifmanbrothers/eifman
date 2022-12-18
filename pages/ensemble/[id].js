@@ -3,7 +3,7 @@ import api from 'utils/ApiEnsemble'
 import useTranslation from 'next-translate/useTranslation'
 import ReactMarkdown from 'react-markdown'
 import Image from 'next/image'
-import { MenuMemberPage, MyCarousel } from 'components'
+import { MenuMemberPage, myCarousel } from 'components'
 
 const Member = ({ data }) => {
 
@@ -32,7 +32,7 @@ const Member = ({ data }) => {
           <ReactMarkdown>{currentData.description}</ReactMarkdown>
         </div>
       </div>
-      <MyCarousel arrImg={arrImg} />
+      <myCarousel.React arrImg={arrImg} />
     </section>
   )
 }

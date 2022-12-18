@@ -12,7 +12,7 @@ import Nav from "./nav"
 import NavItem from "./navItem"
 import MenuMemberPage from "./menuMemberPage"
 import Line from "./line"
-import MyCarousel from "./myCarousel"
+import myCarousel from "./myCarousel"
 import ItemMember from "./itemMember"
 import listNews from "./listNews"
 import itemNews from "./itemNews"
@@ -44,7 +44,7 @@ export {
   NavItem,
   MenuMemberPage,
   Line,
-  MyCarousel,
+  myCarousel,
   ItemMember,
   listNews,
   itemNews,
