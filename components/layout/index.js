@@ -7,8 +7,9 @@ export default function Layout({ children }) {
     <div className='root'>
       <Header />
       {/* {router.asPath === '/' && <Gallery />} */}
-      <Nav />
+      {router.asPath !== '/performances' && <Nav />}
       <main>{children}</main>
+      {/* {router.asPath === '/performances' && <Nav />} */}
       <Footer />
     </div>
   )

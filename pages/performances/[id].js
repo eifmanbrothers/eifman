@@ -2,23 +2,32 @@ import styles from './styles.module.scss'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import apiPerformance from 'utils/ApiPerformance'
-import { myCarousel } from 'components'
+import { myCarousel, Line, errors, navigations } from 'components'
 
 const PerformancePage = ({ data }) => {
   const router = useRouter()
   // console.log(data)
+
+  useEffect(() => {
+    // console.log(1)
+  }, [])
+
+  if (data === null) return <errors.Performance />
   const { attributes: { images: { data: arrImg } } } = data
-  // console.log(arrImg)
-  // useEffect(() => {
-  //   if (data === null) router.push('/404')
-  // }, [router, data])
+
+  const firstData = data.attributes
+  const secondData = data.attributes.localizations.data[0].attributes
+  const currentData = data.reqLocation === firstData.locale ? firstData : secondData
+
   return (
-    <div className={styles.performancePage}>
+    <>
+      <Line />
+      <div className={styles.performancePage}>
+        <navigations.PerformancePage name={currentData.name} />
 
-      <p>page performance</p>
-      <myCarousel.React arrImg={arrImg} />
-
-    </div>
+        {/* <myCarousel.React arrImg={arrImg} /> */}
+      </div>
+    </>
   )
 }
 

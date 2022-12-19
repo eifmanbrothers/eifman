@@ -3,7 +3,7 @@ import api from 'utils/ApiEnsemble'
 import useTranslation from 'next-translate/useTranslation'
 import ReactMarkdown from 'react-markdown'
 import Image from 'next/image'
-import { MenuMemberPage, myCarousel } from 'components'
+import { myCarousel, Line, navigations } from 'components'
 
 const Member = ({ data }) => {
 
@@ -17,23 +17,27 @@ const Member = ({ data }) => {
   const fullName = currentData.secondName + " " + currentData.firstName
 
   return (
-    <section className={styles.member}>
-      <MenuMemberPage nameMember={fullName} />
-      <div className={styles.member__content}>
-        <Image
-          priority
-          src={`http://localhost:1332${firstData.avatar.data.attributes.url}`}
-          alt={`${t('common:photoMember')} ${fullName}`}
-          width={firstData.avatar.data.attributes.width}
-          height={firstData.avatar.data.attributes.height}
-          className={styles.member__avatar}
-        />
-        <div className={styles.member__description}>
-          <ReactMarkdown>{currentData.description}</ReactMarkdown>
+    <>
+      <Line />
+      <section className={styles.member}>
+        <navigations.MemberPage nameMember={fullName} />
+        <div className={styles.member__content}>
+          <Image
+            priority
+            src={`http://localhost:1332${firstData.avatar.data.attributes.url}`}
+            alt={`${t('common:photoMember')} ${fullName}`}
+            width={firstData.avatar.data.attributes.width}
+            height={firstData.avatar.data.attributes.height}
+            className={styles.member__avatar}
+          />
+          <div className={styles.member__description}>
+            <ReactMarkdown>{currentData.description}</ReactMarkdown>
+          </div>
         </div>
-      </div>
-      <myCarousel.React arrImg={arrImg} />
-    </section>
+        <myCarousel.React arrImg={arrImg} />
+      </section>
+    </>
+
   )
 }
 

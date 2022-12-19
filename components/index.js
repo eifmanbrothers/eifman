@@ -1,8 +1,6 @@
 import Header from "./header"
 import Footer from './footer'
-
 import Icon from './icons'
-
 import BuyBilet from "./buyBilet"
 import Logo from "./logo"
 import SocialLinks from "./socialLinks"
@@ -10,16 +8,13 @@ import SwitcherLang from "./switcherLang"
 import GosWidget from "./gosWidget"
 import Nav from "./nav"
 import NavItem from "./navItem"
-import MenuMemberPage from "./menuMemberPage"
 import Line from "./line"
 import myCarousel from "./myCarousel"
 import ItemMember from "./itemMember"
 import listNews from "./listNews"
 import itemNews from "./itemNews"
 import ListMembers from "./listMembers"
-
 import Member from './member'
-
 import Main from "./main"
 import NeededDate from "./neededDate"
 import NavNewsPages from "./navNewsPages"
@@ -30,6 +25,8 @@ import EventNameLetter from "./eventNameLetter"
 import Gallery from "./gallery"
 import Layout from "./layout"
 import nextEvents from "./nextEvents"
+import errors from "./errors"
+import navigations from "./navigations"
 
 export {
   Header,
@@ -42,7 +39,6 @@ export {
   GosWidget,
   Nav,
   NavItem,
-  MenuMemberPage,
   Line,
   myCarousel,
   ItemMember,
@@ -59,5 +55,7 @@ export {
   EventNameLetter,
   Gallery,
   Layout,
-  nextEvents
+  nextEvents,
+  errors,
+  navigations
 }

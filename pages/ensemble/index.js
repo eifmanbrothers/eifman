@@ -14,7 +14,6 @@ const Ensemble = ({ data }) => {
     <>
       <Line />
       <section className={styles.ensemble}>
-
         {
           arrPositions.map((pos) =>
             <ListMembers
