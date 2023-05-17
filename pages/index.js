@@ -17,6 +17,7 @@ const Home = ({ data }) => {
 export async function getServerSideProps({ locale }) {
 
   const res = await apiNews.getNewsPart(locale)
+
   return { props: { data: res.data } }
 }
 

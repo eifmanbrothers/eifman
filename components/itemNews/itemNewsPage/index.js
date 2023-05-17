@@ -4,6 +4,7 @@ import Image from 'next/image'
 import ReactMarkdown from 'react-markdown'
 import { NeededDate } from 'components'
 import { useRouter } from 'next/router'
+import { API_URL } from 'configs/variables'
 
 const ItemNewsPage = ({ data, id }) => {
   const router = useRouter()
@@ -15,7 +16,7 @@ const ItemNewsPage = ({ data, id }) => {
   return (
     <li className={styles.itemNews}>
       <div className={styles.itemNews__imgWrapper}>
-        <Image src={`http://localhost:1332${thumbnail.url}`}
+        <Image src={API_URL + thumbnail.url}
           fill
           sizes="(max-width: 2000px) 100vw,
           (max-width: 2200px) 50vw,

@@ -8,6 +8,7 @@ const News = ({ data }) => {
   const { t } = useTranslation()
   const router = useRouter()
   // console.log(router.asPath)
+  // console.log(data)
 
   const { query, meta: { pagination: { page, pageCount, pageSize, total } } } = data
   // console.log(query)

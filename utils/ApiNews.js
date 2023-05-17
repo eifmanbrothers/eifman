@@ -8,7 +8,6 @@ class Api {
   }
 
   getNewsPart(locale) {
-    // console.log(locale)
     return fetch(`${this.address}/api/news?locale=${locale}&sort=date:desc&pagination[start]=0&pagination[limit]=5`, {
       // return fetch(`${this.address}/api/news?locale=${locale}&pagination[start]=0&pagination[limit]=3`, {
       method: "GET",
