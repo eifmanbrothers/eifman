@@ -1,7 +1,7 @@
-import styles from './styles.module.scss'
-import "react-responsive-carousel/lib/styles/carousel.min.css"
-import { Carousel } from 'react-responsive-carousel'
-import Image from 'next/image'
+import styles from "./styles.module.scss";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+import Image from "next/image";
 
 const React = ({ arrImg, place }) => {
   // console.log(arrImg)
@@ -14,25 +14,27 @@ const React = ({ arrImg, place }) => {
       dynamicHeight={false}
       infiniteLoop={true}
       className={styles.carousel}
-    // onClickThumb={onClickThumb}
+      // onClickThumb={onClickThumb}
     >
-      {
-        arrImg.map((img, index) => <div key={index} className={styles.carousel__imgCont}>
-          <Image src={`http://localhost:1332${img.attributes.url}`} alt="#"
+      {arrImg.map((img, index) => (
+        <div key={index} className={styles.carousel__imgCont}>
+          <Image
+            src={`http://127.0.0.1:1332${img.attributes.url}`}
+            alt={img.attributes.alternativeText}
             fill
             priority
-            sizes='(max-width: 2000px) 100%,'
+            sizes="(max-width: 2000px) 100%,"
             // width={img.attributes.width}
             // height={img.attributes.height}
             className={styles.carousel__img}
-          // width={img.attributes.width}
-          // height={img.attributes.height}
+            // width={img.attributes.width}
+            // height={img.attributes.height}
           />
           {/* <p className="legend">Legend 2</p> */}
-        </div>)
-      }
-    </Carousel >
-  )
-}
+        </div>
+      ))}
+    </Carousel>
+  );
+};
 
-export default React
+export default React;
