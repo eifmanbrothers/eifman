@@ -1,275 +1,273 @@
-import seagull from '../images/events/seagull.png'
-import upAndDown from '../images/events/upAndDown.png'
-import jiselle from '../images/events/jiselle.png'
-import roden from '../images/events/roden.png'
-import onegin from '../images/events/onegin.png'
-import beyond from '../images/events/beyond.png'
-import karenina from '../images/events/karenina.png'
-import chaikovsky from '../images/events/chaikovsky.jpg'
-import hamlet from '../images/events/hamlet.png'
-import musagette from '../images/events/musagette.png'
-import moliere from '../images/events/moliere.png'
-import effect from '../images/events/effect.png'
-import requiem from '../images/events/requiem.png'
-import donKihot from '../images/events/donKihot.jpg'
-import jerusalem from '../images/events/jerusalem.jpg'
+import seagull from "../images/events/seagull.png";
+import upAndDown from "../images/events/upAndDown.png";
+import jiselle from "../images/events/jiselle.png";
+import roden from "../images/events/roden.png";
+import onegin from "../images/events/onegin.png";
+import beyond from "../images/events/beyond.png";
+import karenina from "../images/events/karenina.png";
+import chaikovsky from "../images/events/chaikovsky.jpg";
+import hamlet from "../images/events/hamlet.png";
+import musagette from "../images/events/musagette.png";
+import moliere from "../images/events/moliere.png";
+import effect from "../images/events/effect.png";
+import requiem from "../images/events/requiem.png";
+import donKihot from "../images/events/donKihot.jpg";
+import jerusalem from "../images/events/jerusalem.jpg";
 
 export const items = [
   {
     id: {
       en: 100,
-      ru: 100
+      ru: 100,
     },
     name: {
       en: "The Seagull. A Ballet Story",
-      ru: "Чайка. Балетная история"
+      ru: "Чайка. Балетная история",
     },
-    path: '/repertoire/rodin',
+    path: "/repertoire/rodin",
     imageAlt: {
       en: "Photo ballet The Seagull. A Ballet Story",
-      ru: "Фотография спектакля Чайка. Балетная история"
+      ru: "Фотография спектакля Чайка. Балетная история",
     },
     image: seagull,
-    place: "chayka"
+    place: "chayka",
   },
   {
     id: {
       en: 3,
-      ru: 2
+      ru: 2,
     },
     name: {
       en: "Up & Down",
-      ru: "Вверх и вниз"
+      ru: "Вверх и вниз",
     },
     // path: '/repertoire/up-and-down',
     imageAlt: {
       en: "Photo ballet up-and-down",
-      ru: "Фотография спектакля Вверх и вниз"
+      ru: "Фотография спектакля Вверх и вниз",
     },
     image: upAndDown,
-    place: "down"
+    place: "down",
   },
   {
     id: {
       en: 300,
-      ru: 400
+      ru: 400,
     },
     name: {
       en: "Red Giselle",
-      ru: "Красная Жизель"
+      ru: "Красная Жизель",
     },
-    path: '/repertoire/jiselle',
+    path: "/repertoire/jiselle",
     imageAlt: {
       en: "Photo ballet Red Jiselle",
-      ru: "Фотография спектакля Красная Жизель"
+      ru: "Фотография спектакля Красная Жизель",
     },
     image: jiselle,
-    place: "jiselle"
+    place: "jiselle",
   },
   {
     id: {
       en: 5,
-      ru: 4
+      ru: 4,
     },
     name: {
       en: "Roden, her Eternal Idol",
-      ru: "Роден, ее вечный идол"
+      ru: "Роден, ее вечный идол",
     },
     // path: '/repertoire/roden',
     imageAlt: {
       en: "Photo ballet Roden, her Eternal Idol",
-      ru: "Фотография спектакля Красная Жизель"
+      ru: "Фотография спектакля Красная Жизель",
     },
     image: roden,
-    place: "roden"
+    place: "roden",
   },
   {
     id: {
       en: 111,
-      ru: 112
+      ru: 112,
     },
     name: {
       en: "Eugene Onegin",
-      ru: "Евгений Онегин"
+      ru: "Евгений Онегин",
     },
-    path: '/repertoire/onegin',
+    path: "/repertoire/onegin",
     imageAlt: {
       en: "Photo ballet Eugene Onegin",
-      ru: "Фотография спектакля Евгений Онегин"
+      ru: "Фотография спектакля Евгений Онегин",
     },
     image: onegin,
-    place: "onegin"
+    place: "onegin",
   },
   {
     id: {
       en: 113,
-      ru: 114
+      ru: 114,
     },
     name: {
       en: "Beyond Sin",
-      ru: "По ту сторону греха"
+      ru: "По ту сторону греха",
     },
-    path: '/repertoire/beyond',
+    path: "/repertoire/beyond",
     imageAlt: {
       en: "Photo ballet Beyond Sin",
-      ru: "Фотография спектакля По ту сторону греха"
+      ru: "Фотография спектакля По ту сторону греха",
     },
     image: beyond,
-    place: "beyond"
+    place: "beyond",
   },
   {
     id: {
       en: 115,
-      ru: 116
+      ru: 116,
     },
     name: {
       en: "Anna Karenina",
-      ru: "Анна Каренина"
+      ru: "Анна Каренина",
     },
-    path: '/repertoire/karenina',
+    path: "/repertoire/karenina",
     imageAlt: {
       en: "Photo ballet Anna Karenina",
-      ru: "Фотография спектакля Анна Каренина"
+      ru: "Фотография спектакля Анна Каренина",
     },
     image: karenina,
-    place: "karenina"
+    place: "karenina",
   },
   {
     id: {
       en: 117,
-      ru: 118
+      ru: 118,
     },
     name: {
       en: "Tchaikovsky. PRO et CONTRA",
-      ru: "Чайковский. PRO et CONTRA"
+      ru: "Чайковский. PRO et CONTRA",
     },
-    path: '/repertoire/chaikovsky',
+    path: "/repertoire/chaikovsky",
     imageAlt: {
       en: "Photo ballet Tchaikovsky. PRO et CONTRA",
-      ru: "Фотография спектакля Чайковский. PRO et CONTRA"
+      ru: "Фотография спектакля Чайковский. PRO et CONTRA",
     },
     image: chaikovsky,
-    place: "chaikovsky"
+    place: "chaikovsky",
   },
   {
     id: {
       en: 119,
-      ru: 120
+      ru: 120,
     },
     name: {
       en: "Russian Hamlet",
-      ru: "Русский Гамлет"
+      ru: "Русский Гамлет",
     },
-    path: '/repertoire/hamlet',
+    path: "/repertoire/hamlet",
     imageAlt: {
       en: "Photo ballet Russian Hamlet",
-      ru: "Фотография спектакля Русский Гамлет"
+      ru: "Фотография спектакля Русский Гамлет",
     },
     image: hamlet,
-    place: "hamlet"
+    place: "hamlet",
   },
   {
     id: {
       en: 121,
-      ru: 122
+      ru: 122,
     },
     name: {
       en: "Musagete",
-      ru: "Мусагет"
+      ru: "Мусагет",
     },
-    path: '/repertoire/musagette',
+    path: "/repertoire/musagette",
     imageAlt: {
       en: "Photo ballet Russian Hamlet",
-      ru: "Фотография спектакля Мусагет"
+      ru: "Фотография спектакля Мусагет",
     },
     image: musagette,
-    place: "musagette"
+    place: "musagette",
   },
   {
     id: {
       en: 123,
-      ru: 124
+      ru: 124,
     },
     name: {
       en: "Moliere Passion, or The Mask of Don Juan",
-      ru: "Страсти по Мольеру, или Маска Дон Дуана"
+      ru: "Страсти по Мольеру, или Маска Дон Дуана",
     },
-    path: '/repertoire/moliere',
+    path: "/repertoire/moliere",
     imageAlt: {
       en: "Photo ballet Moliere Passion, or The Mask of Don Juan",
-      ru: "Фотография спектакля Страсти по Мольеру, или Маска Дон Дуана"
+      ru: "Фотография спектакля Страсти по Мольеру, или Маска Дон Дуана",
     },
     image: moliere,
-    place: "moliere"
+    place: "moliere",
   },
   {
     id: {
       en: 125,
-      ru: 126
+      ru: 126,
     },
     name: {
       en: "Moliere Passion, or The Mask of Don Juan",
-      ru: "Эффект Пигмалеона"
+      ru: "Эффект Пигмалеона",
     },
-    path: '/repertoire/effect',
+    path: "/repertoire/effect",
     imageAlt: {
       en: "Photo ballet Moliere Passion, or The Mask of Don Juan",
-      ru: "Фотография спектакля Эффект Пигмалеона"
+      ru: "Фотография спектакля Эффект Пигмалеона",
     },
     image: effect,
-    place: "effect"
+    place: "effect",
   },
   {
     id: {
       en: 127,
-      ru: 128
+      ru: 128,
     },
     name: {
       en: "Requiem",
-      ru: "Реквием"
+      ru: "Реквием",
     },
-    path: '/repertoire/requiem',
+    path: "/repertoire/requiem",
     imageAlt: {
       en: "Photo ballet Requiem",
-      ru: "Фотография спектакля Реквием"
+      ru: "Фотография спектакля Реквием",
     },
     image: requiem,
-    place: "requiem"
+    place: "requiem",
   },
   {
     id: {
       en: 129,
-      ru: 130
+      ru: 130,
     },
     name: {
       en: "I, Don Quixote",
-      ru: "Я - Дон Кихот"
+      ru: "Я - Дон Кихот",
     },
-    path: '/repertoire/don-kihot',
+    path: "/repertoire/don-kihot",
     imageAlt: {
       en: "Photo ballet I, Don Quixote",
-      ru: "Фотография спектакля Я - Дон Кихот"
+      ru: "Фотография спектакля Я - Дон Кихот",
     },
     image: donKihot,
-    place: "donKihot"
+    place: "donKihot",
   },
   {
     id: {
       en: 131,
-      ru: 132
+      ru: 132,
     },
     name: {
       en: "My Jerusalem",
-      ru: "Мой Иерусалим"
+      ru: "Мой Иерусалим",
     },
-    path: '/repertoire/jerusalem',
+    path: "/repertoire/jerusalem",
     imageAlt: {
       en: "Photo ballet My Jerusalem",
-      ru: "Фотография спектакля Мой Иерусалим"
+      ru: "Фотография спектакля Мой Иерусалим",
     },
     image: jerusalem,
-    place: "jerusalem"
+    place: "jerusalem",
   },
-
-
-]
+];

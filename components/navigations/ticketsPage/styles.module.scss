@@ -1,0 +1,14 @@
+.ticketsPage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ticketsPage__list {
+    display: flex;
+    list-style: none;
+}
+
+.ticketsPage__item {
+    margin: 0 15px 0 0;
+}

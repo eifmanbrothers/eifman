@@ -1,15 +1,15 @@
-import styles from './styles.module.scss'
-import useTranslation from 'next-translate/useTranslation'
-import { Gallery, Line, nextEvents, Nav } from 'components'
-import api from 'utils/ApiBileter'
+import styles from "./styles.module.scss";
+import useTranslation from "next-translate/useTranslation";
+import { Gallery, Line, nextEvents, Nav } from "components";
+import api from "utils/ApiBileter";
 // import apiRepertires from 'utils/ApiRepertoire'
 
 const Performances = ({ data }) => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
-  const allMonth = Object.keys(data)
+  const allMonth = Object.keys(data);
   // console.log(allMonth)
-  // console.log(data)
+  // console.log(data);
   // console.log(data['2023-02-01'])
   return (
     <>
@@ -23,13 +23,12 @@ const Performances = ({ data }) => {
         <nextEvents.Repertoire />
       </section>
     </>
-
-  )
-}
+  );
+};
 
 export async function getServerSideProps() {
-  const res = await api.getData()
-  return { props: { data: res } }
+  const res = await api.getData();
+  return { props: { data: res } };
 }
 
-export default Performances
+export default Performances;
