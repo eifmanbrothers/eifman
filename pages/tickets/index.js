@@ -6,19 +6,18 @@ import threeMonth from "helpers/getThreeMonth";
 import { navigations, ListEventsBileter } from "components";
 
 const Tickets = ({ data }) => {
-  const [currentList, setCurrentList] = useState([]);
-  const [currentMonth, setCurrentMonth] = useState("");
-  const { t } = useTranslation();
   const allMonth = Object.keys(data);
+  const [currentList, setCurrentList] = useState([]);
+  const [currentMonth, setCurrentMonth] = useState(allMonth[0]);
+  const { t } = useTranslation();
 
   useEffect(() => {
-    setCurrentMonth(allMonth[0]);
-  }, []);
-  useEffect(() => {
-    setCurrentList([]);
+    // console.log('effect')
+    setCurrentList(Object.entries(data[currentMonth]));
   }, [currentMonth]);
   // console.log(currentMonth);
-  // console.log(currentList);
+  // const arr = Object.entries(data[currentMonth])
+  // console.log(1, arr);
   return (
     <section className={styles.tickets}>
       <h3>{t("tickets:titlePage")}</h3>
@@ -26,12 +25,13 @@ const Tickets = ({ data }) => {
         months={Object.keys(data)}
         changeMonth={(month) => setCurrentMonth(month)}
       />
-      {/* <ListEventsBileter list={data[currentMonth]} /> */}
+      <ListEventsBileter list={currentList} />
     </section>
   );
 };
 
 export async function getServerSideProps() {
+  console.log("fetch")
   const res = await api.getData(threeMonth());
   return { props: { data: res } };
 }
