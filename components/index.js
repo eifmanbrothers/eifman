@@ -28,6 +28,7 @@ import nextEvents from "./nextEvents";
 import errors from "./errors";
 import navigations from "./navigations";
 import ListEventsBileter from "./listEventsBileter";
+import ItemEvent from "./itemEvent";
 
 export {
   Header,
@@ -60,4 +61,5 @@ export {
   errors,
   navigations,
   ListEventsBileter,
+  ItemEvent,
 };

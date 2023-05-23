@@ -7,8 +7,18 @@
 .ticketsPage__list {
     display: flex;
     list-style: none;
+
 }
 
 .ticketsPage__item {
     margin: 0 15px 0 0;
+    font: 15px/20px "PT Sans", sans-serif;
+}
+
+.ticketsPage__item_active {
+    font-weight: bold;
+}
+
+.ticketsPage__item:hover {
+    cursor: pointer;
 }
