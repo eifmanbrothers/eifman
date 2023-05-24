@@ -33,7 +33,7 @@ const ItemEvent = (props) => {
         <p className={styles.itemEvent__building}>{BuildingName}</p>
       </div>
       <div className={styles.itemEvent__time}>
-        <p>'starts at'</p>
+        <p>starts at</p>
         <p>{time}</p>
       </div>
       <div>
