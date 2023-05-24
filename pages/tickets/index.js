@@ -33,13 +33,13 @@ const Tickets = ({ data }) => {
       <h4 className={styles.tickets__month}>
         {str.replace(str[0], str[0].toUpperCase())}
       </h4>
-      <ListEventsBileter list={currentList} />
+      <ListEventsBileter list={currentList} locale={router.locale} />
     </section>
   );
 };
 
 export async function getServerSideProps() {
-  console.log("fetch");
+  // console.log("fetch");
   const res = await api.getData(threeMonth());
   return { props: { data: res } };
 }

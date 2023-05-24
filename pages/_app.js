@@ -1,6 +1,11 @@
 import "../styles/globals.css";
 import Script from "next/script";
-import { srcScript, srcStyle, srcStyleTheatre } from "configs/bileter";
+import {
+  srcScript,
+  srcScriptEn,
+  srcStyle,
+  srcStyleTheatre,
+} from "configs/bileter";
 import { Layout } from "components";
 
 function MyApp({ Component, pageProps }) {
@@ -18,8 +23,8 @@ function MyApp({ Component, pageProps }) {
         type={srcStyleTheatre.type}
         media={srcStyleTheatre.media}
       />
-      <Script src={srcScript} />
       <Component {...pageProps} />
+      {/* <Script src={srcScript} /> */}
     </Layout>
   );
 }
