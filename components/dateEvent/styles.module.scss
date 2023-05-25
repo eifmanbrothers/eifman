@@ -1,0 +1,14 @@
+.dateEvent {
+    position: relative;
+    min-width: 125px;
+}
+
+.dateEvent::before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 70px;
+    width: 2px;
+    content: "";
+    background-color: #F0F0F0;
+}

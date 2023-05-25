@@ -3,47 +3,6 @@
     display: flex;
 }
 
-.itemEvent__date {
-    position: relative;
-    min-width: 125px;
-}
-
-.itemEvent__date::before {
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 70px;
-    width: 2px;
-    content: "";
-    background-color: #F0F0F0;
-}
-
-.itemEvent__event {
-    position: relative;
-    width: 100%;
-    padding: 20px 0 0 10px;    
-}
-
-.itemEvent__event::before {
-    position: absolute;
-    left: -2px;
-    top: 70px;
-    height: 2px;
-    width: 100%;
-    content: "";
-    background-color: #F0F0F0;
-}
-
-.itemEvent__building {
-    display: block;
-    width: 100%;
-    margin: 0;
-}
-
-.itemEvent__name {
-    margin: 0;
-}
-
 .itemEvent__time {
     min-width: 90px;
 }

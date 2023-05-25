@@ -1,25 +1,29 @@
-import styles from './styles.module.scss'
-import ReactMarkdown from 'react-markdown'
-import useTranslation from 'next-translate/useTranslation'
-import api from 'utils/ApiNews'
-import Image from 'next/image'
-import Link from 'next/link'
-import { API_URL } from 'configs/variables'
-import { NeededDate } from 'components'
-import { useRouter } from 'next/router'
+import styles from "./styles.module.scss";
+import ReactMarkdown from "react-markdown";
+import useTranslation from "next-translate/useTranslation";
+import api from "utils/ApiNews";
+import Image from "next/image";
+import Link from "next/link";
+import { API_URL } from "configs/variables";
+import { NeededDate } from "components";
+import { useRouter } from "next/router";
 
 const NewsPage = ({ data }) => {
-
-  const { t } = useTranslation()
-  const router = useRouter()
-  const firstData = data.attributes
-  const secondData = data.attributes.localizations.data[0].attributes
-  const currentData = data.reqLocation === firstData.locale ? firstData : secondData
+  const { t } = useTranslation();
+  const router = useRouter();
+  const firstData = data.attributes;
+  const secondData = data.attributes.localizations.data[0].attributes;
+  const currentData =
+    data.reqLocation === firstData.locale ? firstData : secondData;
 
   return (
-
     <div className={styles.newsPage}>
-      <button className={styles.newsPage__button} onClick={() => router.back()}>{t('common:nameBtnNewsPage')}</button>
+      <button
+        className={styles.newsPage__button}
+        onClick={() => router.push("/news")}
+      >
+        {t("common:nameBtnNewsPage")}
+      </button>
       {/* <Link href="/news" className={styles.newsPage__link}>{t('common:nameLinkNewsPage')}</Link> */}
       <section className={styles.newsPage__container}>
         <h3 className={styles.newsPage__title}>{currentData.title}</h3>
@@ -27,7 +31,7 @@ const NewsPage = ({ data }) => {
           date={currentData.date}
           time={currentData.publishedAt}
           locale={router.locale}
-          format='LL'
+          format="LL"
           place="newsPage"
         />
         <Image
@@ -43,17 +47,17 @@ const NewsPage = ({ data }) => {
         </div>
       </section>
     </div>
-
-
-
-  )
-}
+  );
+};
 
 export async function getServerSideProps(context) {
-  const { params: { id }, locale } = context
-  const res = await api.getNewsSingle(id)
-  res.data.reqLocation = locale
-  return { props: { data: res.data } }
+  const {
+    params: { id },
+    locale,
+  } = context;
+  const res = await api.getNewsSingle(id);
+  res.data.reqLocation = locale;
+  return { props: { data: res.data } };
 }
 
-export default NewsPage
+export default NewsPage;

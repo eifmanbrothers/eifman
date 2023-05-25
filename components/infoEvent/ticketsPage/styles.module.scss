@@ -1,0 +1,25 @@
+.iTicketsPage {
+    position: relative;
+    width: 100%;
+    padding: 20px 0 0 10px;  
+}
+
+.iTicketsPage::before {
+    position: absolute;
+    left: -2px;
+    top: 70px;
+    height: 2px;
+    width: 100%;
+    content: "";
+    background-color: #F0F0F0;
+}
+
+.iTicketsPage__name {
+    margin: 0;
+}
+
+.iTicketsPage__building {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
