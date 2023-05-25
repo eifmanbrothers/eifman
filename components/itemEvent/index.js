@@ -2,9 +2,11 @@ import styles from "./styles.module.scss";
 import moment from "moment";
 import "moment/locale/ru";
 import cn from "classnames";
-import { DateEvent, infoEvent } from "components";
+import useTranslation from "next-translate/useTranslation";
+import { DateEvent, infoEvent, btn } from "components";
 
 const ItemEvent = (props) => {
+  const { t } = useTranslation();
   const {
     IdPerformance,
     HasTickets,
@@ -19,28 +21,25 @@ const ItemEvent = (props) => {
   const regex = /\./g;
   const date = moment(PerfDate.replace(regex, "-"), "DD-MM-YYYY hh:mm:ss");
   const time = date.format("HH:mm");
-  //   console.log(date);
+  //   console.log(PushkinCard);
   return (
     <li className={styles.itemEvent}>
       <DateEvent date={date} locale={locale} />
-      <infoEvent.TicketsPage name={Name} buildingName={BuildingName} />
+      <infoEvent.TicketsPage
+        pushkinCard={PushkinCard}
+        name={Name}
+        buildingName={BuildingName}
+        address={Address}
+      />
       <div className={styles.itemEvent__time}>
-        <p>starts at</p>
-        <p>{time}</p>
+        <p className={styles.itemEvent__timeAt}>{t("tickets:startEvent")}</p>
+        <p className={styles.itemEvent__timeAt}>{time}</p>
       </div>
-      <div>
-        {HasTickets ? (
-          <p
-            id={`perf${IdPerformance}`}
-            className={cn(
-              "with_buy bileter_afisha_showhall",
-              styles.itemEvent__btn
-            )}
-          >
-            buy ticket
-          </p>
-        ) : null}
-      </div>
+      <btn.BuyTicket
+        isTicket={HasTickets}
+        btnName={HasTickets ? t("tickets:buyTicket") : t("tickets:noTicket")}
+        id={IdPerformance}
+      />
     </li>
   );
 };

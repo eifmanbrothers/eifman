@@ -1,0 +1,23 @@
+.buyTicket {
+  margin: 25px 0 0 0;
+  min-width: 115px;
+  height: 40px;
+  background: none;
+  border: 0;
+  color: #f0f0f0;
+  transition: all 0.1s ease-in;
+}
+
+.buyTicket_blocked {
+  opacity: 0.5;
+}
+
+.buyTicket:hover {
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+}
+
+.buyTicket_blocked:hover {
+  cursor: default;
+  transform: scale(1, 1);
+}

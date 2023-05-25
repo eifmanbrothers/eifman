@@ -31,6 +31,7 @@ import ListEventsBileter from "./listEventsBileter";
 import ItemEvent from "./itemEvent";
 import DateEvent from "./dateEvent";
 import infoEvent from "./infoEvent";
+import btn from "./btn";
 
 export {
   Header,
@@ -66,4 +67,5 @@ export {
   ItemEvent,
   DateEvent,
   infoEvent,
+  btn,
 };

@@ -1,12 +1,42 @@
 .itemEvent {
-    border-top: 1px grey solid;
-    display: flex;
+  border-top: 1px grey solid;
+  display: flex;
 }
 
 .itemEvent__time {
-    min-width: 90px;
+  position: relative;
+  min-width: 90px;
+  display: flex;
+  align-items: center;
+  margin: 22px 0 0 0;
+  flex-direction: column;
+}
+
+.itemEvent__time::before {
+  position: absolute;
+  left: 0;
+  top: -18px;
+  height: 60px;
+  width: 2px;
+  content: "";
+  background-color: #f0f0f0;
+}
+
+.itemEvent__time::after {
+  position: absolute;
+  top: 63px;
+  left: -2px;
+  height: 2px;
+  width: 100%;
+  content: "";
+  background-color: #f0f0f0;
 }
 
 .itemEvent__btn:hover {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+.itemEvent__timeAt {
+  margin: 0;
+  font: 16px "PT Sans", sans-serif;
 }

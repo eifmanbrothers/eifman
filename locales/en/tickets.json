@@ -1,3 +1,6 @@
 {
-    "titlePage": "Playbill - performances in St. Petersburg"
+    "titlePage": "Playbill - performances in St. Petersburg",
+    "startEvent": "Starts at",
+    "buyTicket": "BUY",
+    "noTicket": "NO TICKETS"
 }

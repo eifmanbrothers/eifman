@@ -19,7 +19,7 @@ const TicketsPage = ({ months, changeMonth, currentMonth }) => {
               className={cn(styles.ticketsPage__item, {
                 [styles.ticketsPage__item_active]: currentMonth === el,
               })}
-              onClick={() => changeMonth(el)}
+              onClick={() => (currentMonth === el ? null : changeMonth(el))}
             >
               {str.replace(str[0], str[0].toUpperCase())}
             </li>
