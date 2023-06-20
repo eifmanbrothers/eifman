@@ -32,6 +32,11 @@ import ItemEvent from "./itemEvent";
 import DateEvent from "./dateEvent";
 import infoEvent from "./infoEvent";
 import btn from "./btn";
+import card from "./card";
+import list from "./list";
+import CoverCard from "./coverCard";
+import eventFullInfo from "./eventFullInfo";
+import addressEvent from "./addressEvent";
 
 export {
   Header,
@@ -68,4 +73,9 @@ export {
   DateEvent,
   infoEvent,
   btn,
+  card,
+  list,
+  CoverCard,
+  eventFullInfo,
+  addressEvent,
 };

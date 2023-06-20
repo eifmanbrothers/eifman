@@ -5,43 +5,55 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import useTranslation from "next-translate/useTranslation";
 import api from "utils/ApiBileter";
+import apiCover from "utils/ApiCover";
 import threeMonth from "helpers/getThreeMonth";
-import { navigations, ListEventsBileter } from "components";
+import {
+  navigations,
+  ListEventsBileter,
+  list,
+  eventFullInfo,
+} from "components";
+import getTicketsList from "helpers/getTicketsList";
+import getCoversForEvent from "helpers/getCoversForEvent";
 
-const Tickets = ({ data }) => {
+const Tickets = ({ allData }) => {
+  const [covers, setCovers] = useState([]);
+  // const [data, localData] = allData;
+  // console.log(allData);
+  // console.log(allData);
   const router = useRouter();
-  const allMonth = Object.keys(data);
-  const [currentList, setCurrentList] = useState([]);
-  const [currentMonth, setCurrentMonth] = useState(allMonth[0]);
+  // const allMonth = Object.keys(data);
+  // const [currentList, setCurrentList] = useState(getTicketsList(allData));
+  // const [currentMonth, setCurrentMonth] = useState(allMonth[0]);
   const { t } = useTranslation();
 
-  const month = moment(currentMonth);
-  const str = month.locale(router.locale).format("MMMM");
-
-  useEffect(() => {
-    setCurrentList(Object.entries(data[currentMonth]));
-  }, [currentMonth]);
-
+  // const month = moment(currentMonth);
+  // const str = month.locale(router.locale).format("MMMM");
+  // const ticketsList = getCoversForEvent(
+  //   getTicketsList(allData),
+  //   allData[2].data
+  // );
   return (
     <section className={styles.tickets}>
       <h3>{t("tickets:titlePage")}</h3>
-      <navigations.TicketsPage
-        months={Object.keys(data)}
-        changeMonth={(month) => setCurrentMonth(month)}
-        currentMonth={currentMonth}
-      />
       <h4 className={styles.tickets__month}>
-        {str.replace(str[0], str[0].toUpperCase())}
+        {/* {str.replace(str[0], str[0].toUpperCase())} */}
       </h4>
-      <ListEventsBileter list={currentList} locale={router.locale} />
+      <list.Cards list={allData} locale={router.locale} />
+      {/* <list.Cards list={getTicketsList(allData)} covers={covers} /> */}
     </section>
   );
 };
 
-export async function getServerSideProps() {
-  // console.log("fetch");
-  const res = await api.getData(threeMonth());
-  return { props: { data: res } };
+export async function getServerSideProps({ locale }) {
+  console.log("fetch");
+  console.log(locale);
+  // const res = await api.getDataBileter(threeMonth());
+  const res = await api.getTickets(locale);
+
+  return {
+    props: { allData: getCoversForEvent(getTicketsList(res), res[2].data) },
+  };
 }
 
 export default Tickets;

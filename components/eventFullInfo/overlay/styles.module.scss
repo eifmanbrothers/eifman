@@ -1,0 +1,15 @@
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(94, 211, 211, 0.3);
+  //   display: none;
+  visibility: hidden;
+}
+
+.overlay_active {
+  visibility: visible;
+  display: block;
+}

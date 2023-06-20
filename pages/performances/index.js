@@ -27,7 +27,7 @@ const Performances = ({ data }) => {
 };
 
 export async function getServerSideProps() {
-  const res = await api.getData();
+  const res = await api.getDataBileter();
   return { props: { data: res } };
 }
 

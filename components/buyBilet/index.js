@@ -16,7 +16,6 @@ const BuyBilet = () => {
       >
         {t("common:nameButtonBuy").toUpperCase()}
       </button>
-      <p className={styles.buyBilet__span}>{t("common:spanButtonBuy")}</p>
     </div>
   );
 };
