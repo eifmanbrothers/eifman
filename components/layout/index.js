@@ -1,16 +1,16 @@
-import { Header, Nav, Footer, Gallery } from 'components'
-import { useRouter } from 'next/router'
+import { Header, Nav, Footer, Gallery } from "components";
+import { useRouter } from "next/router";
 
 export default function Layout({ children }) {
-  const router = useRouter()
+  const router = useRouter();
   return (
-    <div className='root'>
+    <div className="root">
       <Header />
       {/* {router.asPath === '/' && <Gallery />} */}
-      {router.asPath !== '/performances' && <Nav />}
+      {router.asPath !== "/performances" && <Nav />}
       <main>{children}</main>
       {/* {router.asPath === '/performances' && <Nav />} */}
       <Footer />
     </div>
-  )
+  );
 }

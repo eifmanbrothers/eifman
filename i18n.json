@@ -18,6 +18,9 @@
     ],
     "/performances": [
       "performances"
+    ],
+    "/tickets": [
+      "tickets"
     ]
   }
 }

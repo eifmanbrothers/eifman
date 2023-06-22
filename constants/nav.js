@@ -4,27 +4,34 @@ export const navList = [
       ru: "О театре",
       en: "The Company",
     },
-    path: "/about"
+    path: "/about",
   },
   {
     name: {
       ru: "Афиша",
       en: "Schedule",
     },
-    path: "/schedule"
+    path: "/tickets",
   },
   {
     name: {
       ru: "Труппа",
       en: "Ensemble",
     },
-    path: "/ensemble"
+    path: "/ensemble",
   },
   {
     name: {
       ru: "Репертуар",
       en: "Repertoire",
     },
-    path: "/performances"
-  }
-]
+    path: "/performances",
+  },
+  {
+    name: {
+      ru: "Контакты",
+      en: "Contacts",
+    },
+    path: "/contacts",
+  },
+];

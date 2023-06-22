@@ -1,0 +1,23 @@
+.card {
+  position: relative;
+  padding: 0 0 0 25px;
+  font: 15px "PT Sans", sans-serif;
+}
+
+.card::before {
+  position: absolute;
+  top: 5px;
+  left: -2px;
+  content: "";
+  width: 18px;
+  height: 27px;
+  background-image: url(../../../images/geo-icon.svg);
+}
+
+.card__city {
+  margin: 10px 0 0 0;
+}
+
+.card__theatre {
+  margin: 0;
+}

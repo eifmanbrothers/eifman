@@ -1,0 +1,49 @@
+.card {
+  padding: 12px;
+  min-height: 195px;
+  position: relative;
+  background-color: #000;
+}
+
+.card__title {
+  margin: 0 0 10px 0;
+  min-height: 56px;
+  font: 22px "PT Sans", sans-serif;
+}
+
+.card__title_longName {
+  font: 16px "PT Sans", sans-serif;
+}
+
+.card__date {
+  display: flex;
+  padding: 0 25px 0 25px;
+  // margin: 0;
+  justify-content: space-between;
+  font: 15px "PT Sans", sans-serif;
+}
+
+.card__day {
+  margin: 0;
+  font: 15px "PT Sans", sans-serif;
+}
+
+.card__month {
+  // margin-right: auto;
+  font: 15px "PT Sans", sans-serif;
+}
+
+.card__time {
+  position: relative;
+  font: 15px "PT Sans", sans-serif;
+}
+
+.card__time::before {
+  position: absolute;
+  top: 6px;
+  left: -20px;
+  content: "";
+  width: 9px;
+  height: 9px;
+  background-image: url("../../../images/time-icon.svg");
+}
