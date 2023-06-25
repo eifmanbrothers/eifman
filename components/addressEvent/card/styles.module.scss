@@ -1,4 +1,5 @@
 .card {
+  // min-height: 56px;
   position: relative;
   padding: 0 0 0 25px;
   font: 15px "PT Sans", sans-serif;
@@ -12,6 +13,21 @@
   width: 18px;
   height: 27px;
   background-image: url(../../../images/geo-icon.svg);
+}
+
+.card_isOverlay {
+  // position: relative;
+  margin: 0 0 15px 0;
+}
+
+.card_isOverlay::before {
+  position: absolute;
+  top: 5px;
+  left: -2px;
+  content: "";
+  width: 18px;
+  height: 27px;
+  background-image: url(../../../images/geo-icon-white.svg);
 }
 
 .card__city {

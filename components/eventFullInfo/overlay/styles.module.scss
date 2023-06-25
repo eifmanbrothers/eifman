@@ -4,12 +4,67 @@
   top: 0;
   min-width: 100vw;
   min-height: 100vh;
-  background-color: rgba(94, 211, 211, 0.3);
-  //   display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   visibility: hidden;
+  background: rgba(20, 20, 20, 0.9);
 }
 
 .overlay_active {
   visibility: visible;
-  display: block;
+  // display: block;
+}
+
+.overlay__imgWrapper {
+  width: 256px;
+  height: 256px;
+  overflow: hidden;
+}
+
+.overlay__content {
+  min-width: 265px;
+  max-width: 330px;
+  height: 256px;
+  background-color: rgba(0, 0, 0, 1);
+  padding: 15px;
+}
+
+.overlay__title {
+  min-height: 56px;
+  margin: 0 0 10px 0;
+  font: 22px "PT Sans", sans-serif;
+}
+
+.overlay__about {
+  margin: 0 0 5px 0;
+  padding: 0 0 0 25px;
+  font: 15px "PT Sans", sans-serif;
+}
+
+.overlay__btn {
+  font: 15px "PT Sans", sans-serif;
+  border: none;
+  background: none;
+  padding: 0 0 0 25px;
+  color: aliceblue;
+}
+
+.overlay__btn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.overlay__about:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.overlay__btn_blocked {
+  opacity: 0.5;
+}
+
+.overlay__btn_blocked:hover {
+  cursor: default;
+  text-decoration: none;
 }

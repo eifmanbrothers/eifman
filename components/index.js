@@ -37,6 +37,7 @@ import list from "./list";
 import CoverCard from "./coverCard";
 import eventFullInfo from "./eventFullInfo";
 import addressEvent from "./addressEvent";
+import eventTime from "./eventTime";
 
 export {
   Header,
@@ -78,4 +79,5 @@ export {
   CoverCard,
   eventFullInfo,
   addressEvent,
+  eventTime,
 };

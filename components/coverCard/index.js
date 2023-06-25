@@ -4,7 +4,12 @@ import { API_URL } from "configs/variables";
 
 const CoverCard = ({ images = [], alt }) => {
   const numberImage = Math.floor(Math.random() * images.length);
-  const srcImage = API_URL + images[numberImage]?.attributes.url;
+  const srcImage =
+    API_URL +
+    // for fix when there is not link (is undefined from images[numberImage]?.attributes.url)
+    (images[numberImage]?.attributes.url ||
+      "/uploads/common_Image2_2de1d50903.jpg?updated_at=2023-06-04T13:47:26.919Z");
+  // console.log(srcImage);
   // console.log(srcImage);
   // console.log(images);
   return (

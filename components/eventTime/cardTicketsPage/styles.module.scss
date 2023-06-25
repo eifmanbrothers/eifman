@@ -1,0 +1,30 @@
+.cardTicketsPage {
+  display: flex;
+  padding: 0 25px 0 25px;
+  justify-content: space-between;
+  font: 15px "PT Sans", sans-serif;
+}
+
+.cardTicketsPage__day {
+  margin: 0;
+  font: 15px "PT Sans", sans-serif;
+}
+
+.cardTicketsPage__month {
+  font: 15px "PT Sans", sans-serif;
+}
+
+.cardTicketsPage__time {
+  position: relative;
+  font: 15px "PT Sans", sans-serif;
+}
+
+.cardTicketsPage__time::before {
+  position: absolute;
+  top: 6px;
+  left: -20px;
+  content: "";
+  width: 9px;
+  height: 9px;
+  background-image: url("../../../images/time-icon.svg");
+}
