@@ -5,9 +5,7 @@ import getEventInfoBileter from "helpers/getEventInfoBileter";
 import getNameEventBileter from "helpers/getNameEventBileter";
 import areasSpb from "configs/areasSpb";
 import namesSpb from "configs/namesSpb";
-// import "moment/locale/ru";
-// import "moment/locale/en";
-import { NeededDate, addressEvent } from "components";
+import { addressEvent, eventTime } from "components";
 
 const Card = (props) => {
   const {
@@ -21,23 +19,11 @@ const Card = (props) => {
     locale,
     images,
   } = props;
-
-  const regex = /\./g;
-  const date =
-    PerfDate?.length < 20
-      ? moment(PerfDate?.replace(regex, "-"), "DD-MM-YYYY hh:mm:ss")
-      : moment(PerfDate);
-  const time = date.format("HH:mm");
-
+  //   console.log(props);
   const currentTheatre = getEventInfoBileter(address, areasSpb, locale);
   const isLocalData = typeof currentTheatre === "string";
-  //   console.log(isLocalData);
   // for local data
-  const {
-    // performance: { data: { attributes = {} } = {} } = {},
-    hall = {},
-    Name: localName,
-  } = props;
+  const { hall = {}, Name: localName } = props;
 
   const currentName =
     getNameEventBileter(name, namesSpb, locale) ||
@@ -53,22 +39,7 @@ const Card = (props) => {
       >
         {currentName}
       </h4>
-      <div className={styles.card__date}>
-        <div>
-          <time
-            dateTime={moment(date).locale(locale).format("LT")}
-            className={styles.card__month}
-          >
-            {moment(date).locale(locale).format("Do MMMM,")}
-          </time>
-          <p className={styles.card__day}>
-            {moment(date).locale(locale).format("dddd")}
-          </p>
-        </div>
-        <time dateTime={date.format()} className={styles.card__time}>
-          {time}
-        </time>
-      </div>
+      <eventTime.CardTicketsPage data={PerfDate} locale={locale} />
       <addressEvent.Card
         country={
           isLocalData

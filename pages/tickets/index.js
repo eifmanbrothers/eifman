@@ -18,9 +18,11 @@ import getCoversForEvent from "helpers/getCoversForEvent";
 
 const Tickets = ({ allData }) => {
   const [covers, setCovers] = useState([]);
+
   // const [data, localData] = allData;
   // console.log(allData);
   // console.log(allData);
+
   const router = useRouter();
   // const allMonth = Object.keys(data);
   // const [currentList, setCurrentList] = useState(getTicketsList(allData));

@@ -192,7 +192,7 @@ export const items = [
     },
     name: {
       en: "Moliere Passion, or The Mask of Don Juan",
-      ru: "Страсти по Мольеру, или Маска Дон Дуана",
+      ru: "Страсти по Мольеру, или Маска Дон Жуана",
     },
     path: "/repertoire/moliere",
     imageAlt: {
