@@ -5,7 +5,7 @@ import api from "utils/ApiNews";
 import Image from "next/image";
 import Link from "next/link";
 import { API_URL } from "configs/variables";
-import { NeededDate } from "components";
+import { NeededDate, myCarousel } from "components";
 import { useRouter } from "next/router";
 
 const NewsPage = ({ data }) => {
@@ -16,6 +16,7 @@ const NewsPage = ({ data }) => {
   const currentData =
     data.reqLocation === firstData.locale ? firstData : secondData;
 
+  console.log(currentData);
   return (
     <div className={styles.newsPage}>
       <button
@@ -34,14 +35,19 @@ const NewsPage = ({ data }) => {
           format="LL"
           place="newsPage"
         />
-        <Image
-          src={API_URL + firstData.image.data.attributes.url}
-          alt="#"
-          width={firstData.image.data.attributes.width}
-          height={firstData.image.data.attributes.height}
-          className={styles.newsPage__image}
-          priority
-        />
+        {currentData?.images?.data ? (
+          <myCarousel.React arrImg={currentData.images.data} place="news" />
+        ) : (
+          <Image
+            src={API_URL + firstData.image.data.attributes.url}
+            alt={currentData.image?.data.attributes.alternativeText || "photo"}
+            width={firstData.image.data.attributes.width}
+            height={firstData.image.data.attributes.height}
+            className={styles.newsPage__image}
+            priority
+          />
+        )}
+
         <div className={styles.newsPage__description}>
           <ReactMarkdown>{currentData.news}</ReactMarkdown>
         </div>

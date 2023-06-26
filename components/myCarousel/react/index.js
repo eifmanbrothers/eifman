@@ -1,4 +1,5 @@
 import styles from "./styles.module.scss";
+import cn from "classnames";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import Image from "next/image";
@@ -17,7 +18,10 @@ const React = ({ arrImg, place }) => {
       // onClickThumb={onClickThumb}
     >
       {arrImg.map((img, index) => (
-        <div key={index} className={styles.carousel__imgCont}>
+        <div
+          key={index}
+          className={cn(styles.carousel__imgCont, { [styles[place]]: place })}
+        >
           <Image
             src={`http://127.0.0.1:1332${img.attributes.url}`}
             alt={img.attributes.alternativeText}
