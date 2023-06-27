@@ -15,8 +15,7 @@ const NewsPage = ({ data }) => {
   const secondData = data.attributes.localizations.data[0].attributes;
   const currentData =
     data.reqLocation === firstData.locale ? firstData : secondData;
-
-  console.log(currentData);
+  // console.log(currentData);
   return (
     <div className={styles.newsPage}>
       <button
@@ -51,6 +50,13 @@ const NewsPage = ({ data }) => {
         <div className={styles.newsPage__description}>
           <ReactMarkdown>{currentData.news}</ReactMarkdown>
         </div>
+        {currentData?.videoLink ? (
+          <iframe
+            className={styles.newsPage__video}
+            src={currentData?.videoLink}
+            allowFullScreen
+          ></iframe>
+        ) : null}
       </section>
     </div>
   );

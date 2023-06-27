@@ -26,6 +26,7 @@ function MyApp({ Component, pageProps }) {
         type={srcStyleTheatre.type}
         media={srcStyleTheatre.media}
       />
+      <Script src="/index.js" type="text/javascript" />
       <Component {...pageProps} />
       {/* <Script src={srcScript} /> */}
       {isTicketsPage && (

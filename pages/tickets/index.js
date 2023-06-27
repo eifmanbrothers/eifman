@@ -19,22 +19,10 @@ import getCoversForEvent from "helpers/getCoversForEvent";
 const Tickets = ({ allData }) => {
   const [covers, setCovers] = useState([]);
 
-  // const [data, localData] = allData;
-  // console.log(allData);
-  // console.log(allData);
-
   const router = useRouter();
-  // const allMonth = Object.keys(data);
-  // const [currentList, setCurrentList] = useState(getTicketsList(allData));
-  // const [currentMonth, setCurrentMonth] = useState(allMonth[0]);
+
   const { t } = useTranslation();
 
-  // const month = moment(currentMonth);
-  // const str = month.locale(router.locale).format("MMMM");
-  // const ticketsList = getCoversForEvent(
-  //   getTicketsList(allData),
-  //   allData[2].data
-  // );
   return (
     <section className={styles.tickets}>
       <h3>{t("tickets:titlePage")}</h3>

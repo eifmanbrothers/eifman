@@ -1,5 +1,6 @@
 import styles from "./styles.module.scss";
 import useTranslation from "next-translate/useTranslation";
+import Link from "next/link";
 import { CoverCard, addressEvent, eventTime } from "components";
 import moment from "moment";
 import cn from "classnames";
@@ -22,16 +23,16 @@ const Overlay = (props) => {
     attributes,
   } = props;
   const { t } = useTranslation();
-  const { Name: localName } = props;
-  // console.log(props);
+
+  console.log(props);
   const currentTheatre = getEventInfoBileter(address, areasSpb, locale);
   const currentName =
     getNameEventBileter(name, namesSpb, locale) ||
-    localName ||
-    attributes?.performance?.data?.attributes?.name;
+    attributes?.performance?.data?.attributes?.name ||
+    attributes?.Name;
   // console.log(id);
   const isLocalData = typeof currentTheatre === "string";
-  // console.log(isLocalData);
+  // console.log(props);
   return (
     <div
       className={cn(styles.overlay, {
@@ -43,7 +44,7 @@ const Overlay = (props) => {
       }
     >
       <div className={styles.overlay__imgWrapper}>
-        <CoverCard images={images} />
+        <CoverCard images={images || attributes?.images?.data} />
       </div>
       <div className={styles.overlay__content}>
         <h4 className={styles.overlay__title}>{currentName}</h4>
@@ -72,21 +73,31 @@ const Overlay = (props) => {
         <p className={styles.overlay__about}>
           {t("tickets:nameBtnAboutPerformance")}
         </p>
-        <button
-          disabled={!HasTickets}
-          id={`perf${IdPerformance}`}
-          className={cn(
-            styles.overlay__btn,
-            "with_buy bileter_afisha_showhall",
-            {
-              [styles.overlay__btn_blocked]: !HasTickets,
-            }
-          )}
-        >
-          {HasTickets
-            ? t("tickets:nameBtnBuyTicket")
-            : t("tickets:nameBtnWithoutTickets")}
-        </button>
+        {attributes?.link ? (
+          <Link
+            href={attributes?.link}
+            target="_blank"
+            className={styles.overlay__link}
+          >
+            {t("tickets:nameBtnBuyTicket")}
+          </Link>
+        ) : (
+          <button
+            disabled={!HasTickets}
+            id={`perf${IdPerformance}`}
+            className={cn(
+              styles.overlay__btn,
+              "with_buy bileter_afisha_showhall",
+              {
+                [styles.overlay__btn_blocked]: !HasTickets,
+              }
+            )}
+          >
+            {HasTickets
+              ? t("tickets:nameBtnBuyTicket")
+              : t("tickets:nameBtnWithoutTickets")}
+          </button>
+        )}
       </div>
     </div>
   );
