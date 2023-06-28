@@ -3,9 +3,8 @@ import ReactMarkdown from "react-markdown";
 import useTranslation from "next-translate/useTranslation";
 import api from "utils/ApiNews";
 import Image from "next/image";
-import Link from "next/link";
 import { API_URL } from "configs/variables";
-import { NeededDate, myCarousel } from "components";
+import { NeededDate, myCarousel, MetaData } from "components";
 import { useRouter } from "next/router";
 
 const NewsPage = ({ data }) => {
@@ -15,9 +14,14 @@ const NewsPage = ({ data }) => {
   const secondData = data.attributes.localizations.data[0].attributes;
   const currentData =
     data.reqLocation === firstData.locale ? firstData : secondData;
-  // console.log(currentData);
+  console.log(currentData);
   return (
     <div className={styles.newsPage}>
+      <MetaData
+        title={currentData.title}
+        keywords={currentData.date}
+        description={currentData.title}
+      />
       <button
         className={styles.newsPage__button}
         onClick={() => router.push("/news")}

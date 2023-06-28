@@ -38,6 +38,7 @@ import CoverCard from "./coverCard";
 import eventFullInfo from "./eventFullInfo";
 import addressEvent from "./addressEvent";
 import eventTime from "./eventTime";
+import MetaData from "./metaData";
 
 export {
   Header,
@@ -80,4 +81,5 @@ export {
   eventFullInfo,
   addressEvent,
   eventTime,
+  MetaData,
 };

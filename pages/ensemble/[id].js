@@ -3,9 +3,12 @@ import api from "utils/ApiEnsemble";
 import useTranslation from "next-translate/useTranslation";
 import ReactMarkdown from "react-markdown";
 import Image from "next/image";
-import { myCarousel, Line, navigations } from "components";
+import { myCarousel, Line, navigations, MetaData } from "components";
+import { metaInfo } from "constants/metaInfo";
+import { useRouter } from "next/router";
 
 const Member = ({ data }) => {
+  const router = useRouter();
   const {
     attributes: {
       images: { data: arrImg },
@@ -19,9 +22,17 @@ const Member = ({ data }) => {
     data.reqLocation === firstData.locale ? firstData : secondData;
 
   const fullName = currentData.secondName + " " + currentData.firstName;
-  // console.log(data);
+  const currentMetaData = () =>
+    metaInfo.find((el) => el.page === "ensembleMember");
+
   return (
     <>
+      <MetaData
+        title={currentMetaData().title[router.locale] + " " + fullName}
+        keywords={currentMetaData().keywords[router.locale]}
+        description={currentMetaData().description[router.locale]}
+        locale={router.locale}
+      />
       <Line />
       <section className={styles.member}>
         <navigations.MemberPage nameMember={fullName} />
