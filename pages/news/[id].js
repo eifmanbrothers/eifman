@@ -14,7 +14,7 @@ const NewsPage = ({ data }) => {
   const secondData = data.attributes.localizations.data[0].attributes;
   const currentData =
     data.reqLocation === firstData.locale ? firstData : secondData;
-  console.log(currentData);
+
   return (
     <div className={styles.newsPage}>
       <MetaData
@@ -38,8 +38,8 @@ const NewsPage = ({ data }) => {
           format="LL"
           place="newsPage"
         />
-        {currentData?.images?.data ? (
-          <myCarousel.React arrImg={currentData.images.data} place="news" />
+        {firstData?.images?.data ? (
+          <myCarousel.React arrImg={firstData.images.data} place="news" />
         ) : (
           <Image
             src={API_URL + firstData.image.data.attributes.url}
