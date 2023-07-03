@@ -8,11 +8,11 @@ import { NeededDate, myCarousel, MetaData, errors } from "components";
 import { useRouter } from "next/router";
 
 const NewsPage = ({ data }) => {
+  const { t } = useTranslation();
+  const router = useRouter();
   if (!data) {
     return <errors.NewsPage />;
   }
-  const { t } = useTranslation();
-  const router = useRouter();
   const firstData = data.attributes;
   const secondData = data.attributes.localizations.data[0].attributes;
   const currentData =
