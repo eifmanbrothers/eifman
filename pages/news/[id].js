@@ -4,10 +4,13 @@ import useTranslation from "next-translate/useTranslation";
 import api from "utils/ApiNews";
 import Image from "next/image";
 import { API_URL } from "configs/variables";
-import { NeededDate, myCarousel, MetaData } from "components";
+import { NeededDate, myCarousel, MetaData, errors } from "components";
 import { useRouter } from "next/router";
 
 const NewsPage = ({ data }) => {
+  if (!data) {
+    return <errors.NewsPage />;
+  }
   const { t } = useTranslation();
   const router = useRouter();
   const firstData = data.attributes;
@@ -72,7 +75,10 @@ export async function getServerSideProps(context) {
     locale,
   } = context;
   const res = await api.getNewsSingle(id);
-  res.data.reqLocation = locale;
+  if (res.data) {
+    res.data.reqLocation = locale;
+    return { props: { data: res.data } };
+  }
   return { props: { data: res.data } };
 }
 

@@ -1,3 +1,6 @@
 {
-  "titlePage": "Recent news"
+  "titlePage": "Recent news",
+  "errorNotNews": "there is not news",
+  "messageToAllNews": "you can look there",
+  "linkToAllNews": "here"
 }
