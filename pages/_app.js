@@ -12,6 +12,7 @@ import { Layout } from "components";
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const isTicketsPage = router.pathname.includes("/tickets");
+
   return (
     <Layout>
       <link

@@ -23,6 +23,7 @@ const Ensemble = ({ data }) => {
       <section className={styles.ensemble}>
         {arrPositions.map((pos) => (
           <ListMembers
+            locale={router.locale}
             key={pos}
             position={pos}
             list={data.filter(
