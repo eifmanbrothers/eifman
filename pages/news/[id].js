@@ -44,14 +44,20 @@ const NewsPage = ({ data }) => {
         {firstData?.images?.data ? (
           <myCarousel.React arrImg={firstData.images.data} place="news" />
         ) : (
-          <Image
-            src={API_URL + firstData.image.data.attributes.url}
-            alt={currentData.image?.data.attributes.alternativeText || "photo"}
-            width={firstData.image.data.attributes.width}
-            height={firstData.image.data.attributes.height}
-            className={styles.newsPage__image}
-            priority
-          />
+          <div className={styles.newsPage__imageWrapper}>
+            <Image
+              src={API_URL + firstData.image.data.attributes.url}
+              alt={
+                currentData.image?.data.attributes.alternativeText || "photo"
+              }
+              fill
+              // sizes="(min-width: 808px) 50vw, 100vw"
+              // width={firstData.image.data.attributes.width}
+              // height={firstData.image.data.attributes.height}
+              className={styles.newsPage__image}
+              priority
+            />
+          </div>
         )}
 
         <div className={styles.newsPage__description}>

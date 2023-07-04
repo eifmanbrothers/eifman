@@ -24,7 +24,7 @@ const Overlay = (props) => {
   } = props;
   const { t } = useTranslation();
 
-  console.log(props);
+  // console.log(props);
   const currentTheatre = getEventInfoBileter(address, areasSpb, locale);
   const currentName =
     getNameEventBileter(name, namesSpb, locale) ||
