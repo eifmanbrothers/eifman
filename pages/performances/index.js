@@ -2,11 +2,12 @@ import styles from "./styles.module.scss";
 import useTranslation from "next-translate/useTranslation";
 import { Gallery, Line, nextEvents, Nav } from "components";
 import api from "utils/ApiBileter";
+import getThreeMonth from "helpers/getThreeMonth";
 // import apiRepertires from 'utils/ApiRepertoire'
 
 const Performances = ({ data }) => {
   const { t } = useTranslation();
-
+  console.log(data);
   const allMonth = Object.keys(data);
   // console.log(allMonth)
   // console.log(data);
@@ -27,7 +28,7 @@ const Performances = ({ data }) => {
 };
 
 export async function getServerSideProps() {
-  const res = await api.getDataBileter();
+  const res = await api.getDataBileter(getThreeMonth());
   return { props: { data: res } };
 }
 

@@ -7,6 +7,7 @@ import { list, MetaData } from "components";
 import { metaInfo } from "constants/metaInfo";
 import getTicketsList from "helpers/getTicketsList";
 import getCoversForEvent from "helpers/getCoversForEvent";
+import getNextYear from "helpers/getNextYear";
 
 const Tickets = ({ allData }) => {
   const router = useRouter();
@@ -28,11 +29,10 @@ const Tickets = ({ allData }) => {
 };
 
 export async function getServerSideProps({ locale }) {
-  console.log("fetch");
-  console.log(locale);
-  // const res = await api.getDataBileter(threeMonth());
-  const res = await api.getTickets(locale);
-
+  // console.log("fetch");
+  // console.log(locale);
+  const res = await api.getTickets(locale, getNextYear());
+  // console.log(nextYear);
   return {
     props: { allData: getCoversForEvent(getTicketsList(res), res[2].data) },
   };
