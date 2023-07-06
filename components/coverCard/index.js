@@ -8,10 +8,8 @@ const CoverCard = ({ images = [], alt }) => {
     API_URL +
     // for fix when there is not link (is undefined from images[numberImage]?.attributes.url)
     (images[numberImage]?.attributes.url ||
-      "/uploads/common_Image2_2de1d50903.jpg?updated_at=2023-06-04T13:47:26.919Z");
+      "/uploads/eugene_onegin_photo_by_vladimir_zenzinov_jpg_620x460_q85_subsampling_2_ceaa9eb2fd.jpg");
   // console.log(srcImage);
-  // console.log(srcImage);
-  // console.log(images);
   return (
     <div className={styles.coverCard}>
       <Image

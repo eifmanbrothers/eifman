@@ -14,7 +14,7 @@ import ItemMember from "./itemMember";
 import listNews from "./listNews";
 import itemNews from "./itemNews";
 import ListMembers from "./listMembers";
-import Member from "./member";
+import members from "./member";
 import Main from "./main";
 import NeededDate from "./neededDate";
 import NavNewsPages from "./navNewsPages";
@@ -38,6 +38,8 @@ import CoverCard from "./coverCard";
 import eventFullInfo from "./eventFullInfo";
 import addressEvent from "./addressEvent";
 import eventTime from "./eventTime";
+import MetaData from "./metaData";
+import Loader from "./loader";
 
 export {
   Header,
@@ -56,7 +58,7 @@ export {
   listNews,
   itemNews,
   ListMembers,
-  Member,
+  members,
   Main,
   NeededDate,
   NavNewsPages,
@@ -80,4 +82,6 @@ export {
   eventFullInfo,
   addressEvent,
   eventTime,
+  MetaData,
+  Loader,
 };

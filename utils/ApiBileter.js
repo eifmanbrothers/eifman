@@ -27,7 +27,10 @@ class Api {
 
   getDataBileter(period) {
     return fetch(
-      `${this.address}/42d9de71f65cd840b11c96e24de087a5/afisha?json=1&to=2023-12-31`,
+      `${this.address}/42d9de71f65cd840b11c96e24de087a5/afisha?json=1${
+        period && `&to=${period}`
+      }`,
+      // `${this.address}/42d9de71f65cd840b11c96e24de087a5/afisha?json=1&to=2023-12-31`,
       {
         method: "GET",
         headers: this.headers,
@@ -46,9 +49,10 @@ class Api {
   //   ).then(handlerResponse);
   // }
 
-  getTickets(locale) {
+  getTickets(locale, period) {
+    // console.log(222, period);
     return Promise.all([
-      this.getDataBileter(),
+      this.getDataBileter(period),
       this.getDataLocal(locale),
       this.getCovers(locale),
     ]);

@@ -1,6 +1,6 @@
 import moment from "moment";
 const TO_MONTHS = 3;
-
+// give three or four month from today. To end last month
 module.exports = () => {
   const date = new Date();
   const currentDate = moment(date);

@@ -1,3 +1,6 @@
 {
-  "titlePage": "Новости Театра"
+  "titlePage": "Новости Театра",
+  "errorNotNews": "здесь нет новости...",
+  "messageToAllNews": "вы можете посмотреть",
+  "linkToAllNews": "здесь"
 }
