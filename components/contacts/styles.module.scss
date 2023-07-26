@@ -1,0 +1,28 @@
+.contacts {
+  max-width: 220px;
+  font-size: 14px;
+  // padding: 0 0 150px 0;
+}
+
+.contacts__org {
+  margin: 0 0 0 0;
+}
+
+.contacts__phone {
+  display: inline;
+  margin: 0 15px 0 0;
+  line-height: 3;
+}
+
+.contacts__mail {
+  margin: 0 0 0 0;
+}
+
+.contacts__link {
+  display: block;
+  margin: 0 0 15px 0;
+}
+
+.contacts__link:last-of-type {
+  margin: 0 0 0 0;
+}

@@ -7,7 +7,7 @@ import getThreeMonth from "helpers/getThreeMonth";
 
 const Performances = ({ data }) => {
   const { t } = useTranslation();
-  console.log(data);
+  // console.log(data);
   const allMonth = Object.keys(data);
   // console.log(allMonth)
   // console.log(data);
