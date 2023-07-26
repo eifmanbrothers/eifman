@@ -30,7 +30,7 @@ export default function Layout({ children }) {
       {router.asPath !== "/performances" && <Nav />}
       <main>{children}</main>
       {/* {router.asPath === '/performances' && <Nav />} */}
-      <Footer />
+      <Footer locale={router.locale} />
     </div>
   );
 }

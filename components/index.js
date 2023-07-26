@@ -40,6 +40,8 @@ import addressEvent from "./addressEvent";
 import eventTime from "./eventTime";
 import MetaData from "./metaData";
 import Loader from "./loader";
+import Copyright from "./copyright";
+import Contacts from "./contacts";
 
 export {
   Header,
@@ -84,4 +86,6 @@ export {
   eventTime,
   MetaData,
   Loader,
+  Copyright,
+  Contacts,
 };

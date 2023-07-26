@@ -1,15 +1,19 @@
-import styles from './styles.module.scss'
+import styles from "./styles.module.scss";
+import useTranslation from "next-translate/useTranslation";
+import { Copyright, Contacts } from "components";
 
-const Footer = () => {
+const Footer = ({ locale }) => {
+  const { t } = useTranslation();
+
   // console.log(router.asPath)
   return (
     <footer className={styles.footer}>
-      <div className={styles.footer__container}>
-        this is footer
-      </div>
-
+      <section className={styles.footer__content}>
+        <Copyright />
+        <Contacts locale={locale} />
+      </section>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
