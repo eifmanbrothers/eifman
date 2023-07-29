@@ -42,6 +42,8 @@ import MetaData from "./metaData";
 import Loader from "./loader";
 import Copyright from "./copyright";
 import Contacts from "./contacts";
+import Owner from "./owner";
+import NavFooter from "./navFooter";
 
 export {
   Header,
@@ -88,4 +90,6 @@ export {
   Loader,
   Copyright,
   Contacts,
+  Owner,
+  NavFooter,
 };

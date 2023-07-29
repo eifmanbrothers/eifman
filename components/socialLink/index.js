@@ -1,22 +1,13 @@
-import styles from './styles.module.scss'
-import Link from 'next/link'
-import Image from 'next/image'
+import styles from "./styles.module.scss";
+import Link from "next/link";
+import Image from "next/image";
 
-const SocialLink = ({ href, title, image }) => {
-
+const SocialLink = ({ href, title, image, place }) => {
   return (
-    <Link
-      href={href}
-      passHref
-      className={styles.socialLink}>
-      <Image
-        priority
-        src={image}
-        alt={title}
-        className={styles.image}
-      />
+    <Link target="_blanc" href={href} passHref className={styles.socialLink}>
+      <Image priority src={image} alt={title} className={styles.image} />
     </Link>
-  )
-}
+  );
+};
 
-export default SocialLink
+export default SocialLink;

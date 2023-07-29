@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss";
 import useTranslation from "next-translate/useTranslation";
-import { Copyright, Contacts } from "components";
+import { Copyright, Contacts, NavFooter, SocialLinks, Owner } from "components";
 
 const Footer = ({ locale }) => {
   const { t } = useTranslation();
@@ -11,6 +11,11 @@ const Footer = ({ locale }) => {
       <section className={styles.footer__content}>
         <Copyright />
         <Contacts locale={locale} />
+        <NavFooter />
+        <div className={styles.footer__links}>
+          <SocialLinks place="footer" />
+          <Owner />
+        </div>
       </section>
     </footer>
   );
