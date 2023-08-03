@@ -1,5 +1,22 @@
-.about {
+.about__imgWrapper {
+  position: relative;
   width: 100%;
-  max-width: 960px;
-  margin: 0 auto 150px;
+  height: 360px;
+  margin: 0 0 50px 0;
+}
+
+.about__image {
+  object-fit: contain;
+}
+
+.about__content {
+  max-width: 630px;
+  margin: 0 auto;
+}
+
+.about__video {
+  width: 100%;
+  height: 480px;
+  border: 0;
+  margin: 0 0 50px 0;
 }

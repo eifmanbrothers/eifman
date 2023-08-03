@@ -1,0 +1,30 @@
+.navBottom {
+  position: absolute;
+  left: -10px;
+  top: 35px;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #141414;
+}
+
+.navBottom:before {
+  position: absolute;
+  left: 30px;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background-color: #141414;
+  transform: rotate(45deg);
+}
+
+.navBottom__item {
+  // color: #fff;
+}
+
+.navBottom_column {
+  flex-direction: column;
+  z-index: 1;
+}

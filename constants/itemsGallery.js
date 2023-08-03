@@ -208,7 +208,7 @@ export const items = [
       ru: 126,
     },
     name: {
-      en: "Moliere Passion, or The Mask of Don Juan",
+      en: "The Pygmalion Effect",
       ru: "Эффект Пигмалеона",
     },
     path: "/repertoire/effect",
