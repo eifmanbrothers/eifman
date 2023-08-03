@@ -44,6 +44,10 @@ import Copyright from "./copyright";
 import Contacts from "./contacts";
 import Owner from "./owner";
 import NavFooter from "./navFooter";
+import Welcome from "./welcome";
+import MenuOnPage from "./menuOnPage";
+import NavBottom from "./navBottom";
+import NavBottomPage from "./navBottomPage";
 
 export {
   Header,
@@ -92,4 +96,8 @@ export {
   Contacts,
   Owner,
   NavFooter,
+  Welcome,
+  MenuOnPage,
+  NavBottom,
+  NavBottomPage,
 };

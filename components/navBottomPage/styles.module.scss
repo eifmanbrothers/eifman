@@ -1,0 +1,39 @@
+.navBottomPage {
+  max-width: 960px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 30px;
+}
+
+.navBottomPage__item {
+  //   border-radius: 50%;
+  //   overflow: hidden;
+}
+
+.navBottomPage__link {
+  display: block;
+  position: relative;
+  width: 114px;
+  height: 114px;
+  border-radius: 50%;
+  overflow: hidden;
+  color: #fff;
+  margin: 0 0 10px 0;
+}
+
+.navBottomPage__image {
+  object-fit: cover;
+  transition: all 0.2s ease-in;
+}
+
+.navBottomPage__image:hover {
+  transform: scale(1.1);
+}
+
+.navBottomPage__span {
+  display: block;
+  text-align: center;
+  font-size: 17px;
+}

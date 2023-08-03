@@ -1,0 +1,30 @@
+.welcome {
+  background: #141414;
+  padding: 20px 0;
+  margin: 0 0 40px 0;
+  //   min-height: 190px;
+  //   display: flex;
+}
+
+.welcome__text {
+  max-width: 560px;
+  font: 16px/23px "PT Serif", serif;
+  //   margin: 0 auto;
+  //   text-align: center;
+}
+
+.welcome__content {
+  max-width: 965px;
+  margin: 0 auto;
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: right bottom -20px;
+  //   background-size: 70px 70px;
+  //   align-content: flex-start;
+}
+
+.welcome__imgWrapper {
+  margin: 0 30px 0 0;
+  //   max-width: 960px;
+  //   margin: 0 auto;
+}

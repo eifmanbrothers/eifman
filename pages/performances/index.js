@@ -8,7 +8,7 @@ import getThreeMonth from "helpers/getThreeMonth";
 const Performances = ({ data }) => {
   const { t } = useTranslation();
   // console.log(data);
-  const allMonth = Object.keys(data);
+  // const allMonth = Object.keys(data);
   // console.log(allMonth)
   // console.log(data);
   // console.log(data['2023-02-01'])
@@ -27,9 +27,9 @@ const Performances = ({ data }) => {
   );
 };
 
-export async function getServerSideProps() {
-  const res = await api.getDataBileter(getThreeMonth());
-  return { props: { data: res } };
-}
+// export async function getServerSideProps() {
+//   const res = await api.getDataBileter(getThreeMonth());
+//   return { props: { data: res } };
+// }
 
 export default Performances;
