@@ -23,8 +23,12 @@ const React = ({ arrImg, place }) => {
           className={cn(styles.carousel__imgCont, { [styles[place]]: place })}
         >
           <Image
-            src={`http://127.0.0.1:1332${img.attributes.url}`}
-            alt={img.attributes.alternativeText || "alt text should be here"}
+            src={
+              img.attributes
+                ? `http://127.0.0.1:1332${img.attributes?.url}`
+                : img
+            }
+            alt={img.attributes?.alternativeText || "alt text should be here"}
             fill
             priority
             sizes="(max-width: 2000px) 100%,"
