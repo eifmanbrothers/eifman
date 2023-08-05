@@ -63,15 +63,45 @@ export const metaInfo = [
     page: "ensembleMember",
     title: {
       ru: "Солист Театра балета Бориса Эйфмана",
-      en: "Soloist of the Eifman Ballet ",
+      en: "Soloist of the Eifman Ballet",
     },
     description: {
       ru: "биография и репертуар артиста Театра балета Бориса Эйфмана",
       en: "biography and repertoire of the Soloist of the Eifman Ballet",
     },
     keywords: {
-      ru: ": театр, балет, Борис Эйфман, Санкт-Петербург, солист, артист, танцовщик, ведущий солист, труппа, биография, репертуар",
+      ru: "театр, балет, Борис Эйфман, Санкт-Петербург, солист, артист, танцовщик, ведущий солист, труппа, биография, репертуар",
       en: "theatre, ballet, Boris Eifman, St. Petersburg, soloist, dancer, leading soloist, ensemble, biography, repertoire",
+    },
+  },
+  {
+    page: "about",
+    title: {
+      ru: "О Театре Бориса Эйфмана",
+      en: "About Theatre of Boris Eifman",
+    },
+    description: {
+      ru: "описание деятельности Театра балета Бориса Эйфмана",
+      en: "description of the activities of the Boris Eifman Ballet Theater",
+    },
+    keywords: {
+      ru: "описание, театр, балет, Борис Эйфман, Санкт-Петербург, труппа, репертуар",
+      en: "description, theatre, ballet, Boris Eifman, St. Petersburg, repertoire",
+    },
+  },
+  {
+    page: "eifman",
+    title: {
+      ru: "О Борисе Эйфмане",
+      en: "About Boris Eifman",
+    },
+    description: {
+      ru: "описание деятельности Театра балета Бориса Эйфмана",
+      en: "description of the activities of the Boris Eifman Ballet Theater",
+    },
+    keywords: {
+      ru: "описание, театр, балет, Борис Эйфман, Санкт-Петербург, труппа, репертуар",
+      en: "description, theatre, ballet, Boris Eifman, St. Petersburg, repertoire",
     },
   },
 ];
