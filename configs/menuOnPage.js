@@ -23,4 +23,28 @@ export default [
       en: "Boris Eifman",
     },
   },
+  {
+    place: "dancePalace",
+    href: "/enterprises",
+    nameLink: {
+      ru: "Проекты",
+      en: "Enterprises",
+    },
+    span: {
+      ru: "Дворец Танца",
+      en: "Dance Palace",
+    },
+  },
+  {
+    place: "danceAcademy",
+    href: "/enterprises",
+    nameLink: {
+      ru: "Проекты",
+      en: "Enterprises",
+    },
+    span: {
+      ru: "Академия Танца",
+      en: "Dance Academy",
+    },
+  },
 ];

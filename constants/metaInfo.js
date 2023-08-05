@@ -104,4 +104,34 @@ export const metaInfo = [
       en: "description, theatre, ballet, Boris Eifman, St. Petersburg, repertoire",
     },
   },
+  {
+    page: "dancePalace",
+    title: {
+      ru: "Проект Дворец Танца",
+      en: "Project Dance Palace",
+    },
+    description: {
+      ru: "описание проекта по замыслу Бориса Эйфмана",
+      en: "description project of the Boris Eifman Ballet Theater",
+    },
+    keywords: {
+      ru: "проект, театр, балет, Борис Эйфман, Санкт-Петербург, Дворец Танца",
+      en: "description, theatre, project, Boris Eifman, Dance Palace, St. Petersburg",
+    },
+  },
+  {
+    page: "danceAcademy",
+    title: {
+      ru: "Проект Академия Танца",
+      en: "Project Academy Palace",
+    },
+    description: {
+      ru: "описание проекта по замыслу Бориса Эйфмана",
+      en: "description project of the Boris Eifman Ballet Theater",
+    },
+    keywords: {
+      ru: "Концепция Академии, Миссия Академии, проект, балет, Борис Эйфман, Санкт-Петербург, Академия Танца",
+      en: "The Academy’s mission, The concept of the Academy,description, project, Boris Eifman, Academy Palace, St. Petersburg",
+    },
+  },
 ];
