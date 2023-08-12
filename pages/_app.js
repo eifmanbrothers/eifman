@@ -2,7 +2,7 @@ import "../styles/globals.css";
 import Script from "next/script";
 import { useRouter } from "next/router";
 import { srcScript, srcScriptEn } from "configs/bileter";
-import { Layout } from "components";
+import { Layout, errors } from "components";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Layout>
+      <errors.SiteDev locale={router.locale} />
       <Script src="/index.js" type="text/javascript" />
       <Component {...pageProps} />
       {/* <Script src={srcScript} /> */}

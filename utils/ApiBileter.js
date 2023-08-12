@@ -37,6 +37,18 @@ class Api {
       }
     ).then(handlerResponse);
   }
+  getDataBileterMonth(period) {
+    return fetch(
+      `${this.address}/42d9de71f65cd840b11c96e24de087a5/afisha?json=1${
+        period && `&month=${period}`
+      }`,
+      // `${this.address}/42d9de71f65cd840b11c96e24de087a5/afisha?json=1&to=2023-12-31`,
+      {
+        method: "GET",
+        headers: this.headers,
+      }
+    ).then(handlerResponse);
+  }
   // getDataBileter(period) {
   //   return fetch(
   //     `${this.address}/42d9de71f65cd840b11c96e24de087a5/afisha?json=1${
@@ -52,7 +64,7 @@ class Api {
   getTickets(locale, period) {
     // console.log(222, period);
     return Promise.all([
-      this.getDataBileter(period),
+      this.getDataBileterMonth(period),
       this.getDataLocal(locale),
       this.getCovers(locale),
     ]);
