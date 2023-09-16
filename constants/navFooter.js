@@ -4,7 +4,7 @@ export const navList = [
       ru: "О театре",
       en: "The Company",
     },
-    path: "/theatre",
+    path: "/about",
   },
   {
     name: {

@@ -29,7 +29,7 @@ export const navList = [
       },
       {
         name: {
-          ru: "Партеры",
+          ru: "Партнеры",
           en: "Partners",
         },
         path: "/about/partners",
