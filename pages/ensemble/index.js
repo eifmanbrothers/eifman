@@ -6,7 +6,7 @@ import { metaInfo } from "constants/metaInfo";
 
 const Ensemble = ({ data }) => {
   const router = useRouter();
-  // console.log(data)
+  // console.log(data);
   const arrPositions = data.reduce((arr, el) => {
     const pos = el.attributes.position.data?.attributes.position;
     if (!arr.includes(pos)) arr.push(pos);

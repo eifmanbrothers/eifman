@@ -4,6 +4,43 @@
   margin: 0 auto;
 }
 
+.tickets__changeMonth {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  background: #141414;
+}
+
 .tickets__month {
-  font-size: 22px;
+  margin: 0;
+  width: 250px;
+  font-size: 18px;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.tickets__btn {
+  border: none;
+  background: transparent;
+  background-image: url(../../images/arrow-left_11x26.svg);
+  background-repeat: no-repeat;
+  background-size: 11px 26px;
+  opacity: 0.7;
+}
+
+.tickets__btn_right {
+  transform: rotateY(180deg);
+}
+
+.tickets__btn:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.tickets__btn_disabled {
+  opacity: 0.7;
+}
+.tickets__btn_disabled:hover {
+  opacity: 0.7;
+  cursor: default;
 }

@@ -11,42 +11,60 @@ export const navList = [
           ru: "Борис Эйфман",
           en: "Boris Eifman",
         },
-        path: "/about/eifman",
+        path: {
+          en: "/about/eifman",
+          ru: "/about/eifman",
+        },
       },
       {
         name: {
           ru: "Дирекция",
           en: "Management",
         },
-        path: "/about/principals",
+        path: {
+          en: "/about/principals",
+          ru: "/about/principals",
+        },
       },
       {
         name: {
           ru: "Для импресарио",
           en: "Presenter info",
         },
-        path: "/about/presenter",
+        path: {
+          en: "/about/presenter",
+          ru: "/about/presenter",
+        },
       },
       {
         name: {
           ru: "Партнеры",
           en: "Partners",
         },
-        path: "/about/partners",
+        path: {
+          en: "/about/partners",
+          ru: "/about/partners",
+        },
       },
       {
         name: {
           ru: "Официально",
           en: "Official",
         },
-        path: "/about/official",
+        path: {
+          en: "/about/official",
+          ru: "/about/official",
+        },
       },
       {
         name: {
           ru: "Вакансии",
           en: "Vacancies",
         },
-        path: "/about/vacancies",
+        path: {
+          en: "/about/vacancies",
+          ru: "/about/vacancies",
+        },
       },
     ],
   },
@@ -77,105 +95,150 @@ export const navList = [
           ru: "Анна Каренина",
           en: "Anna Karenina",
         },
-        path: "/performances/karenina",
+        path: {
+          en: "/performances/1",
+          ru: "/performances/2",
+        },
       },
       {
         name: {
           en: "The Seagull. A Ballet Story",
           ru: "Чайка. Балетная история",
         },
-        path: "/performances/seagull",
+        path: {
+          en: "/performances/23",
+          ru: "/performances/24",
+        },
       },
       {
         name: {
           en: "Up & Down",
           ru: "Вверх и вниз",
         },
-        path: "/performances/down",
+        path: {
+          en: "/performances/19",
+          ru: "/performances/20",
+        },
       },
       {
         name: {
           en: "Red Giselle",
           ru: "Красная Жизель",
         },
-        path: "/performances/giselle",
+        path: {
+          en: "/performances/5",
+          ru: "/performances/6",
+        },
       },
       {
         name: {
           en: "Roden, her Eternal Idol",
           ru: "Роден, ее вечный идол",
         },
-        path: "/performances/roden",
+        path: {
+          en: "/performances/11",
+          ru: "/performances/12",
+        },
       },
       {
         name: {
           en: "Eugene Onegin",
           ru: "Евгений Онегин",
         },
-        path: "/performances/onegin",
+        path: {
+          en: "/performances/9",
+          ru: "/performances/10",
+        },
       },
       {
         name: {
           en: "Beyond Sin",
           ru: "По ту сторону греха",
         },
-        path: "/performances/sin",
+        path: {
+          en: "/performances/13",
+          ru: "/performances/14",
+        },
       },
       {
         name: {
           en: "Tchaikovsky. PRO et CONTRA",
           ru: "Чайковский. PRO et CONTRA",
         },
-        path: "/performances/contra",
+        path: {
+          en: "/performances/17",
+          ru: "/performances/18",
+        },
       },
       {
         name: {
           en: "Russian Hamlet",
           ru: "Русский Гамлет",
         },
-        path: "/performances/gamlet",
+        path: {
+          en: "/performances/7",
+          ru: "/performances/8",
+        },
       },
       {
         name: {
           en: "Musagete",
           ru: "Мусагет",
         },
-        path: "/performances/musagete",
+        path: {
+          en: "/performances/21",
+          ru: "/performances/22",
+        },
       },
       {
         name: {
           en: "Moliere Passion, or The Mask of Don Juan",
           ru: "Страсти по Мольеру, или Маска Дон Жуана",
         },
-        path: "/performances/don",
+        path: {
+          en: "/performances/25",
+          ru: "/performances/26",
+        },
       },
       {
         name: {
           en: "The Pygmalion Effect",
           ru: "Эффект Пигмалеона",
         },
-        path: "/performances/pigmaleon",
+        path: {
+          en: "/performances/3",
+          ru: "/performances/4",
+        },
       },
       {
         name: {
           en: "Requiem",
           ru: "Реквием",
         },
-        path: "/performances/requiem",
+        path: {
+          en: "/performances/15",
+          ru: "/performances/16",
+        },
       },
       {
         name: {
           en: "I, Don Quixote",
           ru: "Я - Дон Кихот",
         },
-        path: "/performances/quixote",
+        path: {
+          en: "/performances/29",
+          ru: "/performances/30",
+        },
       },
       {
         name: {
           en: "My Jerusalem",
           ru: "Мой Иерусалим",
         },
-        path: "/performances/jerusalem",
+        path: {
+          en: "/performances/27",
+          ru: "/performances/28",
+        },
       },
     ],
   },
@@ -192,28 +255,40 @@ export const navList = [
           ru: "Академия Танца",
           en: "Dance Academy",
         },
-        path: "/enterprises/academy",
+        path: {
+          en: "/enterprises/academy",
+          ru: "/enterprises/academy",
+        },
       },
       {
         name: {
           ru: "Дворец Танца",
           en: "Dance Palace",
         },
-        path: "/enterprises/palace",
+        path: {
+          en: "/enterprises/palace",
+          ru: "/enterprises/palace",
+        },
       },
       {
         name: {
           ru: "Театр Академии танца",
           en: "Dance Academy Theatre",
         },
-        path: "/enterprises/children",
+        path: {
+          en: "/enterprises/children",
+          ru: "/enterprises/children",
+        },
       },
       {
         name: {
           ru: "Художественно-производственные мастерские",
           en: "Theater workshops",
         },
-        path: "/enterprises/workshops",
+        path: {
+          en: "/enterprises/workshops",
+          ru: "/enterprises/workshops",
+        },
       },
     ],
   },

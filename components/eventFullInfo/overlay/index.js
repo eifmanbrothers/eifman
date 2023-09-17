@@ -2,12 +2,12 @@ import styles from "./styles.module.scss";
 import useTranslation from "next-translate/useTranslation";
 import Link from "next/link";
 import { CoverCard, addressEvent, eventTime } from "components";
-import moment from "moment";
 import cn from "classnames";
 import getNameEventBileter from "helpers/getNameEventBileter";
 import getEventInfoBileter from "helpers/getEventInfoBileter";
 import namesSpb from "configs/namesSpb";
 import areasSpb from "configs/areasSpb";
+import getPathForPerformance from "helpers/getPathForPerformance";
 
 const Overlay = (props) => {
   const {
@@ -23,16 +23,17 @@ const Overlay = (props) => {
     attributes,
   } = props;
   const { t } = useTranslation();
-
-  // console.log(props);
+  // if there is Name(name) in props => it is data from bileter
+  // console.log(1, attributes);
   const currentTheatre = getEventInfoBileter(address, areasSpb, locale);
   const currentName =
     getNameEventBileter(name, namesSpb, locale) ||
     attributes?.performance?.data?.attributes?.name ||
     attributes?.Name;
-  // console.log(id);
+
   const isLocalData = typeof currentTheatre === "string";
-  // console.log(props);
+  let path = getPathForPerformance(name, locale);
+
   return (
     <div
       className={cn(styles.overlay, {
@@ -70,9 +71,16 @@ const Overlay = (props) => {
           }
           locale={locale}
         />
-        <p className={styles.overlay__about}>
+        <Link
+          href={
+            name
+              ? "/performances/" + path
+              : "/performances/" + attributes?.performance.data.id
+          }
+          className={styles.overlay__about}
+        >
           {t("tickets:nameBtnAboutPerformance")}
-        </p>
+        </Link>
         {attributes?.link ? (
           <Link
             href={attributes?.link}

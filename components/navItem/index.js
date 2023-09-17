@@ -7,13 +7,15 @@ import { NavBottom } from "components";
 const NavItem = ({ name, path, locale, place, submenu, column }) => {
   const router = useRouter();
 
+  const isSubMenu = place === "submenu";
+  // console.log(isSubMenu);
   return (
     <li
       className={cn(styles.navItem, styles[place], {
         [styles.navItem_active]: path === router.pathname,
       })}
     >
-      <Link href={path}>{name[locale]}</Link>
+      <Link href={isSubMenu ? path[locale] : path}>{name[locale]}</Link>
       {submenu ? (
         <div className={styles.navItem__submenu}>
           <NavBottom locale={locale} submenu={submenu} column={column} />
