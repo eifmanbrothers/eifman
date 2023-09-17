@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Layout>
-      {/* <errors.SiteDev locale={router.locale} /> */}
+      <errors.SiteDev locale={router.locale} />
       <Script src="/index.js" type="text/javascript" />
       <Component {...pageProps} />
       {/* <Script src={srcScript} /> */}
