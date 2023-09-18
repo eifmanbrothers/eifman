@@ -16,3 +16,30 @@
   margin: 0 auto;
   font: 20px "PT Sans", sans-serif;
 }
+
+.performancePage__promo {
+  padding: 0 0 0 110px;
+}
+
+.performancePage__promoContent {
+  display: flex;
+  justify-content: space-between;
+  font: 15px/20px "PT Sans", sans-serif;
+}
+
+.performancePage__introduce {
+  p:first-of-type {
+    margin-top: 0;
+  }
+}
+
+.performancePage__imgWrapper {
+  position: relative;
+  width: 520px;
+  height: 345px;
+  text-align: end;
+}
+
+.performancePage__img {
+  object-fit: contain;
+}
