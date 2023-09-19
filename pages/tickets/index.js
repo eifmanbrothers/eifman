@@ -12,20 +12,24 @@ import getTicketsList from "helpers/getTicketsList";
 import getCoversForEvent from "helpers/getCoversForEvent";
 import getNextYear from "helpers/getNextYear";
 import getMonthForBileter from "helpers/getMonthForBileter";
+import { FadeLoader } from "react-spinners";
 
 const Tickets = ({ allData }) => {
   const router = useRouter();
   const { t } = useTranslation();
   const [data, setDate] = useState(allData);
   const [countMonth, setCountMonth] = useState(0);
+  const [isReq, setIsReq] = useState(true);
   // console.log(data);
 
   const changeMonth = (evt) => {
     if (evt.target.name === "inc") {
+      setIsReq(true);
       setCountMonth(countMonth + 1);
     }
     if (evt.target.name === "dec") {
       // console.log(countMonth);
+      setIsReq(true);
       countMonth ? setCountMonth(countMonth - 1) : null;
     }
     // console.log(countMonth);
@@ -39,9 +43,10 @@ const Tickets = ({ allData }) => {
   useEffect(() => {
     api
       .getTickets(router.locale, getMonthForBileter(countMonth))
-      .then((res) =>
-        setDate(getCoversForEvent(getTicketsList(res), res[2].data))
-      )
+      .then((res) => {
+        setDate(getCoversForEvent(getTicketsList(res), res[2].data));
+        setIsReq(false);
+      })
       .catch((error) => console.log(error));
   }, [countMonth, router.locale]);
 
@@ -70,8 +75,14 @@ const Tickets = ({ allData }) => {
           onClick={(evt) => changeMonth(evt)}
         />
       </div>
-
-      <list.Cards list={data} locale={router.locale} />
+      <div className={styles.tickets__wrapper}>
+        {isReq && (
+          <div className={styles.target__spinner}>
+            <FadeLoader color="#fff" />
+          </div>
+        )}
+        <list.Cards list={data} locale={router.locale} />
+      </div>
     </section>
   );
 };

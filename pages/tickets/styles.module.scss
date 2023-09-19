@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   padding: 30px 0;
+  // height: 60px;
   background: #141414;
 }
 
@@ -21,6 +22,7 @@
 
 .tickets__btn {
   border: none;
+  height: 28px;
   background: transparent;
   background-image: url(../../images/arrow-left_11x26.svg);
   background-repeat: no-repeat;
@@ -40,7 +42,18 @@
 .tickets__btn_disabled {
   opacity: 0.7;
 }
+
 .tickets__btn_disabled:hover {
   opacity: 0.7;
   cursor: default;
+}
+
+.target__spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  justify-content: center;
 }

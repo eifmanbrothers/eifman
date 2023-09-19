@@ -75,7 +75,7 @@ const Overlay = (props) => {
           href={
             name
               ? "/performances/" + path
-              : "/performances/" + attributes?.performance.data.id
+              : "/performances/" + attributes?.performance.data?.id
           }
           className={styles.overlay__about}
         >

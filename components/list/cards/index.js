@@ -10,10 +10,11 @@ const Cards = ({ list, locale, covers = [] }) => {
     setBuyEvent({});
     console.log("close");
   };
-
+  // console.log(list);
   return (
     <>
       <ul className={styles.cards}>
+        {/* {list.length === 0 && <p>нет событий</p>} */}
         {list.map((c) => {
           return c.id ? (
             <card.TicketsPageLocal
