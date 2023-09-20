@@ -1,0 +1,28 @@
+.principals {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.principals__director {
+  position: relative;
+  display: flex;
+  padding: 30px 0 0 40px;
+}
+
+.principals__img {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.principals__caption {
+  color: #fff;
+  font-family: "PT Serif", serif;
+  font-size: 22px;
+  margin: 85px 0 0 20px;
+}
+
+.principals__members {
+  font: 15px/20px "PT Sans", sans-serif;
+  padding: 30px 0 0 80px;
+  margin: 0 0 100px 0;
+}

@@ -24,6 +24,18 @@ export default [
     },
   },
   {
+    place: "principals",
+    href: "/about",
+    nameLink: {
+      ru: "О Театре",
+      en: "About Theatre",
+    },
+    span: {
+      ru: "Руководство",
+      en: "Management",
+    },
+  },
+  {
     place: "dancePalace",
     href: "/enterprises",
     nameLink: {

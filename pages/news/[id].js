@@ -31,7 +31,6 @@ const NewsPage = ({ data }) => {
       >
         {t("common:nameBtnNewsPage")}
       </button>
-      {/* <Link href="/news" className={styles.newsPage__link}>{t('common:nameLinkNewsPage')}</Link> */}
       <section className={styles.newsPage__container}>
         <h3 className={styles.newsPage__title}>{currentData.title}</h3>
         <NeededDate

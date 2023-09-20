@@ -2,19 +2,12 @@ import styles from "./styles.module.scss";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import apiPerformance from "utils/ApiPerformance";
-import { myCarousel, Line, errors, navigations } from "components";
+import { myCarousel, Line, errors, navigations, MetaData } from "components";
 import ReactMarkdown from "react-markdown";
 import Image from "next/image";
 import { API_URL } from "configs/variables";
 
 const PerformancePage = ({ data }) => {
-  const router = useRouter();
-  console.log(data);
-
-  useEffect(() => {
-    // console.log(1)
-  }, []);
-
   if (data === null) return <errors.Performance />;
   const {
     attributes: {
@@ -30,6 +23,11 @@ const PerformancePage = ({ data }) => {
 
   return (
     <>
+      <MetaData
+        title={currentData.name}
+        keywords={currentData.name}
+        description={currentData.name}
+      />
       <Line />
       <div className={styles.performancePage}>
         <navigations.PerformancePage name={currentData.name} />

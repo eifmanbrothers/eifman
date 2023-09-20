@@ -134,4 +134,19 @@ export const metaInfo = [
       en: "The Academy’s mission, The concept of the Academy,description, project, Boris Eifman, Academy Palace, St. Petersburg",
     },
   },
+  {
+    page: "principals",
+    title: {
+      ru: "Руководство Театра",
+      en: "Theatre management",
+    },
+    description: {
+      ru: "администрация театра, руководство театра",
+      en: "management theater, collective",
+    },
+    keywords: {
+      ru: "Руководство Театра, персонал театра, сотрудники театра",
+      en: "Theatre management, members of theatre, collective of theatre",
+    },
+  },
 ];
