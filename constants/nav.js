@@ -113,7 +113,7 @@ export const navList = [
       {
         name: {
           en: "Up & Down",
-          ru: "Вверх и вниз",
+          ru: "Up & Down",
         },
         path: {
           en: "/performances/19",
@@ -203,7 +203,7 @@ export const navList = [
       {
         name: {
           en: "The Pygmalion Effect",
-          ru: "Эффект Пигмалеона",
+          ru: "Эффект Пигмалиона",
         },
         path: {
           en: "/performances/3",

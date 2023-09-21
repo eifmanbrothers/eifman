@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss";
 import api from "utils/ApiPrincipals";
-import { MenuOnPage, MetaData } from "components";
+import { MenuOnPage, MetaData, NavBottomPage } from "components";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import ReactMarkdown from "react-markdown";
@@ -34,6 +34,7 @@ const Principals = ({ data }) => {
       <div className={styles.principals__members}>
         <ReactMarkdown>{attributes.principals}</ReactMarkdown>
       </div>
+      <NavBottomPage locale={router.locale} />
     </section>
   );
 };

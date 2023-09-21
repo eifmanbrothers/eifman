@@ -25,10 +25,6 @@
   margin: 0 auto;
 }
 
-// .newsPage__link {
-//   color: #707070;
-//   font: 20px "PT Serif", serif;
-// }
 .newsPage__button {
   padding: 0;
   color: #707070;
@@ -42,19 +38,12 @@
 }
 
 .newsPage__imageWrapper {
-  // display: flex;
-  // flex-direction: column;
   position: relative;
   min-height: 450px;
-  // text-align: center;
-  // position: relative;
-  // width: 620px;
-  // height: 413px;
-  // object-fit: contain;
 }
 
 .newsPage__image {
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .newsPage__description {

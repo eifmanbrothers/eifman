@@ -149,4 +149,49 @@ export const metaInfo = [
       en: "Theatre management, members of theatre, collective of theatre",
     },
   },
+  {
+    page: "presenter",
+    title: {
+      ru: "Для импресарио",
+      en: "Presenter info",
+    },
+    description: {
+      ru: "Для импресарио",
+      en: "Presenter info",
+    },
+    keywords: {
+      ru: "Руководство Театра, персонал театра, сотрудники театра",
+      en: "Theatre management, members of theatre, collective of theatre",
+    },
+  },
+  {
+    page: "partners",
+    title: {
+      ru: "Партнеры Театра",
+      en: "Our Partners",
+    },
+    description: {
+      ru: "Партнеры Театра",
+      en: "Our Partners",
+    },
+    keywords: {
+      ru: "Руководство Театра, персонал театра, сотрудники театра",
+      en: "Theatre management, members of theatre, collective of theatre",
+    },
+  },
+  {
+    page: "official",
+    title: {
+      ru: "Официально",
+      en: "Official",
+    },
+    description: {
+      ru: "Официальные документы",
+      en: "Official documents",
+    },
+    keywords: {
+      ru: "Руководство Театра, сотрудники театра",
+      en: "Theatre management, collective of theatre",
+    },
+  },
 ];

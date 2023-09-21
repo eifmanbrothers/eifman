@@ -39,7 +39,7 @@ export const items = [
     },
     name: {
       en: "Up & Down",
-      ru: "Вверх и вниз",
+      ru: "Up & Down",
     },
     // path: "/repertoire/up-and-down",
     imageAlt: {
@@ -209,7 +209,7 @@ export const items = [
     },
     name: {
       en: "The Pygmalion Effect",
-      ru: "Эффект Пигмалеона",
+      ru: "Эффект Пигмалиона",
     },
     // path: "/repertoire/effect",
     imageAlt: {

@@ -36,6 +36,42 @@ export default [
     },
   },
   {
+    place: "presenter",
+    href: "/about",
+    nameLink: {
+      ru: "О Театре",
+      en: "About Theatre",
+    },
+    span: {
+      ru: "Для импресарио",
+      en: "Presenter info",
+    },
+  },
+  {
+    place: "partners",
+    href: "/about",
+    nameLink: {
+      ru: "О Театре",
+      en: "About Theatre",
+    },
+    span: {
+      ru: "Наши Партнеры",
+      en: "Our Partners",
+    },
+  },
+  {
+    place: "official",
+    href: "/about",
+    nameLink: {
+      ru: "О Театре",
+      en: "About Theatre",
+    },
+    span: {
+      ru: "Официально",
+      en: "Official",
+    },
+  },
+  {
     place: "dancePalace",
     href: "/enterprises",
     nameLink: {
