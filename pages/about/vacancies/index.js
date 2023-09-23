@@ -8,7 +8,6 @@ import Link from "next/link";
 
 const Vacancies = ({ data }) => {
   const router = useRouter();
-
   return (
     <section className={styles.vacancies}>
       <MetaData

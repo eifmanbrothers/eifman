@@ -3,3 +3,23 @@
   max-width: 960px;
   margin: 0 auto 150px;
 }
+
+.contacts__block {
+  margin: 4dvb 0 50px 0;
+  display: flex;
+}
+
+.contacts__content {
+  margin: 0 0 0 20px;
+
+  p {
+    margin: 0 0 8px 0;
+  }
+  p:nth-of-type(1) {
+    margin: 0 0 8px 0;
+  }
+
+  .contacts__contact {
+    margin: 0 0 0 0;
+  }
+}

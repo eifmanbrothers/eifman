@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import Script from "next/script";
 import { useRouter } from "next/router";
-import { srcScript, srcScriptEn } from "configs/bileter";
+import { srcScript, srcScriptEn, srcScriptYaMap } from "configs/bileter";
 import { Layout, errors } from "components";
 
 function MyApp({ Component, pageProps }) {
