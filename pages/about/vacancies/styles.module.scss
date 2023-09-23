@@ -1,0 +1,41 @@
+.vacancies {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.vacancies__list {
+  margin: 50px 0 150px;
+  list-style: none;
+}
+
+.vacancies__vacancy {
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.vacancies__item {
+  position: relative;
+  margin: 0 0 50px 0;
+}
+
+.vacancies__item::after {
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  width: 30%;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+}
+
+.vacancies__contact {
+  font-weight: bold;
+  margin: 0 0 70px 0;
+}
+
+.vacancies__contactEmail {
+  font-weight: normal;
+  text-decoration: underline;
+}

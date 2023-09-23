@@ -1,4 +1,9 @@
 export default {
+  href: "/enterprises/academy",
+  title: {
+    ru: "Академия Танца",
+    en: "Dance Academy",
+  },
   images: [
     "https://api.eifman.com/uploads/1_9c4cde9de8.jpg",
     "https://api.eifman.com/uploads/4_538d0bfed0.jpg",

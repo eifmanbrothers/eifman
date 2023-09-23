@@ -105,6 +105,21 @@ export const metaInfo = [
     },
   },
   {
+    page: "enterprises",
+    title: {
+      ru: "Проекты Театра",
+      en: "Projects of the Boris Eifman Ballet Theater",
+    },
+    description: {
+      ru: "описание проектов по замыслу Бориса Эйфмана",
+      en: "description projects of the Boris Eifman Ballet Theater",
+    },
+    keywords: {
+      ru: "проект, театр, балет, Борис Эйфман, Санкт-Петербург, Дворец Танца",
+      en: "description, theatre, project, Boris Eifman, Dance Palace, St. Petersburg",
+    },
+  },
+  {
     page: "dancePalace",
     title: {
       ru: "Проект Дворец Танца",
@@ -128,6 +143,36 @@ export const metaInfo = [
     description: {
       ru: "описание проекта по замыслу Бориса Эйфмана",
       en: "description project of the Boris Eifman Ballet Theater",
+    },
+    keywords: {
+      ru: "Концепция Академии, Миссия Академии, проект, балет, Борис Эйфман, Санкт-Петербург, Академия Танца",
+      en: "The Academy’s mission, The concept of the Academy,description, project, Boris Eifman, Academy Palace, St. Petersburg",
+    },
+  },
+  {
+    page: "dance",
+    title: {
+      ru: "Проект Театр Академии Танца",
+      en: "Project Dance Academy Theatre",
+    },
+    description: {
+      ru: "описание проекта по замыслу Бориса Эйфмана",
+      en: "description project of the Boris Eifman Ballet Theater",
+    },
+    keywords: {
+      ru: "Концепция Академии, Миссия Академии, проект, балет, Борис Эйфман, Санкт-Петербург, Академия Танца",
+      en: "The Academy’s mission, The concept of the Academy,description, project, Boris Eifman, Academy Palace, St. Petersburg",
+    },
+  },
+  {
+    page: "workshop",
+    title: {
+      ru: "Художественно-производственные мастерские",
+      en: "Художественно-производственные мастерские",
+    },
+    description: {
+      ru: "Художественно-производственные мастерские",
+      en: "Художественно-производственные мастерские",
     },
     keywords: {
       ru: "Концепция Академии, Миссия Академии, проект, балет, Борис Эйфман, Санкт-Петербург, Академия Танца",
@@ -191,6 +236,21 @@ export const metaInfo = [
     },
     keywords: {
       ru: "Руководство Театра, сотрудники театра",
+      en: "Theatre management, collective of theatre",
+    },
+  },
+  {
+    page: "vacancies",
+    title: {
+      ru: "Вакансии",
+      en: "Vacancies",
+    },
+    description: {
+      ru: "Откриытые вакансии в коллективе",
+      en: "Theatre open vacancies",
+    },
+    keywords: {
+      ru: "Руководство Театра, сотрудники театра, открытые вакансии",
       en: "Theatre management, collective of theatre",
     },
   },

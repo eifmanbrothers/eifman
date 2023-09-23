@@ -276,8 +276,8 @@ export const navList = [
           en: "Dance Academy Theatre",
         },
         path: {
-          en: "/enterprises/children",
-          ru: "/enterprises/children",
+          en: "/enterprises/dance",
+          ru: "/enterprises/dance",
         },
       },
       {

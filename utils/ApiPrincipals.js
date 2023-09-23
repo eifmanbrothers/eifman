@@ -41,6 +41,14 @@ class Api {
       headers: this.headres,
     }).then(handlerResponse);
   }
+
+  getVacancies(locale) {
+    // console.log(locale)
+    return fetch(`${this.address}/api/vacancies?locale=${locale}`, {
+      method: "GET",
+      headers: this.headres,
+    }).then(handlerResponse);
+  }
 }
 
 const api = new Api({

@@ -1,0 +1,35 @@
+.enterprises {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.enterprises__title {
+  font-family: "PT Serif", sans-serif;
+  font-size: 20px;
+}
+
+.enterprises__list {
+  list-style: none;
+  padding: 0;
+  margin: 50px 0 150px 0;
+}
+
+.enterprises__item {
+  margin: 0 0 70px 0;
+  background: #141414;
+}
+
+.enterprises__link {
+  display: flex;
+}
+
+.enterprises__imgWrapper {
+  position: relative;
+  width: 400px;
+  height: 225px;
+}
+
+.enterprises__itemTitle {
+  font-size: 22px;
+  padding: 0 0 0 50px;
+}

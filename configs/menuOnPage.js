@@ -72,6 +72,18 @@ export default [
     },
   },
   {
+    place: "vacancies",
+    href: "/about",
+    nameLink: {
+      ru: "О Театре",
+      en: "About Theatre",
+    },
+    span: {
+      ru: "Вакансии",
+      en: "Vacancies",
+    },
+  },
+  {
     place: "dancePalace",
     href: "/enterprises",
     nameLink: {
@@ -93,6 +105,30 @@ export default [
     span: {
       ru: "Академия Танца",
       en: "Dance Academy",
+    },
+  },
+  {
+    place: "dance",
+    href: "/enterprises",
+    nameLink: {
+      ru: "Проекты",
+      en: "Enterprises",
+    },
+    span: {
+      ru: "Театр Академии Танца",
+      en: "Dance Academy Theatre",
+    },
+  },
+  {
+    place: "workshop",
+    href: "/enterprises",
+    nameLink: {
+      ru: "Проекты",
+      en: "Enterprises",
+    },
+    span: {
+      ru: "Художественно-производственные мастерские",
+      en: "Art and production workshops",
     },
   },
 ];

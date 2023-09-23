@@ -2,7 +2,6 @@ import styles from "./styles.module.scss";
 import { useRouter } from "next/router";
 import { metaInfo } from "constants/metaInfo";
 import { MenuOnPage, MetaData, NavBottomPage } from "components";
-
 import api from "utils/ApiPrincipals";
 import ReactMarkdown from "react-markdown";
 
