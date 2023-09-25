@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const SocialLink = ({ href, title, image, place }) => {
   return (
-    <Link target="_blanc" href={href} passHref className={styles.socialLink}>
+    <Link target="_blank" href={href} passHref className={styles.socialLink}>
       <Image src={image} alt={title} className={styles.image} />
     </Link>
   );
