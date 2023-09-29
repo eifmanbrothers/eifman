@@ -18,8 +18,8 @@ class Api {
     return fetch(
       `${API_URL}/api/events?populate[hall][populate][0]=country,city,address,theatre,stage&populate[images]=data&populate=performance${
         locale
-          ? `&locale=${locale}&filters[PerfDate][$contains]=${period}`
-          : `&filters[PerfDate][$contains]=${period}`
+          ? `&locale=${locale}&filters[PerfDate][$contains]=${period}&sort=PerfDate:asc`
+          : `&filters[PerfDate][$contains]=${period}&sort=PerfDate:asc`
       }`,
       // `${API_URL}/api/events?populate[hall][populate][0]=country,city,address,theatre,stage&populate[images]=data&populate=performance${
       //   locale ? `&locale=${locale}` : ""

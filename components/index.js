@@ -48,6 +48,8 @@ import Welcome from "./welcome";
 import MenuOnPage from "./menuOnPage";
 import NavBottom from "./navBottom";
 import NavBottomPage from "./navBottomPage";
+import PerfInfo from "./perfInfo";
+import perfInfoList from "./perfInfoList";
 
 export {
   Header,
@@ -100,4 +102,6 @@ export {
   MenuOnPage,
   NavBottom,
   NavBottomPage,
+  PerfInfo,
+  perfInfoList,
 };

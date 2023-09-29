@@ -1,0 +1,37 @@
+.perfInfo__nav {
+  list-style: none;
+  display: flex;
+  max-width: 910px;
+  margin: 50px auto 10px;
+}
+
+.perfInfo__item {
+  width: 130px;
+  min-height: 50px;
+  border-bottom: solid 2px #3a3a3a;
+}
+
+.perfInfo__item:hover {
+  //   cursor: pointer;
+  border-bottom: solid 2px #898989;
+}
+
+.perfInfo__item_active {
+  border-bottom: solid 2px #898989;
+}
+
+.perfInfo__btn {
+  border: none;
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: "PT Serif", sans-serif;
+}
+
+.perfInfo__btn:hover {
+  cursor: pointer;
+}

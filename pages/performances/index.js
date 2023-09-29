@@ -1,35 +1,28 @@
 import styles from "./styles.module.scss";
 import useTranslation from "next-translate/useTranslation";
-import { Gallery, Line, nextEvents, Nav } from "components";
-import api from "utils/ApiBileter";
-import getThreeMonth from "helpers/getThreeMonth";
-// import apiRepertires from 'utils/ApiRepertoire'
+import { useRouter } from "next/router";
+import { Gallery, nextEvents, Nav, MetaData } from "components";
+import { metaInfo } from "constants/metaInfo";
 
-const Performances = ({ data }) => {
+const Performances = () => {
   const { t } = useTranslation();
-  // console.log(data);
-  // const allMonth = Object.keys(data);
-  // console.log(allMonth)
-  // console.log(data);
-  // console.log(data['2023-02-01'])
+  const router = useRouter();
+
   return (
     <>
+      <MetaData
+        {...metaInfo.find((el) => el.page === "performances")}
+        locale={router.locale}
+      />
       {/* <Line />
       <h3 className={styles.performances__title}>{t('performances:titlePage')}</h3> */}
       <Gallery />
       <section className={styles.performances}>
-        {/* <p className="with_buy bileter_afisha_showhall" id={`perf${data['2023-02-01']['15-02-2023'][0].IdPerformance}`}>{data['2023-02-01']['15-02-2023'][0].Name}</p> */}
-        {/* <div className="bileter_afisha"></div> */}
         <Nav />
-        <nextEvents.Repertoire />
+        {/* <nextEvents.Repertoire /> */}
       </section>
     </>
   );
 };
-
-// export async function getServerSideProps() {
-//   const res = await api.getDataBileter(getThreeMonth());
-//   return { props: { data: res } };
-// }
 
 export default Performances;

@@ -46,6 +46,6 @@ export const navList = [
       ru: "Хочу работать",
       en: "Vacancies",
     },
-    path: "/vacancies",
+    path: "/about/vacancies",
   },
 ];

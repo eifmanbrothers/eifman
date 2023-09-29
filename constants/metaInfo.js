@@ -45,6 +45,21 @@ export const metaInfo = [
     },
   },
   {
+    page: "performances",
+    title: {
+      ru: "Репертуар Театра балета Бориса Эйфмана",
+      en: "Eifman Ballet Repertoire",
+    },
+    description: {
+      ru: "узнать свежие новости и последние события Театра балета Бориса Эйфмана",
+      en: "fresh news and latest events of the Eifman Ballet",
+    },
+    keywords: {
+      ru: "театр, балет, Борис Эйфман, Санкт-Петербург, Репертуар",
+      en: "theatre, ballet, Boris Eifman, St. Petersburg, repertoire",
+    },
+  },
+  {
     page: "ensemble",
     title: {
       ru: "Труппа Театра балета Бориса Эйфмана",
