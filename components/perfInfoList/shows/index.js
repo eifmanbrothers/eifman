@@ -1,7 +1,7 @@
 import styles from "./styles.module.scss";
 
 const Shows = () => {
-  return <p>block</p>;
+  return <p></p>;
 };
 
 export default Shows;

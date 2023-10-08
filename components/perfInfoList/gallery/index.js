@@ -1,7 +1,7 @@
 import styles from "./styles.module.scss";
 
 const Gallery = () => {
-  return <p>block</p>;
+  return <p></p>;
 };
 
 export default Gallery;

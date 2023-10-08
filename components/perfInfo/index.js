@@ -1,5 +1,4 @@
 import styles from "./styles.module.scss";
-import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import items from "constants/navPerfPage";
@@ -21,6 +20,36 @@ const PerfInfo = ({ data }) => {
     case "introduction": {
       currentComponent = perfInfoList ? (
         <perfInfoList.Introduction data={data.introduction} />
+      ) : null;
+      break;
+    }
+    case "synopsis": {
+      currentComponent = perfInfoList ? (
+        <perfInfoList.Synopsis data={data.synopsis} />
+      ) : null;
+      break;
+    }
+    case "press": {
+      currentComponent = perfInfoList ? (
+        <perfInfoList.Press data={data.press} />
+      ) : null;
+      break;
+    }
+    case "video": {
+      currentComponent = perfInfoList ? (
+        <perfInfoList.Video data={data.videoLink} />
+      ) : null;
+      break;
+    }
+    case "gallery": {
+      currentComponent = perfInfoList ? (
+        <perfInfoList.Gallery data={data} />
+      ) : null;
+      break;
+    }
+    case "upcoming shows": {
+      currentComponent = perfInfoList ? (
+        <perfInfoList.Shows data={data} />
       ) : null;
       break;
     }
