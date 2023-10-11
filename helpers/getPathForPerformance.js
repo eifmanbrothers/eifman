@@ -16,9 +16,14 @@ export default (name, locale) => {
         path = locale === "ru" ? "4" : "3";
       }
       break;
+    case "250 лет Московской государственной академии хореографии: Балеты Бориса Эйфмана «Мусагет» и «Мой Иерусалим»":
+      {
+        path = locale === "ru" ? "22" : "21";
+      }
+      break;
 
     default:
-      "set-current-name-for-path";
+      path = "set-current-name-for-path-helpers-get-path";
       break;
   }
   return path;

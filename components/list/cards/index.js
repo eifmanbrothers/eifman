@@ -10,11 +10,33 @@ const Cards = ({ list, locale, covers = [] }) => {
     setBuyEvent({});
     console.log("close");
   };
-  // console.log(list);
+
+  list.sort((a, b) => {
+    const aDate = Number(
+      a.attributes?.PerfDate.slice(0, 2) || a.PerfDate.slice(0, 2)
+    );
+    const bDate = Number(
+      b.attributes?.PerfDate.slice(0, 2) || b.PerfDate.slice(0, 2)
+    );
+
+    if (aDate < bDate) {
+      return -1;
+    }
+    if (aDate > bDate) {
+      return 1;
+    }
+  });
+
   return (
     <>
       <ul className={styles.cards}>
-        {/* {list.length === 0 && <p>нет событий</p>} */}
+        {list.length === 0 && (
+          <p className={styles.cards__no}>
+            {locale === "ru"
+              ? "Спектакли не запланированы"
+              : "No performances scheduled"}
+          </p>
+        )}
         {list.map((c) => {
           return c.id ? (
             <card.TicketsPageLocal

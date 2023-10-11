@@ -33,7 +33,8 @@ const Overlay = (props) => {
 
   const isLocalData = typeof currentTheatre === "string";
   let path = getPathForPerformance(name, locale);
-
+  // console.log(name);
+  // console.log(path);
   return (
     <div
       className={cn(styles.overlay, {

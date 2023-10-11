@@ -4,8 +4,6 @@ import { links } from "/constants/socialLinks";
 import cn from "classnames";
 
 const SocialLinks = ({ place }) => {
-  // console.log(links)
-
   return (
     <ul className={cn(styles.socialLinks, styles[place])}>
       {links.map((el) => (

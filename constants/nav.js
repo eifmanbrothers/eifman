@@ -48,8 +48,8 @@ export const navList = [
       },
       {
         name: {
-          ru: "Официально",
-          en: "Official",
+          ru: "Документы",
+          en: "Documents",
         },
         path: {
           en: "/about/official",

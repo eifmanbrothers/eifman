@@ -1,5 +1,4 @@
 import styles from "./styles.module.scss";
-import { myCarousel } from "components";
 import Image from "next/image";
 import { API_URL } from "configs/variables";
 import { useState } from "react";
@@ -11,7 +10,6 @@ const Gallery = ({ data = [] }) => {
   return (
     <>
       <ul className={styles.gallery}>
-        {/* <myCarousel.PerfInfo images={data} /> */}
         {data?.map((el, index) => (
           <li key={index} className={styles.gallery__imgWrapper}>
             <Image
@@ -20,7 +18,7 @@ const Gallery = ({ data = [] }) => {
               fill
               alt={el.attributes?.alternativeText || "alt text should be here"}
               sizes="(max-width: 1968px) 100vw"
-              // onClick={() => setImage(API_URL + el.attributes.url)}
+              onClick={() => setImage(API_URL + el.attributes.url)}
             />
           </li>
         ))}
@@ -33,11 +31,12 @@ const Gallery = ({ data = [] }) => {
         {image && (
           <div className={styles.gallery__overlayWrapper}>
             <Image
-              alt="#"
+              alt="photo performance"
               src={image}
               fill
               className={styles.gallery__overlayImage}
-              // onClick={() => setImage("")}
+              onClick={() => setImage("")}
+              onTouchStart={() => setImage("")}
             />
           </div>
         )}
