@@ -43,7 +43,7 @@ const PerfInfo = ({ data }) => {
     }
     case "gallery": {
       currentComponent = perfInfoList ? (
-        <perfInfoList.Gallery data={data} />
+        <perfInfoList.Gallery data={data?.images?.data} />
       ) : null;
       break;
     }
@@ -56,7 +56,7 @@ const PerfInfo = ({ data }) => {
   }
   //   console.log(data);
   return (
-    <div>
+    <>
       <nav className={styles.perfInfo__nav}>
         {items.map((el) => (
           <li
@@ -75,7 +75,7 @@ const PerfInfo = ({ data }) => {
         ))}
       </nav>
       {currentComponent}
-    </div>
+    </>
   );
 };
 

@@ -48,7 +48,13 @@ const Overlay = (props) => {
         <CoverCard images={images || attributes?.images?.data} />
       </div>
       <div className={styles.overlay__content}>
-        <h4 className={styles.overlay__title}>{currentName}</h4>
+        <h4
+          className={cn(styles.overlay__title, {
+            [styles.overlay__title_longName]: currentName?.length > 90,
+          })}
+        >
+          {currentName}
+        </h4>
         <eventTime.CardTicketsPage
           data={PerfDate || attributes?.PerfDate}
           locale={locale}

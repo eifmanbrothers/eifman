@@ -33,9 +33,11 @@ const Card = (props) => {
   return (
     <div className={styles.card}>
       <h4
-        className={cn(styles.card__title, {
-          [styles.card__title_longName]: currentName?.length > 40,
-        })}
+        className={cn(
+          styles.card__title,
+          { [styles.card__title_longName]: currentName?.length > 40 },
+          { [styles.card__title_longNameMore]: currentName?.length > 90 }
+        )}
       >
         {currentName}
       </h4>
