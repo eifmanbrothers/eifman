@@ -57,7 +57,6 @@ const PerformancePage = ({ data }) => {
           </div>
         </section>
         <PerfInfo data={currentData} />
-        {/* <myCarousel.React arrImg={arrImg} /> */}
       </div>
     </>
   );

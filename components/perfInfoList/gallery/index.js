@@ -36,7 +36,7 @@ const Gallery = ({ data = [] }) => {
               fill
               className={styles.gallery__overlayImage}
               onClick={() => setImage("")}
-              onTouchStart={() => setImage("")}
+              onTouchEnd={() => setImage("")}
             />
           </div>
         )}
