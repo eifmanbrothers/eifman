@@ -16,6 +16,11 @@ export default (name, locale) => {
         path = locale === "ru" ? "4" : "3";
       }
       break;
+    case "Русский Гамлет/Russian Hamlet":
+      {
+        path = locale === "ru" ? "8" : "7";
+      }
+      break;
     case "250 лет Московской государственной академии хореографии: Балеты Бориса Эйфмана «Мусагет» и «Мой Иерусалим»":
       {
         path = locale === "ru" ? "22" : "21";
