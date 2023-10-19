@@ -1,0 +1,14 @@
+.presenter {
+  max-width: 960px;
+  margin: 0 auto 100px;
+
+  p:nth-of-type(1) {
+    margin: 50px 0 0 0;
+  }
+  p:nth-of-type(3) {
+    margin: 0 0 70px 0;
+  }
+  p:nth-of-type(6) {
+    margin: 0 0 100px 0;
+  }
+}

@@ -3,7 +3,6 @@ import { CoverCard, eventFullInfo } from "components";
 
 const TicketsPageLocal = (props) => {
   const { attributes: { images: { data: images } = {} } = {} } = props;
-
   return (
     <li className={styles.cardLocal} onClick={props.clickHandler}>
       <CoverCard images={images} />

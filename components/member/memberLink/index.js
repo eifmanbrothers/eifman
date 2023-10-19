@@ -2,6 +2,7 @@ import styles from "./styles.module.scss";
 import Image from "next/image";
 import Link from "next/link";
 import getAltMemberPhoto from "helpers/getAltMemberPhoto";
+import { API_URL } from "configs/variables";
 
 const MemberLink = ({ member, locale }) => {
   // console.log(member)
@@ -25,8 +26,12 @@ const MemberLink = ({ member, locale }) => {
     >
       <figure className={styles.memberLink__container}>
         <Image
-          src={`http://127.0.0.1:1332` + url}
-          alt={getAltMemberPhoto(alternativeText, locale)}
+          src={API_URL + url}
+          // src={`http://127.0.0.1:1332` + url}
+          alt={
+            getAltMemberPhoto(alternativeText, locale) ||
+            "member ensemble text needs here"
+          }
           width={width}
           height={height}
           className={styles.memberLink__image}

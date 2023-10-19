@@ -19,7 +19,7 @@ export default function Document() {
         />
         <link
           rel="icon"
-          href="https://eifman.com/favicon.ico"
+          href="https://eifmanballet.com/favicon.ico"
           type="image/x-icon"
         />
       </Head>

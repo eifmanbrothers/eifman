@@ -2,9 +2,19 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   list-style: none;
+  min-height: 500px;
   padding: 25px;
-  margin: 0;
+  margin: 0 0 100px 0;
   background: #141414;
+
+  li:nth-of-type(3n) {
+    margin: 0 0 45px 0;
+  }
+}
+
+.cards__no {
+  width: 100%;
+  text-align: center;
+  font: 15px/20px "PT Sans", sans-serif;
 }

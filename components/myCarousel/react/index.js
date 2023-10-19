@@ -3,6 +3,7 @@ import cn from "classnames";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import Image from "next/image";
+import { API_URL } from "configs/variables";
 
 const React = ({ arrImg, place }) => {
   // console.log(arrImg)
@@ -25,8 +26,9 @@ const React = ({ arrImg, place }) => {
           <Image
             src={
               img.attributes
-                ? `http://127.0.0.1:1332${img.attributes?.url}`
-                : img
+                ? API_URL + img.attributes?.url
+                : // ? `http://127.0.0.1:1332${img.attributes?.url}`
+                  img
             }
             alt={img.attributes?.alternativeText || "alt text should be here"}
             fill

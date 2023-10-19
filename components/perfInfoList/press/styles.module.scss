@@ -1,0 +1,26 @@
+.press {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: justify;
+  font: 15px/20px "PT Sans", sans-serif;
+
+  p {
+    text-align: end;
+    font-style: italic;
+    text-align: right;
+    color: #aaaaaa;
+    font-size: 15px;
+    margin: 0 0 20px 0;
+  }
+
+  blockquote {
+    margin: 0;
+  }
+
+  blockquote p {
+    text-align: justify;
+    color: #fff;
+    font-style: normal;
+    margin: 0;
+  }
+}

@@ -1,4 +1,9 @@
 export default {
+  href: "/enterprises/palace",
+  title: {
+    ru: "Дворец Танца",
+    en: "Dance Palace",
+  },
   image: "https://api.eifman.com/uploads/1_a0e3387217.jpg",
   text: {
     en: `

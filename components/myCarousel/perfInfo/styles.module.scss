@@ -1,0 +1,26 @@
+.perfInfo {
+  position: fixed;
+  left: 50%;
+  top: 4%;
+  transform: translateX(-50%);
+  width: 90vw;
+  min-height: 100vh;
+  z-index: 5;
+}
+
+.perfInfo__carusel {
+  height: 100%;
+}
+
+.perfInfo__imageWrapper {
+  position: relative;
+  min-height: 90vh;
+  //   height: 400px;
+}
+
+.perfInfo__image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}

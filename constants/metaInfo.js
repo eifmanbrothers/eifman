@@ -45,6 +45,21 @@ export const metaInfo = [
     },
   },
   {
+    page: "performances",
+    title: {
+      ru: "Репертуар Театра балета Бориса Эйфмана",
+      en: "Eifman Ballet Repertoire",
+    },
+    description: {
+      ru: "узнать свежие новости и последние события Театра балета Бориса Эйфмана",
+      en: "fresh news and latest events of the Eifman Ballet",
+    },
+    keywords: {
+      ru: "театр, балет, Борис Эйфман, Санкт-Петербург, Репертуар",
+      en: "theatre, ballet, Boris Eifman, St. Petersburg, repertoire",
+    },
+  },
+  {
     page: "ensemble",
     title: {
       ru: "Труппа Театра балета Бориса Эйфмана",
@@ -105,6 +120,21 @@ export const metaInfo = [
     },
   },
   {
+    page: "enterprises",
+    title: {
+      ru: "Проекты Театра",
+      en: "Projects of the Boris Eifman Ballet Theater",
+    },
+    description: {
+      ru: "описание проектов по замыслу Бориса Эйфмана",
+      en: "description projects of the Boris Eifman Ballet Theater",
+    },
+    keywords: {
+      ru: "проект, театр, балет, Борис Эйфман, Санкт-Петербург, Дворец Танца",
+      en: "description, theatre, project, Boris Eifman, Dance Palace, St. Petersburg",
+    },
+  },
+  {
     page: "dancePalace",
     title: {
       ru: "Проект Дворец Танца",
@@ -132,6 +162,111 @@ export const metaInfo = [
     keywords: {
       ru: "Концепция Академии, Миссия Академии, проект, балет, Борис Эйфман, Санкт-Петербург, Академия Танца",
       en: "The Academy’s mission, The concept of the Academy,description, project, Boris Eifman, Academy Palace, St. Petersburg",
+    },
+  },
+  {
+    page: "dance",
+    title: {
+      ru: "Проект Театр Академии Танца",
+      en: "Project Dance Academy Theatre",
+    },
+    description: {
+      ru: "описание проекта по замыслу Бориса Эйфмана",
+      en: "description project of the Boris Eifman Ballet Theater",
+    },
+    keywords: {
+      ru: "Концепция Академии, Миссия Академии, проект, балет, Борис Эйфман, Санкт-Петербург, Академия Танца",
+      en: "The Academy’s mission, The concept of the Academy,description, project, Boris Eifman, Academy Palace, St. Petersburg",
+    },
+  },
+  {
+    page: "workshop",
+    title: {
+      ru: "Художественно-производственные мастерские",
+      en: "Художественно-производственные мастерские",
+    },
+    description: {
+      ru: "Художественно-производственные мастерские",
+      en: "Художественно-производственные мастерские",
+    },
+    keywords: {
+      ru: "Концепция Академии, Миссия Академии, проект, балет, Борис Эйфман, Санкт-Петербург, Академия Танца",
+      en: "The Academy’s mission, The concept of the Academy,description, project, Boris Eifman, Academy Palace, St. Petersburg",
+    },
+  },
+  {
+    page: "principals",
+    title: {
+      ru: "Руководство Театра",
+      en: "Theatre management",
+    },
+    description: {
+      ru: "администрация театра, руководство театра",
+      en: "management theater, collective",
+    },
+    keywords: {
+      ru: "Руководство Театра, персонал театра, сотрудники театра",
+      en: "Theatre management, members of theatre, collective of theatre",
+    },
+  },
+  {
+    page: "presenter",
+    title: {
+      ru: "Для импресарио",
+      en: "Presenter info",
+    },
+    description: {
+      ru: "Для импресарио",
+      en: "Presenter info",
+    },
+    keywords: {
+      ru: "Руководство Театра, персонал театра, сотрудники театра",
+      en: "Theatre management, members of theatre, collective of theatre",
+    },
+  },
+  {
+    page: "partners",
+    title: {
+      ru: "Партнеры Театра",
+      en: "Our Partners",
+    },
+    description: {
+      ru: "Партнеры Театра",
+      en: "Our Partners",
+    },
+    keywords: {
+      ru: "Руководство Театра, персонал театра, сотрудники театра",
+      en: "Theatre management, members of theatre, collective of theatre",
+    },
+  },
+  {
+    page: "official",
+    title: {
+      ru: "Официально",
+      en: "Official",
+    },
+    description: {
+      ru: "Официальные документы",
+      en: "Official documents",
+    },
+    keywords: {
+      ru: "Руководство Театра, сотрудники театра",
+      en: "Theatre management, collective of theatre",
+    },
+  },
+  {
+    page: "vacancies",
+    title: {
+      ru: "Вакансии",
+      en: "Vacancies",
+    },
+    description: {
+      ru: "Откриытые вакансии в коллективе",
+      en: "Theatre open vacancies",
+    },
+    keywords: {
+      ru: "Руководство Театра, сотрудники театра, открытые вакансии",
+      en: "Theatre management, collective of theatre",
     },
   },
 ];

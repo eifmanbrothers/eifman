@@ -1,5 +1,5 @@
 import vkImg from "/images/VK_white.svg";
-import okImg from "/images/Ok_white.svg";
+import okImg from "/images/Ok_white2.svg";
 import youtubeImg from "/images/YouTube_white.svg";
 
 export const links = [
@@ -15,7 +15,7 @@ export const links = [
   },
   {
     title: "OK",
-    href: "https://ok.com",
+    href: "https://eifman.com",
     image: okImg,
   },
 ];

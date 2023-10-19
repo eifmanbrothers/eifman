@@ -6,6 +6,7 @@ class Api {
     this.address = address;
     this.headers = headers;
   }
+
   getCovers(locale) {
     return fetch(`${API_URL}/api/covers?populate=images`, {
       method: "GET",
@@ -13,11 +14,16 @@ class Api {
     }).then(handlerResponse);
   }
 
-  getDataLocal(locale) {
+  getDataLocal(locale, period) {
     return fetch(
       `${API_URL}/api/events?populate[hall][populate][0]=country,city,address,theatre,stage&populate[images]=data&populate=performance${
-        locale ? `&locale=${locale}` : ""
+        locale
+          ? `&locale=${locale}&filters[PerfDate][$contains]=${period}&sort=PerfDate:asc`
+          : `&filters[PerfDate][$contains]=${period}&sort=PerfDate:asc`
       }`,
+      // `${API_URL}/api/events?populate[hall][populate][0]=country,city,address,theatre,stage&populate[images]=data&populate=performance${
+      //   locale ? `&locale=${locale}` : ""
+      // }`,
       {
         method: "GET",
         headers: this.headers,
@@ -64,8 +70,9 @@ class Api {
   getTickets(locale, period) {
     // console.log(222, period);
     return Promise.all([
-      this.getDataBileterMonth(period),
-      this.getDataLocal(locale),
+      this.getDataBileterMonth(period.bileter),
+      // this.getDataLocal(locale),
+      this.getDataLocal(locale, period.local),
       this.getCovers(locale),
     ]);
   }

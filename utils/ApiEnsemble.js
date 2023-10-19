@@ -1,5 +1,5 @@
-import handlerResponse from './handlerRes'
-import { API_URL } from 'configs/variables'
+import handlerResponse from "./handlerRes";
+import { API_URL } from "configs/variables";
 
 class Api {
   constructor({ address, headers }) {
@@ -9,11 +9,13 @@ class Api {
 
   getEnsembles(locale) {
     // console.log(locale)
-    return fetch(`${this.address}/api/ensembles?populate=position,avatar&locale=${locale}`, {
-      method: "GET",
-      headers: this.headres,
-    })
-      .then(handlerResponse)
+    return fetch(
+      `${this.address}/api/ensembles?populate=position,avatar&pagination[pageSize]=100&locale=${locale}`,
+      {
+        method: "GET",
+        headers: this.headres,
+      }
+    ).then(handlerResponse);
   }
 
   getMember(id) {
@@ -22,8 +24,7 @@ class Api {
       // return fetch(`${this.address}/ensembles/${id}?locale=${locale}`, {
       method: "GET",
       headers: this.headres,
-    })
-      .then(handlerResponse)
+    }).then(handlerResponse);
   }
 }
 
@@ -37,4 +38,4 @@ const api = new Api({
   },
 });
 
-export default api
+export default api;

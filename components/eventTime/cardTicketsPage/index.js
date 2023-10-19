@@ -16,7 +16,7 @@ const CardTicketsPage = ({ data, locale }) => {
           dateTime={moment(date).locale(locale).format("LT")}
           className={styles.cardTicketsPage__month}
         >
-          {moment(date).locale(locale).format("Do MMMM,")}
+          {moment(date).locale(locale).format("DD MMMM,")}
         </time>
         <p className={styles.cardTicketsPage__day}>
           {moment(date).locale(locale).format("dddd")}

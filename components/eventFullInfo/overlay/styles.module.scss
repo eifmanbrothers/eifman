@@ -9,6 +9,7 @@
   align-items: center;
   visibility: hidden;
   background: rgba(20, 20, 20, 0.9);
+  z-index: 2;
 }
 
 .overlay_active {
@@ -25,7 +26,7 @@
 .overlay__content {
   min-width: 265px;
   max-width: 330px;
-  height: 256px;
+  min-height: 256px;
   background-color: rgba(0, 0, 0, 1);
   padding: 15px;
 }
@@ -36,7 +37,12 @@
   font: 22px "PT Sans", sans-serif;
 }
 
+.overlay__title_longName {
+  font: 16px "PT Sans", sans-serif;
+}
+
 .overlay__about {
+  display: block;
   margin: 0 0 5px 0;
   padding: 0 0 0 25px;
   font: 15px "PT Sans", sans-serif;
