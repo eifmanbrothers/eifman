@@ -20,7 +20,6 @@ const MemberItem = ({ member, locale }) => {
     <figure className={styles.memberItem}>
       <Image
         src={API_URL + url}
-        // src={`http://127.0.0.1:1332` + url}
         alt={
           getAltMemberPhoto(alternativeText, locale) || "alt text needs here"
         }

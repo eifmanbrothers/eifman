@@ -27,7 +27,6 @@ const MemberLink = ({ member, locale }) => {
       <figure className={styles.memberLink__container}>
         <Image
           src={API_URL + url}
-          // src={`http://127.0.0.1:1332` + url}
           alt={
             getAltMemberPhoto(alternativeText, locale) ||
             "member ensemble text needs here"
