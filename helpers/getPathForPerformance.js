@@ -16,6 +16,11 @@ export default (name, locale) => {
         path = locale === "ru" ? "4" : "3";
       }
       break;
+    case "Анна Каренина/Anna Karenina":
+      {
+        path = locale === "ru" ? "2" : "1";
+      }
+      break;
     case "Русский Гамлет/Russian Hamlet":
       {
         path = locale === "ru" ? "8" : "7";
