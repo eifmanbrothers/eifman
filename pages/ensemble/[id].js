@@ -6,6 +6,7 @@ import Image from "next/image";
 import { myCarousel, Line, navigations, MetaData } from "components";
 import { metaInfo } from "constants/metaInfo";
 import { useRouter } from "next/router";
+import { API_URL } from "configs/variables";
 
 const Member = ({ data }) => {
   const router = useRouter();
@@ -39,7 +40,8 @@ const Member = ({ data }) => {
         <div className={styles.member__content}>
           <Image
             priority
-            src={`http://127.0.0.1:1332${firstData.avatar.data.attributes.url}`}
+            src={API_URL + firstData.avatar.data.attributes.url}
+            // src={`http://127.0.0.1:1332${firstData.avatar.data.attributes.url}`}
             alt={`${t("common:photoMember")} ${fullName}`}
             width={firstData.avatar.data.attributes.width}
             height={firstData.avatar.data.attributes.height}
