@@ -9,6 +9,7 @@ import { useRouter } from "next/router";
 import { API_URL } from "configs/variables";
 
 const Member = ({ data }) => {
+  const { t } = useTranslation();
   const router = useRouter();
   if (!data) {
     return <errors.EnsemblePage />;
@@ -18,7 +19,6 @@ const Member = ({ data }) => {
       images: { data: arrImg },
     },
   } = data;
-  const { t } = useTranslation();
 
   const firstData = data.attributes;
   const secondData = data.attributes.localizations.data[0].attributes;
