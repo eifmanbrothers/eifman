@@ -1,15 +1,6 @@
 import styles from "./styles.module.scss";
-import { useEffect } from "react";
-import { useRouter } from "next/router";
 import apiPerformance from "utils/ApiPerformance";
-import {
-  myCarousel,
-  Line,
-  errors,
-  navigations,
-  MetaData,
-  PerfInfo,
-} from "components";
+import { Line, errors, navigations, MetaData, PerfInfo } from "components";
 import ReactMarkdown from "react-markdown";
 import Image from "next/image";
 import { API_URL } from "configs/variables";
@@ -48,6 +39,7 @@ const PerformancePage = ({ data }) => {
             <div className={styles.performancePage__imgWrapper}>
               <Image
                 className={styles.performancePage__img}
+                priority={true}
                 alt={currentData.name || "alt text needs here"}
                 src={API_URL + (firstData.image.data?.attributes.url || "")}
                 width={firstData.image.data?.attributes.width || 100}

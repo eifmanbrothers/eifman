@@ -5,13 +5,30 @@
   display: flex;
 }
 
+.buyBilet__bileterInfo {
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .buyBilet__btn {
-  width: 185px;
-  height: 40px;
+  display: block;
+  text-align: center;
+  max-width: 185px;
+  min-width: 165px;
+  padding: 10px 20px;
+  max-height: 40px;
   font-family: "PT Sans", sans-serif;
   background-color: #fff;
   color: #1e1e1e;
   border: none;
+  margin: 0 0 5px 0;
+}
+
+.buyBilet__span {
+  font-size: 12px;
+  margin: 0;
+  text-align: center;
 }
 
 .buyBilet__logoKk {

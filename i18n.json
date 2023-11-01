@@ -8,7 +8,8 @@
     "*": [
       "common",
       "member",
-      "news"
+      "news",
+      "ensemble"
     ],
     "/ensemble": [
       "ensemble"
@@ -20,6 +21,9 @@
       "performances"
     ],
     "/tickets": [
+      "tickets"
+    ],
+    "/schedule": [
       "tickets"
     ]
   }

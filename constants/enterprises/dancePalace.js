@@ -4,7 +4,7 @@ export default {
     ru: "Дворец Танца",
     en: "Dance Palace",
   },
-  image: "https://api.eifman.com/uploads/1_a0e3387217.jpg",
+  image: "https://api.eifmanballet.com/uploads/1_a0e3387217.jpg",
   text: {
     en: `
 Eifman Ballet has been around for over forty five years in St.-Petersburg. Despite this, the company still hasn't got its own stage. For more than two decades the troupe had had their quarters in rehearsal facilities at Liza Chaikina Street. In 2010 the company moved to another premises at Gagarinskaya Street, while the building on Chaikina was demolished and gave place to the construction of the Boris Eifman Dance Academy (construction completed in 2012).

@@ -30,6 +30,21 @@ export const metaInfo = [
     },
   },
   {
+    page: "schedule",
+    title: {
+      ru: "Купить билеты на спектакли Театра балета Бориса Эйфмана в Санкт-Петербурге",
+      en: "Buy tickets for performances of the Eifman Ballet Saint-Petersburg",
+    },
+    description: {
+      ru: "Купить билеты на спектакли Театра балета Бориса Эйфмана на официальном сайте без наценки и комиссии в Санкт-Петербурге",
+      en: "Buy tickets for performances of the Eifman Ballet theatre on the official website without extra charge and commission Saint-Petersburg",
+    },
+    keywords: {
+      ru: "прямые продажи, театр, балет, Борис Эйфман, Санкт-Петербург, купить билет, спектакль, билеты без наценки, купить билет на официальном сайте",
+      en: "theatre, ballet, Boris Eifman, St. Petersburg, buy a ticket, performance, tickets without extra charge, buy a ticket on the official website",
+    },
+  },
+  {
     page: "news",
     title: {
       ru: "Новости Театра балета Бориса Эйфмана",
@@ -132,6 +147,21 @@ export const metaInfo = [
     keywords: {
       ru: "проект, театр, балет, Борис Эйфман, Санкт-Петербург, Дворец Танца",
       en: "description, theatre, project, Boris Eifman, Dance Palace, St. Petersburg",
+    },
+  },
+  {
+    page: "contacts",
+    title: {
+      ru: "Адрес Театра, контактная информация",
+      en: "Contacts of the Boris Eifman Ballet Theater",
+    },
+    description: {
+      ru: "контактная информация Театра Бориса Эйфмана",
+      en: "contact information of the Boris Eifman Ballet Theater",
+    },
+    keywords: {
+      ru: "контактные телефоны, месторасположение театра, карта, отделы театра",
+      en: "phone, contact emails, theatre, Boris Eifman, St. Petersburg",
     },
   },
   {

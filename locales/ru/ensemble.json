@@ -1,3 +1,6 @@
 {
-  "pageName": "Страница труппы"
+  "titlePage": "Страница труппы",
+  "errorNotMember": "нет такого артиста...",
+  "message": "вы можете посмотреть",
+  "linkToEnsemble": "здесь"
 }

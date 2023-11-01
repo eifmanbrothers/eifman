@@ -11,13 +11,12 @@ const BuyBilet = () => {
 
   return (
     <div className={styles.buyBilet}>
-      <button
-        type="button"
-        className={styles.buyBilet__btn}
-        onClick={() => router.push("/tickets")}
-      >
-        {t("common:nameButtonBuy").toUpperCase()}
-      </button>
+      <div className={styles.buyBilet__bileterInfo}>
+        <Link className={styles.buyBilet__btn} href="/schedule">
+          {t("common:nameButtonBuy").toUpperCase()}
+        </Link>
+        <p className={styles.buyBilet__span}>{t("common:spanButtonBuy")}</p>
+      </div>
       <Link
         href="https://www.spbculture.ru/"
         className={styles.buyBilet__logoKk}

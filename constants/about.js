@@ -50,5 +50,5 @@ Forming an original ballet repertoire of modern Russia based upon the rich tradi
 
   link: "https://www.youtube.com/embed/Pg0YUQMb8DQ",
   image:
-    "https://api.eifman.com/uploads/eifman_theatre_mid_jpg_940x360_q85_crop_subsampling_2_296f896a49.jpg",
+    "https://api.eifmanballet.com/uploads/eifman_theatre_mid_jpg_940x360_q85_crop_subsampling_2_296f896a49.jpg",
 };

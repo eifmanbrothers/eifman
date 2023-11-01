@@ -1,3 +1,6 @@
 {
-  "pageName": "Page ensemble"
+  "titlePage": "Page ensemble",
+  "errorNotMember": "нет такого артиста...",
+  "message": "вы можете посмотреть",
+  "linkToEnsemble": "здесь"
 }

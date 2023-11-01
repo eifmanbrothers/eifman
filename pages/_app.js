@@ -6,7 +6,9 @@ import { Layout, errors } from "components";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
-  const isTicketsPage = router.pathname.includes("/tickets");
+  const isTicketsPage =
+    router.pathname.includes("/tickets") ||
+    router.pathname.includes("/schedule");
 
   return (
     <Layout>

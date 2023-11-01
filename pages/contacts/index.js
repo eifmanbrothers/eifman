@@ -3,12 +3,18 @@ import data from "constants/contacts";
 import ReactMarkdown from "react-markdown";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { MetaData } from "components";
+import { metaInfo } from "constants/metaInfo";
 
 const Contacts = () => {
   const { addressFirst, addressSecond } = data;
   const router = useRouter();
   return (
     <section className={styles.contacts}>
+      <MetaData
+        {...metaInfo.find((el) => el.page === "contacts")}
+        locale={router.locale}
+      />
       <div className={styles.contacts__block}>
         <div className={styles.contacts__imgWrapper}>
           <iframe
