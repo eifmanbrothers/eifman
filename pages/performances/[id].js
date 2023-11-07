@@ -19,6 +19,8 @@ const PerformancePage = ({ data }) => {
   const currentData =
     data.reqLocation === firstData.locale ? firstData : secondData;
 
+  // console.log(1, currentData);
+  // console.log(2, firstData);
   return (
     <>
       <MetaData
@@ -48,7 +50,7 @@ const PerformancePage = ({ data }) => {
             </div>
           </div>
         </section>
-        <PerfInfo data={currentData} />
+        <PerfInfo data={currentData} firstData={firstData} />
       </div>
     </>
   );

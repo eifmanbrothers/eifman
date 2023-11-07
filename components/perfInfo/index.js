@@ -5,10 +5,10 @@ import items from "constants/navPerfPage";
 import cn from "classnames";
 import { perfInfoList } from "components";
 
-const PerfInfo = ({ data }) => {
+const PerfInfo = ({ data, firstData }) => {
   const router = useRouter();
   const [activeComponent, setActiveComponent] = useState("resume");
-  // console.log(data);
+
   let currentComponent;
   switch (activeComponent) {
     case "resume": {
@@ -43,7 +43,7 @@ const PerfInfo = ({ data }) => {
     }
     case "gallery": {
       currentComponent = perfInfoList ? (
-        <perfInfoList.Gallery data={data?.images?.data} />
+        <perfInfoList.Gallery data={firstData.images?.data} />
       ) : null;
       break;
     }
@@ -54,7 +54,13 @@ const PerfInfo = ({ data }) => {
       break;
     }
   }
-  //   console.log(data);
+  const isDisabled = (data, type) => {
+    if (type === "video") return false;
+    if (type === "gallery") return false;
+    if (!data[type]) return true;
+    return false;
+  };
+
   return (
     <>
       <nav className={styles.perfInfo__nav}>
@@ -63,10 +69,14 @@ const PerfInfo = ({ data }) => {
             key={el.type}
             className={cn(styles.perfInfo__item, {
               [styles.perfInfo__item_active]: activeComponent === el.type,
+              [styles.perfInfo__item_disabled]: isDisabled(data, el.type),
             })}
           >
             <button
-              className={styles.perfInfo__btn}
+              disabled={isDisabled(data, el.type)}
+              className={cn(styles.perfInfo__btn, {
+                [styles.perfInfo__btn_disabled]: isDisabled(data, el.type),
+              })}
               onClick={() => setActiveComponent(el.type)}
             >
               {el.name[router.locale]}
