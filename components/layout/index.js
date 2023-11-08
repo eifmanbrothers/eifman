@@ -25,7 +25,7 @@ export default function Layout({ children }) {
   // }, [router.events]);
   return (
     <div className="root">
-      <Header />
+      <Header router={router} />
       {router.asPath === "/" && <Gallery />}
       {router.asPath !== "/performances" && <Nav />}
       <main>{children}</main>

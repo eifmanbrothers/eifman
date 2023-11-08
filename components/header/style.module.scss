@@ -5,3 +5,16 @@
   justify-content: space-between;
   margin: 0 auto 30px;
 }
+
+.header__spinner {
+  position: fixed;
+  background-color: rgba($color: #000, $alpha: 0.7);
+  min-width: 100vw;
+  min-height: 100vh;
+  left: 0;
+  top:0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
