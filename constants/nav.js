@@ -132,7 +132,7 @@ export const navList = [
       },
       {
         name: {
-          en: "Roden, her Eternal Idol",
+          en: "Rodin, Her Eternal Idol",
           ru: "Роден, ее вечный идол",
         },
         path: {
