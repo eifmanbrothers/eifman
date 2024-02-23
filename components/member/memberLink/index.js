@@ -31,6 +31,7 @@ const MemberLink = ({ member, locale }) => {
             getAltMemberPhoto(alternativeText, locale) ||
             "member ensemble text needs here"
           }
+          quality={100}
           width={width}
           height={height}
           className={styles.memberLink__image}

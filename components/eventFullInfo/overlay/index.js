@@ -24,7 +24,6 @@ const Overlay = (props) => {
   } = props;
   const { t } = useTranslation();
   // if there is Name(name) in props => it is data from bileter
-  // console.log(1, attributes);
   const currentTheatre = getEventInfoBileter(address, areasSpb, locale);
   const currentName =
     getNameEventBileter(name, namesSpb, locale) ||
@@ -33,8 +32,7 @@ const Overlay = (props) => {
 
   const isLocalData = typeof currentTheatre === "string";
   let path = getPathForPerformance(name, locale);
-  // console.log(name);
-  // console.log(path);
+  // console.log(props);
   return (
     <div
       className={cn(styles.overlay, {
@@ -110,7 +108,9 @@ const Overlay = (props) => {
           >
             {HasTickets
               ? t("tickets:nameBtnBuyTicket")
-              : t("tickets:nameBtnWithoutTickets")}
+              : HasTickets === "underfined"
+              ? t("tickets:nameBtnWithoutTickets")
+              : ""}
           </button>
         )}
       </div>

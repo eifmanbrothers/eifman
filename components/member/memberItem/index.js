@@ -23,6 +23,7 @@ const MemberItem = ({ member, locale }) => {
         alt={
           getAltMemberPhoto(alternativeText, locale) || "alt text needs here"
         }
+        quality={100}
         width={width}
         height={height}
         className={styles.memberLink__image}

@@ -48,6 +48,7 @@ const Member = ({ data }) => {
             width={firstData.avatar.data.attributes.width}
             height={firstData.avatar.data.attributes.height}
             className={styles.member__avatar}
+            quality={100}
           />
           <div className={styles.member__description}>
             <ReactMarkdown>{currentData.description}</ReactMarkdown>
