@@ -32,15 +32,15 @@ const Schedule = ({ data }) => {
         {...metaInfo.find((el) => el.page === "schedule")}
         locale={router.locale}
       />
-      <h3 className={styles.schedule__title}>{t("common:schedulePage")}</h3>
+      <h1 className={styles.schedule__title}>{t("common:schedulePage")}</h1>
       <navigations.TicketsPage
         months={allMonths}
         changeMonth={(month) => setCurrentMonth(month)}
         currentMonth={currentMonth}
       />
-      <h5 className={styles.schedule__subtitle}>
+      <h3 className={styles.schedule__subtitle}>
         {str.replace(str[0], str[0].toUpperCase())}
-      </h5>
+      </h3>
       <ListEventsBileter list={list} locale={router.locale} />
     </section>
   );

@@ -6,7 +6,7 @@
 }
 
 .about__image {
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .about__content {
@@ -19,4 +19,19 @@
   height: 480px;
   border: 0;
   margin: 0 0 50px 0;
+}
+
+@media screen and (max-width: 670px) {
+  .about__imgWrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+  }
+
+  .about__content {
+    margin: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
 }

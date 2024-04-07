@@ -29,6 +29,7 @@ const Enterprises = () => {
                   src={item.image || item.images[0]}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className={styles.enterprises__img}
                 />
               </div>
               <h3 className={styles.enterprises__itemTitle}>

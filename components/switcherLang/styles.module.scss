@@ -26,9 +26,27 @@
 .switcher__link_active {
   font: 16px "PT Serif", serif;
   cursor: default;
-  color: #2B2B2B;
+  color: #2b2b2b;
 }
 
 .switcher__link_active:hover {
   text-decoration: none;
+}
+
+@media screen and (max-width: 750px) {
+  .switcher {
+    display: none;
+  }
+
+  .navMobile {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: rgba(128, 128, 128, 1);
+  }
+
+  .switcher__link_active {
+    color: rgba(43, 43, 43, 1);
+  }
 }

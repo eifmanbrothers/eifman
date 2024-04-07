@@ -11,3 +11,16 @@
   font: 22px/20px "PT Sans", sans-serif;
   margin: 40px 0 40px 0;
 }
+
+@media screen and (max-width: 1000px) {
+  .schedule {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .schedule__title {
+    padding: 0 40px 0 0;
+  }
+}

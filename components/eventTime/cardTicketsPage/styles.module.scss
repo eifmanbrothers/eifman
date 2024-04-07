@@ -1,30 +1,46 @@
 .cardTicketsPage {
   display: flex;
   padding: 0 25px 0 25px;
-  justify-content: space-between;
+  // justify-content: space-between;
+  flex-direction: column;
   font: 15px "PT Sans", sans-serif;
 }
 
 .cardTicketsPage__day {
-  margin: 0;
+  display: inline;
+  margin: 0 0 0 5px;
   font: 15px "PT Sans", sans-serif;
 }
 
 .cardTicketsPage__month {
+  position: relative;
   font: 15px "PT Sans", sans-serif;
+}
+
+.cardTicketsPage__month::before {
+  opacity: 0.6;
+  position: absolute;
+  top: 0px;
+  left: -26px;
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-image: url("../../../images/calendar.svg");
 }
 
 .cardTicketsPage__time {
   position: relative;
   font: 15px "PT Sans", sans-serif;
+  margin: 10px 0 0 0;
 }
 
 .cardTicketsPage__time::before {
+  opacity: 0.6;
   position: absolute;
-  top: 6px;
-  left: -20px;
+  top: 0px;
+  left: -26px;
   content: "";
-  width: 9px;
-  height: 9px;
-  background-image: url("../../../images/time-icon.svg");
+  width: 18px;
+  height: 18px;
+  background-image: url("../../../images/clock.svg");
 }

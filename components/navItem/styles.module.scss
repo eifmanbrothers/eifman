@@ -41,3 +41,17 @@
   color: #fff;
   margin: 0 20px 6px 0;
 }
+
+.navMobile {
+  color: black;
+  font: 20px/26px "PT Sans", sans-serif;
+}
+
+@media screen and (max-width: 830px) {
+  .footer {
+    min-width: 50px;
+  }
+  .navItem {
+    margin: 0 14px 0 0;
+  }
+}

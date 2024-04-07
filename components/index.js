@@ -50,6 +50,7 @@ import NavBottom from "./navBottom";
 import NavBottomPage from "./navBottomPage";
 import PerfInfo from "./perfInfo";
 import perfInfoList from "./perfInfoList";
+import NavMobile from "./navMobile";
 
 export {
   Header,
@@ -104,4 +105,5 @@ export {
   NavBottomPage,
   PerfInfo,
   perfInfoList,
+  NavMobile,
 };

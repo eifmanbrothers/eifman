@@ -8,4 +8,14 @@
   font: 15px/20px "PT Sans", sans-serif;
   text-align: justify;
   margin: 0 auto 70px;
+
+  p:first-of-type {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .palace__text {
+    padding: 0 20px;
+  }
 }

@@ -27,7 +27,7 @@ const NewsPage = ({ data }) => {
       />
       <button
         className={styles.newsPage__button}
-        onClick={() => router.push("/news")}
+        onClick={() => router.push("/news?page=1")}
       >
         {t("common:nameBtnNewsPage")}
       </button>

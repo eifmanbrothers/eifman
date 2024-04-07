@@ -39,3 +39,14 @@
   font-weight: normal;
   text-decoration: underline;
 }
+
+@media screen and (max-width: 750px) {
+  .vacancies__list {
+    padding: 0 20px;
+    margin: 50px 0 50px;
+  }
+
+  .vacancies__contact {
+    padding: 0 20px;
+  }
+}

@@ -5,7 +5,6 @@ import getAltMemberPhoto from "helpers/getAltMemberPhoto";
 import { API_URL } from "configs/variables";
 
 const MemberLink = ({ member, locale }) => {
-  // console.log(member)
   const {
     attributes: {
       firstName,

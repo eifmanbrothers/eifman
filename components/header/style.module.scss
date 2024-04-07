@@ -1,8 +1,15 @@
 .header {
+  z-index: 100;
   width: 100%;
   max-width: 960px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns:
+    minmax(min-content, max-content) min-content minmax(min-content, 1fr)
+    min-content auto min-content;
+  // justify-content: space-between;
+  // align-content: center;
+  grid-template-rows: min-content min-content;
+  justify-items: end;
   margin: 0 auto 30px;
 }
 
@@ -12,9 +19,41 @@
   min-width: 100vw;
   min-height: 100vh;
   left: 0;
-  top:0;
+  top: 0;
   z-index: 100;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.header__logoKk {
+  margin: 0 auto 0 20px;
+}
+
+@media screen and (max-width: 1020px) {
+  .header {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .header {
+    // position: fixed;
+    align-items: top;
+  }
+
+  .header_mobMenuOpened {
+    position: fixed;
+  }
+
+  .header__logoKk {
+    grid-row: 1;
+    grid-column: 1;
+    margin: 0 10px 0 0;
+  }
+
+  .header__logoKkImg {
+    max-height: 70px;
+  }
 }

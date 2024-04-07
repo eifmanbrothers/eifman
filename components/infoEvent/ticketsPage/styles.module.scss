@@ -9,7 +9,7 @@
   left: -2px;
   top: 95px;
   height: 2px;
-  width: 133%;
+  width: 100%;
   content: "";
   background-color: #f0f0f0;
 }
@@ -52,4 +52,33 @@
   text-align: left;
   font: 14px "PT Sans", sans-serif;
   color: #aaa;
+}
+
+@media screen and (max-width: 1000px) {
+  // .iTicketsPage::before {
+  //   width: 100%;
+  // }
+
+  // .iTicketsPage_hasPushkinCard::after {
+  //   right: 20px;
+  // }
+
+  // .iTicketsPage__name {
+  //   padding: 0 150px 0 0;
+  // }
+}
+
+@media screen and (max-width: 820px) {
+  .iTicketsPage::before {
+    width: 100%;
+    // max-width: 150%;
+  }
+
+  .iTicketsPage_hasPushkinCard::after {
+    right: 20px;
+  }
+
+  .iTicketsPage__name {
+    padding: 0 150px 0 0;
+  }
 }

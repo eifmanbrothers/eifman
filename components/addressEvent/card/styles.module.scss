@@ -6,13 +6,15 @@
 }
 
 .card::before {
+  opacity: 0.6;
   position: absolute;
-  top: 5px;
-  left: -2px;
+  top: 0;
+  left: -1px;
   content: "";
   width: 18px;
-  height: 27px;
-  background-image: url(../../../images/geo-icon.svg);
+  height: 18px;
+  background-image: url(../../../images/map-pin.svg);
+  background-repeat: no-repeat;
 }
 
 .card_isOverlay {
@@ -23,11 +25,11 @@
 .card_isOverlay::before {
   position: absolute;
   top: 5px;
-  left: -2px;
+  left: -1px;
   content: "";
   width: 18px;
   height: 27px;
-  background-image: url(../../../images/geo-icon-white.svg);
+  background-image: url(../../../images/map-pin.svg);
 }
 
 .card__city {

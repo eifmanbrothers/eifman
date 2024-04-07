@@ -7,7 +7,7 @@
 .tickets__changeMonth {
   display: flex;
   justify-content: center;
-  padding: 30px 0;
+  padding: 35px 0;
   // height: 60px;
   background: #141414;
 }
@@ -24,7 +24,7 @@
   border: none;
   height: 28px;
   background: transparent;
-  background-image: url(../../images/arrow-left_11x26.svg);
+  background-image: url(../../images/arrow-left_11x26-2.svg);
   background-repeat: no-repeat;
   background-size: 11px 26px;
   opacity: 0.7;
@@ -56,4 +56,11 @@
   z-index: 3;
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 995px) {
+  .tickets {
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
 }

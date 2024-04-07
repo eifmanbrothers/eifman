@@ -3,11 +3,11 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import cn from "classnames";
 
-const SwitcherLang = () => {
+const SwitcherLang = ({ place }) => {
   const router = useRouter();
 
   return (
-    <ul className={styles.switcher}>
+    <ul className={cn(styles.switcher, [styles[place]])}>
       {router.locales.map((el) => (
         <li key={el} className={styles.switcher__item}>
           <Link

@@ -20,6 +20,7 @@
 }
 
 .enterprises__link {
+  position: relative;
   display: flex;
 }
 
@@ -32,4 +33,40 @@
 .enterprises__itemTitle {
   font-size: 22px;
   padding: 0 0 0 50px;
+}
+
+@media screen and (max-width: 770px) {
+  .enterprises {
+    padding: 0 20px;
+  }
+
+  .enterprises__imgWrapper {
+    width: 100%;
+  }
+
+  .enterprises__img {
+    // display: block;
+    position: relative;
+    object-fit: cover;
+  }
+
+  .enterprises__imgWrapper::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: linear-gradient(
+      360deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(20, 20, 20, 0.8) 70%
+    );
+  }
+
+  .enterprises__itemTitle {
+    position: absolute;
+    left: 0;
+    font-style: italic;
+  }
 }

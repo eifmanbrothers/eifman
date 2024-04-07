@@ -19,9 +19,7 @@ const Contacts = () => {
         <div className={styles.contacts__imgWrapper}>
           <iframe
             src="https://yandex.ru/map-widget/v1/?um=constructor%3A80d7c0eb1eb0eedcade85d7c465ec1c1f0d2051af9d3a6423735538844806379&amp;source=constructor"
-            width="460"
-            height="240"
-            style={{ border: 0 }}
+            className={styles.contacts__map}
           ></iframe>
         </div>
         <div className={styles.contacts__content}>
@@ -41,9 +39,7 @@ const Contacts = () => {
         <div className={styles.contacts__imgWrapper}>
           <iframe
             src="https://yandex.ru/map-widget/v1/?um=constructor%3A4cf62a79992c9012fdf50e1ca865b1a49cf19e4f54950e427604b71b58319822&amp;source=constructor"
-            width="460"
-            height="240"
-            style={{ border: 0 }}
+            className={styles.contacts__map}
           ></iframe>
         </div>
         <div className={styles.contacts__content}>

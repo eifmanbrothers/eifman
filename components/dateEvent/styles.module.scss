@@ -31,3 +31,9 @@
   margin: 0;
   font: 15px "PT Sans", sans-serif;
 }
+
+@media screen and (max-width: 770px) {
+  .dateEvent {
+    min-width: 100px;
+  }
+}

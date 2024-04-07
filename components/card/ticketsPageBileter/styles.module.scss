@@ -1,10 +1,11 @@
 .cardBileter {
   width: 270px;
-  margin: 0 50px 45px 0;
+  // margin: 0 50px 45px 0;
   transition: all 0.1s ease;
 }
 
 .cardBileter:hover {
   cursor: pointer;
-  box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.2);
+  // box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.2); was
+  box-shadow: 0px 4px 30px 0px rgba(255, 255, 255, 0.35);
 }

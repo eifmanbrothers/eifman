@@ -5,8 +5,15 @@
 }
 
 .contacts__block {
-  margin: 4dvb 0 50px 0;
+  margin: 4px 0 50px 0;
   display: flex;
+}
+
+.contacts__map {
+  min-width: 460px;
+  width: 100%;
+  min-height: 240px;
+  border: none;
 }
 
 .contacts__content {
@@ -21,5 +28,32 @@
 
   .contacts__contact {
     margin: 0 0 0 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .contacts {
+    margin: 0 0 150px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .contacts {
+    margin: 0 0 50px;
+  }
+
+  .contacts__block {
+    flex-direction: column;
+    margin: 40px 0 50px 0;
+  }
+  .contacts__map {
+    min-width: 100%;
+    min-height: 360px;
+  }
+
+  .contacts__content {
+    margin: 25px 0 0 0;
   }
 }

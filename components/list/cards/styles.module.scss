@@ -1,20 +1,37 @@
 .cards {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 270px);
+  grid-gap: 40px;
+  align-items: stretch;
+  justify-content: center;
   list-style: none;
-  min-height: 500px;
-  padding: 25px;
   margin: 0 0 100px 0;
   background: #141414;
-
-  li:nth-of-type(3n) {
-    margin: 0 0 45px 0;
-  }
+  padding: 0 0 40px 0;
 }
 
 .cards__no {
-  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
   font: 15px/20px "PT Sans", sans-serif;
+}
+
+@media screen and (max-width: 950px) {
+  .cards {
+    grid-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cards {
+    grid-gap: 10px;
+  }
+}
+@media screen and (max-width: 866px) {
+  .cards {
+    grid-gap: 60px;
+  }
 }

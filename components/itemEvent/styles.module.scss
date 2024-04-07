@@ -40,3 +40,10 @@
   margin: 0;
   font: 16px "PT Sans", sans-serif;
 }
+
+@media screen and (max-width: 700px) {
+  .header {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}

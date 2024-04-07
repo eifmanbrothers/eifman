@@ -7,3 +7,11 @@
   align-content: flex-start;
   // align-items: start;
 }
+
+@media screen and (max-width: 830px) {
+  .navFooter {
+    padding: 0;
+    margin: 30px 0 0 0;
+    max-width: 100%;
+  }
+}

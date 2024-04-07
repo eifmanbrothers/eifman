@@ -1,4 +1,5 @@
 .buyTicket {
+  position: relative;
   margin: 25px 0 0 0;
   min-width: 115px;
   height: 40px;
@@ -6,6 +7,16 @@
   border: 0;
   color: #f0f0f0;
   // transition: all 0.1s ease-in;
+}
+
+.buyTicket::before {
+  position: absolute;
+  left: -2px;
+  top: 70px;
+  height: 2px;
+  width: 100%;
+  content: "";
+  background-color: #f0f0f0;
 }
 
 .buyTicket_blocked {
