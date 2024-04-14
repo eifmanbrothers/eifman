@@ -1,4 +1,4 @@
-import { Header, Nav, Footer, Gallery, Loader } from "components";
+import { Header, Nav, Footer, Gallery, Loader, GalleryMob } from "components";
 import { useRouter } from "next/router";
 // import { useState, useEffect } from "react";
 
@@ -27,6 +27,7 @@ export default function Layout({ children }) {
     <div className="root">
       <Header router={router} />
       {router.asPath === "/" && <Gallery />}
+      {router.asPath === "/" && <GalleryMob router={router} />}
       {router.asPath !== "/performances" && <Nav />}
       <main>{children}</main>
       {/* {router.asPath === '/performances' && <Nav />} */}
