@@ -3,6 +3,7 @@ import { items } from "constants/itemsGallery";
 import { EventImagineMob } from "components";
 
 const GalleryMob = ({ router }) => {
+  // console.log(items);
   return (
     <div className={styles.galleryMob}>
       <ul className={styles.galleryMob__list}>
@@ -12,6 +13,8 @@ const GalleryMob = ({ router }) => {
             router={router}
             id={el.id}
             image={el.image}
+            name={el.name}
+            place={el.place}
           />
         ))}
       </ul>
