@@ -1,7 +1,7 @@
 import styles from "./styles.module.scss";
 import useTranslation from "next-translate/useTranslation";
 import { useRouter } from "next/router";
-import { Gallery, nextEvents, Nav, MetaData } from "components";
+import { Gallery, GalleryMob, nextEvents, Nav, MetaData } from "components";
 import { metaInfo } from "constants/metaInfo";
 
 const Performances = () => {
@@ -17,6 +17,7 @@ const Performances = () => {
       {/* <Line />
       <h3 className={styles.performances__title}>{t('performances:titlePage')}</h3> */}
       <Gallery />
+      <GalleryMob router={router} />
       <section className={styles.performances}>
         <Nav />
         {/* <nextEvents.Repertoire /> */}

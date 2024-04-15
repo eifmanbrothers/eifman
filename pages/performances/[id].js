@@ -31,21 +31,21 @@ const PerformancePage = ({ data }) => {
       <Line />
       <div className={styles.performancePage}>
         <navigations.PerformancePage name={currentData.name} />
+        <h1 className={styles.performancePage__title}>{currentData.name}</h1>
         <section className={styles.performancePage__promo}>
           <div className={styles.performancePage__promoContent}>
-            <div>
-              <ReactMarkdown className={styles.performancePage__introduce}>
-                {currentData.introduce}
-              </ReactMarkdown>
-            </div>
+            <ReactMarkdown className={styles.performancePage__introduce}>
+              {currentData.introduce}
+            </ReactMarkdown>
             <div className={styles.performancePage__imgWrapper}>
               <Image
                 className={styles.performancePage__img}
                 priority={true}
                 alt={currentData.name || "alt text needs here"}
                 src={API_URL + (firstData.image.data?.attributes.url || "")}
-                width={firstData.image.data?.attributes.width || 100}
-                height={firstData.image.data?.attributes.height || 100}
+                fill
+                // width={firstData.image.data?.attributes.width || 100}
+                // height={firstData.image.data?.attributes.height || 100}
               />
             </div>
           </div>

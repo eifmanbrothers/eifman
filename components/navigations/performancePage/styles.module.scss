@@ -14,3 +14,13 @@
   font-family: "PT Serif", sans-serif;
   font-size: 20px;
 }
+
+@media screen and (max-width: 820px) {
+  .nav__link {
+    font-size: 13px;
+  }
+
+  .nav__span {
+    font-size: 13px;
+  }
+}

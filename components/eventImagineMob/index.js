@@ -4,6 +4,8 @@ import Link from "next/link";
 import cn from "classnames";
 
 const EventImagineMob = ({ router, id, image, name, place }) => {
+  const isPerformancesPage = router.asPath === "/performances";
+  // console.log(isPerformancesPage);
   return (
     <li className={styles.eventImagineMob}>
       <Link
