@@ -16,6 +16,7 @@ const EventImagineMob = ({ router, id, image, name, place }) => {
           className={cn(styles.eventImagineMob__imgWrapper, styles[place])}
         >
           <Image
+            fill
             alt="#"
             src={image}
             className={styles.eventImagineMob__img}
