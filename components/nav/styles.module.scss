@@ -22,3 +22,16 @@
   padding: 0;
   margin: 0;
 }
+
+@media screen and (max-width: 995px) {
+  .nav {
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .nav {
+    display: none;
+  }
+}

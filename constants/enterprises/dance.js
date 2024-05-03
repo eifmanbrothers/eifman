@@ -5,9 +5,9 @@ export default {
     en: "Dance Academy Theatre",
   },
   images: [
-    "https://api.eifman.com/uploads/img_7080_01_jpg_960x640_q85_subsampling_2_2ad9b42b22.jpg",
-    "https://api.eifman.com/uploads/img_7423_jpg_960x640_q85_subsampling_2_9fee00e42a.jpg",
-    "https://api.eifman.com/uploads/y_and05534_hdr_jpg_960x640_q85_subsampling_2_89e4b25251.jpg",
+    "https://api.eifmanballet.com/uploads/img_7080_01_jpg_960x640_q85_subsampling_2_2ad9b42b22.jpg",
+    "https://api.eifmanballet.com/uploads/img_7423_jpg_960x640_q85_subsampling_2_9fee00e42a.jpg",
+    "https://api.eifmanballet.com/uploads/y_and05534_hdr_jpg_960x640_q85_subsampling_2_89e4b25251.jpg",
   ],
   text: {
     en: `

@@ -30,8 +30,8 @@ const Partners = ({ data }) => {
           <div key={item}>
             <h2 className={styles.partners__title}>{item}</h2>
             <ul className={styles.partners__list}>
-              {arr.map((r) => (
-                <li key={item.id}>
+              {arr.map((r, idx) => (
+                <li key={item.id + idx}>
                   <Link href={r.attributes.link} target="_blank">
                     <Image
                       alt={r.attributes.name}

@@ -15,7 +15,7 @@ export const links = [
   },
   {
     title: "OK",
-    href: "https://eifman.com",
+    href: "https://eifmanballet.com",
     image: okImg,
   },
 ];

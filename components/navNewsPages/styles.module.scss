@@ -1,8 +1,39 @@
+.navNewsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .navNews {
-  width: 100%;
   display: flex;
   list-style: none;
   justify-content: center;
+}
+
+.navNews__btn {
+  padding: 0 20px;
+  height: 16px;
+  border: none;
+  background: transparent;
+  background-image: url("../../images/arrow-left_11x26-2.svg");
+  background-repeat: no-repeat;
+}
+
+.navNews__btn_right {
+  transform: rotateY(180deg);
+  padding: 0 14px;
+}
+
+.navNews__btn:hover {
+  cursor: pointer;
+}
+
+.navNews__btn_disabled {
+  opacity: 0.2;
+}
+
+.navNews__btn_disabled:hover {
+  cursor: default;
 }
 
 .navNews__item {

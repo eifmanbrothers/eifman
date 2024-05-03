@@ -11,7 +11,7 @@ People’s Artist of Russia, the Laureate of the State Prize of the Russian Fede
 Художественный руководитель Санкт‑Петербургского государственного академического театра балета
     `,
   },
-  titleImage: "https://api.eifman.com/uploads/1_96476af5de.jpg",
+  titleImage: "https://api.eifmanballet.com/uploads/1_96476af5de.jpg",
   subtitle: {
     en: `
 Boris Eifman, the founder and creator of his own theater, his own style, and his own ballet universe, who is called “one of the leading choreographers in the world” and an “amazing magician of the theater”, was born in 1946 in Siberia, and from early childhood he wanted to express his feelings and his thoughts in body language, in dance. He himself would later say, “For me, ballet is more than a profession. It is a means of existence, my mission on this earth. Using its resources, I am compelled to convey what is given to me from on high. Most likely, I would simply suffocate on my emotions if I didn’t have the possibility of expressing them through art. For me, choreography is art that is deeply religious, in the broadest sense of the word.”
@@ -26,7 +26,7 @@ Eifman brilliantly combined cutting-edge achievements in the world of ballet wit
 Врожденное чувство движения, «инстинкт к сочинению» привели его в Ленинградскую консерваторию, на хореографическое отделение, а затем в Академию русского балета имени Вагановой, где он проработал десять лет как хореограф, сочиняя новые произведения для студенческих спектаклей. И, наконец, в 1977 году он формирует ансамбль балета. С этого момента начинается история Эйфмана, который своим талантом, кровью и потом, энергией, не оставлявшей его все 24 часа в сутки, стал создавать свой театр. Эйфман гениально сочетал авангардные достижения балетного мира с академической школой русской классической хореографии, на которой он вырос сам. «То, что я делаю, можно назвать танцем эмоций, свободным танцем, новым языком, в котором сплелись и классика, и модерн, и экстатические импульсы, и многое другое…» Его артистам, имевшим исключительно академическую базовую подготовку, приходилось осваивать новую пластическую лексику. Это была совершенно другая хореография, первооснова которой рождалась вместе с созданной Эйфманом труппой.
     `,
   },
-  subtitleImage: "https://api.eifman.com/uploads/2_53442c885c.jpg",
+  subtitleImage: "https://api.eifmanballet.com/uploads/2_53442c885c.jpg",
   about: {
     en: `
 In the course of time, his ballet ensemble became a ballet theatre, and this change in names reflects the essential formula of Eifman’s creative method. As an artist whose natural inclination is toward the theater, he is interested in choreographing not only variations of movement but also transparent internal actions as well as one or another overriding idea connected with a performance. “I create ballets of a different kind, where self-expression becomes the subject and in which there is drama, philosophy, characters and an idea. And I am sure that this is the ballet of the future. Believe me, many of my young colleagues will follow the road that I have taken.  This road leads eventually to man.”
@@ -60,14 +60,14 @@ When Eifman turns to the works of great writers or to the lives of geniuses and 
     en: "Text by Tatiana Boborykina",
   },
   arrImg: [
-    "https://api.eifman.com/uploads/3_86f1e9f9b7.jpg",
-    "https://api.eifman.com/uploads/8_a183d9eef0.jpg",
-    "https://api.eifman.com/uploads/4_e23ec7e5ee.jpg",
-    "https://api.eifman.com/uploads/7_a8521a6d0d.jpg",
-    "https://api.eifman.com/uploads/10_42d271acf3.jpg",
-    "https://api.eifman.com/uploads/9_200eb86b31.jpg",
-    "https://api.eifman.com/uploads/12_6c26cfd594.jpg",
-    "https://api.eifman.com/uploads/11_541e38a0b8.jpg",
+    "https://api.eifmanballet.com/uploads/3_86f1e9f9b7.jpg",
+    "https://api.eifmanballet.com/uploads/8_a183d9eef0.jpg",
+    "https://api.eifmanballet.com/uploads/4_e23ec7e5ee.jpg",
+    "https://api.eifmanballet.com/uploads/7_a8521a6d0d.jpg",
+    "https://api.eifmanballet.com/uploads/10_42d271acf3.jpg",
+    "https://api.eifmanballet.com/uploads/9_200eb86b31.jpg",
+    "https://api.eifmanballet.com/uploads/12_6c26cfd594.jpg",
+    "https://api.eifmanballet.com/uploads/11_541e38a0b8.jpg",
   ],
   quotes: [{}],
   press: {

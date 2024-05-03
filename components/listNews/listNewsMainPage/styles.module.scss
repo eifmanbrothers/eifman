@@ -17,3 +17,16 @@
   text-decoration: underline;
   font: 15px "PT Sans", sans-serif;
 }
+
+@media screen and (max-width: 995px) {
+  .listNews {
+    padding: 0 16px 45px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .listNews__list {
+    flex-direction: column;
+  }
+}

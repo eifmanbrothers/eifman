@@ -2,7 +2,7 @@ export default [
   {
     id: 1,
     inputData: "Роден, ее вечный идол/Rodin, her eternal idol",
-    en: "Rodin, her eternal idol",
+    en: "Rodin, Her Eternal Idol",
     ru: "Роден, ee вечный идол",
   },
   {

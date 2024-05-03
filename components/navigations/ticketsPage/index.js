@@ -11,7 +11,7 @@ const TicketsPage = ({ months, changeMonth, currentMonth }) => {
     <div className={styles.ticketsPage}>
       <ul className={styles.ticketsPage__list}>
         {months.map((el) => {
-          const month = moment(el);
+          const month = moment(el, "MM.YYYY");
           const str = month.locale(router.locale).format("MMMM");
           return (
             <li

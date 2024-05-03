@@ -4,7 +4,7 @@ import cn from "classnames";
 import { useRouter } from "next/router";
 import { NavBottom } from "components";
 
-const NavItem = ({ name, path, locale, place, submenu, column }) => {
+const NavItem = ({ name, path, locale, place, submenu, column, handler }) => {
   const router = useRouter();
 
   const isSubMenu = place === "submenu";
@@ -15,7 +15,9 @@ const NavItem = ({ name, path, locale, place, submenu, column }) => {
         [styles.navItem_active]: path === router.pathname,
       })}
     >
-      <Link href={isSubMenu ? path[locale] : path}>{name[locale]}</Link>
+      <Link href={isSubMenu ? path[locale] : path} onClick={handler}>
+        {name[locale]}
+      </Link>
       {submenu ? (
         <div className={styles.navItem__submenu}>
           <NavBottom locale={locale} submenu={submenu} column={column} />

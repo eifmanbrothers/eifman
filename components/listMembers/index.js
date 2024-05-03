@@ -6,7 +6,7 @@ const ListMembers = ({ list = [], position, locale }) => {
 
   return (
     <>
-      <h4 className={styles.listMembers__title}>{position}</h4>
+      <h2 className={styles.listMembers__title}>{position}</h2>
       <ul className={styles.listMembers}>
         {list.map((el) => (
           <ItemMember

@@ -19,7 +19,12 @@ const Welcome = ({ locale }) => {
         }}
       >
         <div className={styles.welcome__imgWrapper}>
-          <Image src={img} alt="Eifman Boris" priority />
+          <Image
+            src={img}
+            alt="Eifman Boris"
+            priority
+            className={styles.welcome__img}
+          />
         </div>
         <blockquote className={styles.welcome__text} suppressHydrationWarning>
           {blockquote}

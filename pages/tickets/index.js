@@ -56,7 +56,7 @@ const Tickets = ({ allData }) => {
         {...metaInfo.find((el) => el.page === "tickets")}
         locale={router.locale}
       />
-      <h3>{t("tickets:titlePage")}</h3>
+      <h1>{t("tickets:titlePage")}</h1>
       <div className={styles.tickets__changeMonth}>
         <button
           disabled={!countMonth}

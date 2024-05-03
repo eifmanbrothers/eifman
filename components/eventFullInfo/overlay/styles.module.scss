@@ -84,3 +84,14 @@
   cursor: pointer;
   text-decoration: underline;
 }
+
+@media screen and (max-width: 750px) {
+  .overlay {
+    flex-direction: column;
+  }
+
+  .overlay__content {
+    min-width: 256px;
+    max-width: 256px;
+  }
+}

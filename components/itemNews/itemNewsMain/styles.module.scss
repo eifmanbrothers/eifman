@@ -1,15 +1,21 @@
 .itemNews {
   max-width: 140px;
-  // box-sizing: content-box;
-  // margin-right: 25px;
 }
 
-.itemNews__link {}
+.itemNews__link {
+}
 
 .itemNews__link:hover {
   text-decoration: underline;
 }
 
-// .itemNews:hover {
-//   border: 1px solid white;
-// }
+@media screen and (max-width: 830px) {
+  .itemNews {
+    max-width: 100%;
+  }
+
+  .itemNews__link {
+    display: block;
+    margin: 0 0 20px 0;
+  }
+}

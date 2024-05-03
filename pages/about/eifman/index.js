@@ -20,6 +20,7 @@ const Eifman = () => {
           <ReactMarkdown>{data.title[router.locale]}</ReactMarkdown>
         </div>
         <Image
+          priority={true}
           src={data.titleImage}
           alt="Photo Boris Eifman"
           width={349}

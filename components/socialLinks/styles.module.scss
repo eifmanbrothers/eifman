@@ -2,7 +2,7 @@
   display: flex;
   list-style: none;
   padding: 0;
-  margin: 0 25px 0 0;
+  margin: 0 20px 0 0;
   opacity: 0.7;
 
   li:first-of-type {
@@ -39,4 +39,23 @@
 .footer {
   justify-content: space-between;
   margin: 0 0 20px 0;
+}
+
+@media screen and (max-width: 830px) {
+  .socialLinks {
+    display: none;
+  }
+
+  .footer {
+    justify-content: flex-start;
+    margin: 0 0 0 0;
+    display: flex;
+  }
+
+  .navMobile {
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    right: -4px;
+  }
 }

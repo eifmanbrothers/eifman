@@ -21,7 +21,9 @@ a {
 
 .root {
   padding: 16px 0 0 0;
-  min-width: 960px;
+  width: 100%;
+  /* max-width: 960px; */
+  margin: 0 auto;
 }
 
 /* for gosWidget start */
@@ -263,3 +265,4 @@ a {
 }
 
 /* for gosWidget start */
+

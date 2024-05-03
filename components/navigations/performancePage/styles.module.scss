@@ -9,7 +9,18 @@
 }
 
 .nav__span {
+  display: inline;
   margin-left: 5px;
   font-family: "PT Serif", sans-serif;
   font-size: 20px;
+}
+
+@media screen and (max-width: 820px) {
+  .nav__link {
+    font-size: 13px;
+  }
+
+  .nav__span {
+    font-size: 13px;
+  }
 }

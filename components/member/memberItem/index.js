@@ -6,6 +6,9 @@ import { API_URL } from "configs/variables";
 const MemberItem = ({ member, locale }) => {
   const {
     attributes: {
+      firstName,
+      secondName,
+      patronymic,
       avatar: {
         data: {
           attributes: { url, width, height, alternativeText },
@@ -13,22 +16,21 @@ const MemberItem = ({ member, locale }) => {
       },
     },
   } = member;
-  const {
-    attributes: { firstName, secondName, patronymic },
-  } = member;
+
   return (
     <figure className={styles.memberItem}>
       <Image
         src={API_URL + url}
-        // src={`http://127.0.0.1:1332` + url}
         alt={
-          getAltMemberPhoto(alternativeText, locale) || "alt text needs here"
+          getAltMemberPhoto(alternativeText, locale) ||
+          "member ensemble text needs here"
         }
+        quality={100}
         width={width}
         height={height}
         className={styles.memberLink__image}
       />
-      <figcaption>
+      <figcaption suppressHydrationWarning>
         {firstName + " " + secondName + " " + (patronymic || "")}
       </figcaption>
     </figure>

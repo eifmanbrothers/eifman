@@ -21,6 +21,7 @@ const Principals = ({ data }) => {
       <MenuOnPage place="principals" locale={router.locale} />
       <figure className={styles.principals__director}>
         <Image
+          priority={true}
           alt={attributes.director}
           src={attributes.linkImageDirector}
           width={300}

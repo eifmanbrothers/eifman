@@ -5,11 +5,11 @@ export default {
     en: "Art and production workshops",
   },
   images: [
-    "https://api.eifman.com/uploads/03_img_4369_jpg_960x640_q85_subsampling_2_cf584d9267.jpg",
-    "https://api.eifman.com/uploads/01_img_1405_jpg_960x640_q85_subsampling_2_3d4d9612fb.jpg",
-    "https://api.eifman.com/uploads/04_img_3551_jpg_960x640_q85_subsampling_2_b73209f312.jpg",
-    "https://api.eifman.com/uploads/05_img_3565_jpg_960x640_q85_subsampling_2_40dc90d1e9.jpg",
-    "https://api.eifman.com/uploads/02_img_4375_jpg_960x640_q85_subsampling_2_5f34d491af.jpg",
+    "https://api.eifmanballet.com/uploads/03_img_4369_jpg_960x640_q85_subsampling_2_cf584d9267.jpg",
+    "https://api.eifmanballet.com/uploads/01_img_1405_jpg_960x640_q85_subsampling_2_3d4d9612fb.jpg",
+    "https://api.eifmanballet.com/uploads/04_img_3551_jpg_960x640_q85_subsampling_2_b73209f312.jpg",
+    "https://api.eifmanballet.com/uploads/05_img_3565_jpg_960x640_q85_subsampling_2_40dc90d1e9.jpg",
+    "https://api.eifmanballet.com/uploads/02_img_4375_jpg_960x640_q85_subsampling_2_5f34d491af.jpg",
   ],
   text: {
     en: `

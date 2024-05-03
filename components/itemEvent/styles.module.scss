@@ -24,7 +24,7 @@
 
 .itemEvent__time::after {
   position: absolute;
-  top: 63px;
+  top: 73px;
   left: -2px;
   height: 2px;
   width: 100%;
@@ -39,4 +39,11 @@
 .itemEvent__timeAt {
   margin: 0;
   font: 16px "PT Sans", sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
 }

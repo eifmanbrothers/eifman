@@ -8,3 +8,9 @@
 .newsPage {
   margin: 0 0 40px 0;
 }
+
+@media screen and (max-width: 830px) {
+  .itemNewsMainPage {
+    margin: 0;
+  }
+}

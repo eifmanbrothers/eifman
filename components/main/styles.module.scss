@@ -2,3 +2,10 @@
   max-width: 960px;
   margin: 0 auto 20px;
 }
+
+@media screen and (max-width: 995px) {
+  .main__newsTitle {
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+}

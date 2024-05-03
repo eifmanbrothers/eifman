@@ -1,3 +1,5 @@
+import { API_URL } from "./variables";
+
 export default [
   {
     name: {
@@ -5,7 +7,7 @@ export default [
       en: "Boris Eifman",
     },
     path: "/about/eifman",
-    image: "https://api.eifman.com/uploads/1_ca71fa789d.jpg",
+    image: `${API_URL}/uploads/1_ca71fa789d.jpg`,
   },
   {
     name: {
@@ -13,7 +15,7 @@ export default [
       en: "About",
     },
     path: "/about",
-    image: "https://api.eifman.com/uploads/2_d608b22bc1.jpg",
+    image: `${API_URL}/uploads/2_d608b22bc1.jpg`,
   },
   {
     name: {
@@ -21,7 +23,7 @@ export default [
       en: "Management",
     },
     path: "/about/principals",
-    image: "https://api.eifman.com/uploads/3_0d39e08690.jpg",
+    image: `${API_URL}/uploads/3_0d39e08690.jpg`,
   },
   {
     name: {
@@ -29,7 +31,7 @@ export default [
       en: "Presenter Info",
     },
     path: "/about/presenter",
-    image: "https://api.eifman.com/uploads/4_5b516a0bee.jpg",
+    image: `${API_URL}/uploads/4_5b516a0bee.jpg`,
   },
   {
     name: {
@@ -37,15 +39,15 @@ export default [
       en: "Our Partners",
     },
     path: "/about/partners",
-    image: "https://api.eifman.com/uploads/5_acf68f1597.jpg",
+    image: `${API_URL}/uploads/5_acf68f1597.jpg`,
   },
   {
     name: {
-      ru: "Официально",
-      en: "Official",
+      ru: "Документы",
+      en: "Documents",
     },
     path: "/about/official",
-    image: "https://api.eifman.com/uploads/7_dd990c5efe.jpg",
+    image: `${API_URL}/uploads/7_dd990c5efe.jpg`,
   },
   {
     name: {
@@ -53,6 +55,6 @@ export default [
       en: "Careers",
     },
     path: "/about/vacancies",
-    image: "https://api.eifman.com/uploads/6_96a7448ce1.jpg",
+    image: `${API_URL}/uploads/6_96a7448ce1.jpg`,
   },
 ];

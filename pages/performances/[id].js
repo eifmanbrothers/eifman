@@ -1,15 +1,6 @@
 import styles from "./styles.module.scss";
-import { useEffect } from "react";
-import { useRouter } from "next/router";
 import apiPerformance from "utils/ApiPerformance";
-import {
-  myCarousel,
-  Line,
-  errors,
-  navigations,
-  MetaData,
-  PerfInfo,
-} from "components";
+import { Line, errors, navigations, MetaData, PerfInfo } from "components";
 import ReactMarkdown from "react-markdown";
 import Image from "next/image";
 import { API_URL } from "configs/variables";
@@ -28,6 +19,8 @@ const PerformancePage = ({ data }) => {
   const currentData =
     data.reqLocation === firstData.locale ? firstData : secondData;
 
+  // console.log(1, currentData);
+  // console.log(2, firstData);
   return (
     <>
       <MetaData
@@ -38,25 +31,26 @@ const PerformancePage = ({ data }) => {
       <Line />
       <div className={styles.performancePage}>
         <navigations.PerformancePage name={currentData.name} />
+        <h1 className={styles.performancePage__title}>{currentData.name}</h1>
         <section className={styles.performancePage__promo}>
           <div className={styles.performancePage__promoContent}>
-            <div>
-              <ReactMarkdown className={styles.performancePage__introduce}>
-                {currentData.introduce}
-              </ReactMarkdown>
-            </div>
+            <ReactMarkdown className={styles.performancePage__introduce}>
+              {currentData.introduce}
+            </ReactMarkdown>
             <div className={styles.performancePage__imgWrapper}>
               <Image
                 className={styles.performancePage__img}
+                priority={true}
                 alt={currentData.name || "alt text needs here"}
                 src={API_URL + (firstData.image.data?.attributes.url || "")}
-                width={firstData.image.data?.attributes.width || 100}
-                height={firstData.image.data?.attributes.height || 100}
+                fill
+                // width={firstData.image.data?.attributes.width || 100}
+                // height={firstData.image.data?.attributes.height || 100}
               />
             </div>
           </div>
         </section>
-        <PerfInfo data={currentData} />
+        <PerfInfo data={currentData} firstData={firstData} />
       </div>
     </>
   );

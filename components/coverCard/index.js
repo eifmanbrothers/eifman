@@ -20,6 +20,7 @@ const CoverCard = ({ images = [], alt }) => {
         fill={true}
         alt="photo"
         sizes="(max-width: 120px) 100%"
+        quality={100}
       />
     </div>
   );

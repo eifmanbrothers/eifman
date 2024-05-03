@@ -19,10 +19,12 @@ import Main from "./main";
 import NeededDate from "./neededDate";
 import NavNewsPages from "./navNewsPages";
 import EventImagine from "./eventImagine";
+import EventImagineMob from "./eventImagineMob";
 import EventName from "./eventName";
 import EventNameWord from "./eventNameWord";
 import EventNameLetter from "./eventNameLetter";
 import Gallery from "./gallery";
+import GalleryMob from "./galleryMob";
 import Layout from "./layout";
 import nextEvents from "./nextEvents";
 import errors from "./errors";
@@ -50,6 +52,7 @@ import NavBottom from "./navBottom";
 import NavBottomPage from "./navBottomPage";
 import PerfInfo from "./perfInfo";
 import perfInfoList from "./perfInfoList";
+import NavMobile from "./navMobile";
 
 export {
   Header,
@@ -73,10 +76,12 @@ export {
   NeededDate,
   NavNewsPages,
   EventImagine,
+  EventImagineMob,
   EventName,
   EventNameWord,
   EventNameLetter,
   Gallery,
+  GalleryMob,
   Layout,
   nextEvents,
   errors,
@@ -104,4 +109,5 @@ export {
   NavBottomPage,
   PerfInfo,
   perfInfoList,
+  NavMobile,
 };
