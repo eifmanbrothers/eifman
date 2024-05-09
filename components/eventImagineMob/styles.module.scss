@@ -1,10 +1,10 @@
 .eventImagineMob {
-  width: 265px;
-  height: 320px;
+  // width: 265px;
+  // height: 320px;
 }
 
 .eventImagineMob__link {
-  width: 100%;
+  // width: 100%;
   // display: block;
   //   display: none;
 }
@@ -16,81 +16,84 @@
   width: 265px;
   height: 320px;
 }
+.eventImagineMob__imgWrapper_perfPage {
+  width: 165px;
+  height: 226px;
+}
 
 .eventImagineMob__img {
   min-width: 100%;
-
   object-fit: contain;
 }
 
 .eventImagineMob__caption {
   position: absolute;
-  left: 0;
-  bottom: 0;
-  max-width: 265px;
-  font: 22px/25px "PT Sans", sans-serif;
+  display: inline-block;
+  width: 100%;
+  min-height: 50px;
   text-align: center;
+  bottom: -40px;
+  font: 22px/25px "PT Sans", sans-serif;
 }
 
+// .eventImagineMob__caption_perfPage {
+//   bottom: -20px;
+// }
+
 .musagette {
-  margin: 115px 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .beyond {
-  margin: 134px 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .jiselle {
-  margin: 75px 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .karenina {
-  margin: 136px 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .chaikovsky {
-  margin: 65px 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .hamlet {
-  margin: 12px 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .moliere {
-  margin: 65px 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .effect {
-  margin: 35px 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .requiem {
-  margin: -15px 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .donKihot {
-  margin: -25px 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .jerusalem {
-  margin: 17px 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .chayka {
-  margin: 0 0 0 0px;
+  margin: 0 0 0 0;
+}
+
+.down {
+  margin: 0 0 0 0;
 }
 
 @media screen and (max-width: 820px) {
-  // .eventImagineMob__imgWrapper {
-  //   position: relative;
-  //   min-width: 265px;
-  //   height: 295px;
-  // }
-
-  // .eventImagineMob__img {
-  //   min-width: 100%;
-  //   height: auto;
-  //   object-fit: contain;
-  //   //   display: none;
-  // }
+  .eventImagineMob__caption_perfPage {
+    font: 16px/18px "PT Sans", sans-serif;
+  }
 }

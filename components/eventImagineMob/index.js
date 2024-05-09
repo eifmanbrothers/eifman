@@ -13,7 +13,9 @@ const EventImagineMob = ({ router, id, image, name, place }) => {
         className={styles.eventImagineMob__link}
       >
         <figure
-          className={cn(styles.eventImagineMob__imgWrapper, styles[place])}
+          className={cn(styles.eventImagineMob__imgWrapper, styles[place], {
+            [styles.eventImagineMob__imgWrapper_perfPage]: isPerformancesPage,
+          })}
         >
           <Image
             fill
@@ -21,7 +23,11 @@ const EventImagineMob = ({ router, id, image, name, place }) => {
             src={image}
             className={styles.eventImagineMob__img}
           ></Image>
-          <figcaption className={styles.eventImagineMob__caption}>
+          <figcaption
+            className={cn(styles.eventImagineMob__caption, {
+              [styles.eventImagineMob__caption_perfPage]: isPerformancesPage,
+            })}
+          >
             {name[router.locale]}
           </figcaption>
         </figure>
