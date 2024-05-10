@@ -1,0 +1,17 @@
+.itemEventBileter {
+  display: flex;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(#fff, 0.3);
+}
+
+.itemEventBileter:last-of-type {
+  border-bottom: 0px solid rgba(#fff, 0.3);
+}
+
+@media screen and (max-width: 630px) {
+  .itemEventBileter {
+    flex-direction: column;
+    padding: 25px 0;
+    border-bottom: 0px solid rgba(#fff, 0.3);
+  }
+}

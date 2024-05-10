@@ -1,5 +1,5 @@
 import styles from "./styles.module.scss";
-import { ItemEvent } from "components";
+import { ItemEvent, ItemEventBileter } from "components";
 
 const ListEventsBileter = ({ list = [], locale }) => {
   // const arr = list.reduce((obj, el) => {
@@ -12,7 +12,8 @@ const ListEventsBileter = ({ list = [], locale }) => {
   return (
     <ul className={styles.listEventsBileter}>
       {list.map((el) => (
-        <ItemEvent key={el.IdPerformance} {...el} locale={locale} />
+        // <ItemEvent key={el.IdPerformance} {...el} locale={locale} />
+        <ItemEventBileter key={el.IdPerformance} {...el} locale={locale} />
       ))}
     </ul>
   );

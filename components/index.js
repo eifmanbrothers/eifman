@@ -31,7 +31,9 @@ import errors from "./errors";
 import navigations from "./navigations";
 import ListEventsBileter from "./listEventsBileter";
 import ItemEvent from "./itemEvent";
+import ItemEventBileter from "./itemEventBileter";
 import DateEvent from "./dateEvent";
+import DateEventBileter from "./dateEventBileter";
 import infoEvent from "./infoEvent";
 import btn from "./btn";
 import card from "./card";
@@ -88,7 +90,9 @@ export {
   navigations,
   ListEventsBileter,
   ItemEvent,
+  ItemEventBileter,
   DateEvent,
+  DateEventBileter,
   infoEvent,
   btn,
   card,
