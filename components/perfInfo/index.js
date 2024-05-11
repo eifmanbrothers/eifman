@@ -76,6 +76,7 @@ const PerfInfo = ({ data, firstData }) => {
               disabled={isDisabled(data, el.type)}
               className={cn(styles.perfInfo__btn, {
                 [styles.perfInfo__btn_disabled]: isDisabled(data, el.type),
+                [styles.perfInfo__btn_active]: activeComponent === el.type,
               })}
               onClick={() => setActiveComponent(el.type)}
             >

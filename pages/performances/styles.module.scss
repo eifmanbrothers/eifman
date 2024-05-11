@@ -48,12 +48,20 @@
   object-fit: cover;
 }
 
+@media screen and (max-width: 1000px) {
+  .performancePage {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 0 100px 0;
+    padding: 0 20px;
+  }
+}
+
 @media screen and (max-width: 820px) {
   .performances {
     margin: 0 auto 50px;
   }
   .performancePage {
-    padding: 0 20px;
   }
 
   .performancePage__title {
@@ -80,5 +88,11 @@
 
   .performancePage__introduce {
     font: 21px/30px "PT Sans", sans-serif;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .performancePage__title {
+    font: 32px/35px "PT Sans", sans-serif;
   }
 }

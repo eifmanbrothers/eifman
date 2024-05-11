@@ -1,6 +1,13 @@
 .resume {
-  max-width: 600px;
-  margin: 0 auto;
-  font: 15px/20px "PT Sans", sans-serif;
-  text-align: justify;
+  max-width: 730px;
+  font: 21px/30px "PT Serif", sans-serif;
+}
+
+@media screen and (max-width: 820px) {
+}
+
+@media screen and (max-width: 540px) {
+  .resume {
+    font: 17px/25px "PT Serif", sans-serif;
+  }
 }
