@@ -9,7 +9,17 @@
   margin: 0 0 40px 0;
 }
 
+@media screen and (max-width: 1000px) {
+  .newsPage {
+    margin: 0 0 50px 0;
+    padding: 0 20px;
+  }
+}
 @media screen and (max-width: 830px) {
+  .newsPage {
+    margin: 0 0 0px 0;
+  }
+
   .itemNewsMainPage {
     margin: 0;
   }

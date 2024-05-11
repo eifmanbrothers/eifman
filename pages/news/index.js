@@ -22,7 +22,7 @@ const News = ({ data }) => {
         {...metaInfo.find((el) => el.page === "news")}
         locale={router.locale}
       />
-      <h3 className={styles.news__title}>{t("news:titlePage")}</h3>
+      <h1 className={styles.news__title}>{t("news:titlePage")}</h1>
       <listNews.ListNewsPage listNews={data.data} />
       <NavNewsPages allPages={pageCount} currentPath={router.asPath} />
     </section>

@@ -8,15 +8,16 @@ import { API_URL } from "configs/variables";
 
 const ItemNewsPage = ({ data, id }) => {
   const router = useRouter();
-  // console.log(data)
+  // console.log(data);
   const {
     date,
     title,
-    description,
+    news,
     publishedAt,
     image: {
       data: {
         attributes: {
+          url,
           formats: { thumbnail },
         },
       },
@@ -29,13 +30,14 @@ const ItemNewsPage = ({ data, id }) => {
     <li className={styles.itemNews}>
       <div className={styles.itemNews__imgWrapper}>
         <Image
-          src={API_URL + thumbnail.url}
+          // src={API_URL + thumbnail.url}
+          src={API_URL + url}
           fill
           sizes="(max-width: 2000px) 100vw,
           (max-width: 2200px) 50vw,
           33vw"
-          alt="#"
-          quality={100}
+          alt="alt text needs here"
+          quality={75}
           className={styles.itemNews__image}
         />
       </div>
@@ -45,7 +47,9 @@ const ItemNewsPage = ({ data, id }) => {
         </Link>
         <NeededDate date={date} locale={router.locale} time={publishedAt} />
         <div className={styles.newsItem__description}>
-          <ReactMarkdown>{description}</ReactMarkdown>
+          <p className={styles.itemNews__description}>
+            {news.slice(0, 100)}...
+          </p>
         </div>
       </div>
     </li>

@@ -32,7 +32,7 @@ const NewsPage = ({ data }) => {
         {t("common:nameBtnNewsPage")}
       </button>
       <section className={styles.newsPage__container}>
-        <h3 className={styles.newsPage__title}>{currentData.title}</h3>
+        <h1 className={styles.newsPage__title}>{currentData.title}</h1>
         <NeededDate
           date={currentData.date}
           time={currentData.publishedAt}
@@ -55,6 +55,7 @@ const NewsPage = ({ data }) => {
               // height={firstData.image.data.attributes.height}
               className={styles.newsPage__image}
               priority
+              quality={100}
             />
           </div>
         )}
