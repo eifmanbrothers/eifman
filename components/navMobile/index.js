@@ -8,15 +8,18 @@ const NavMobile = ({ isOpen, router, handler }) => {
     <nav
       className={cn(styles.navMobile, { [styles.navMobile_visible]: isOpen })}
     >
-      {navList.map((el) => (
-        <NavItem
-          key={el.path}
-          locale={router.locale}
-          {...el}
-          place="navMobile"
-          handler={handler}
-        />
-      ))}
+      <ul className={styles.navMobile__list}>
+        {navList.map((el) => (
+          <NavItem
+            key={el.path}
+            locale={router.locale}
+            {...el}
+            place="navMobile"
+            handler={handler}
+          />
+        ))}
+      </ul>
+
       <SocialLinks place="navMobile" />
       <SwitcherLang place="navMobile" />
     </nav>

@@ -5,7 +5,7 @@ import cn from "classnames";
 
 const EventImagineMob = ({ router, id, image, name, place }) => {
   const isPerformancesPage = router.asPath === "/performances";
-  // console.log(isPerformancesPage);
+
   return (
     <li className={styles.eventImagineMob}>
       <Link
@@ -19,10 +19,11 @@ const EventImagineMob = ({ router, id, image, name, place }) => {
         >
           <Image
             fill
-            alt="#"
+            alt="photo"
             src={image}
             className={styles.eventImagineMob__img}
-          ></Image>
+            sizes="(max-width: 1920px) 100vw, (max-width: 820px) 25vw, (max-width: 699px): 30vw, (max-width: 534px): 50vw, (max-width: 369px): 100vw"
+          />
           <figcaption
             className={cn(styles.eventImagineMob__caption, {
               [styles.eventImagineMob__caption_perfPage]: isPerformancesPage,

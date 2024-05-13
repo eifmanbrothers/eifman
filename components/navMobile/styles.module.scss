@@ -20,12 +20,17 @@
   //   display: none;
 }
 
+.navMobile__list {
+  padding: 0;
+  list-style: none;
+}
+
 .navMobile_visible {
   width: 100%;
   // overflow: hidden;
   //   display: block;
 }
 
-.navMobile__items {
-  list-style: none;
-}
+// .navMobile__items {
+//   list-style: none;
+// }

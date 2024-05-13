@@ -4,9 +4,9 @@ import Link from "next/link";
 const Performance = () => {
   return (
     <>
-      <h4 className={styles.performance}>there is not performance</h4>
+      <h4 className={styles.performance}>a performance unavailable</h4>
       <Link className={styles.performance__link} href="/">
-        to main Page
+        Main page
       </Link>
     </>
   );

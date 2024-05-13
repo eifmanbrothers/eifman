@@ -50,9 +50,7 @@ const NewsPage = ({ data }) => {
                 currentData.image?.data.attributes.alternativeText || "photo"
               }
               fill
-              // sizes="(min-width: 808px) 50vw, 100vw"
-              // width={firstData.image.data.attributes.width}
-              // height={firstData.image.data.attributes.height}
+              sizes="(max-width: 1920px) 100vw"
               className={styles.newsPage__image}
               priority
               quality={100}

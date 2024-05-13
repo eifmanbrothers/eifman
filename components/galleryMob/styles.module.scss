@@ -1,6 +1,5 @@
 .galleryMob {
   display: none;
-  // margin: 0 0 15px 0;
 }
 
 .galleryMob__list {
@@ -18,8 +17,13 @@
 @media screen and (max-width: 820px) {
   .galleryMob {
     display: block;
-    // overflow: hidden;
     padding: 0 20px;
     overflow-y: hidden;
+  }
+}
+
+@media screen and (max-width: 369px) {
+  .galleryMob__list_perfPage {
+    justify-content: center;
   }
 }
