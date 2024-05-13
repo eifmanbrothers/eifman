@@ -8,7 +8,6 @@ import { API_URL } from "configs/variables";
 
 const ItemNewsPage = ({ data, id }) => {
   const router = useRouter();
-  // console.log(data);
   const {
     date,
     title,
@@ -24,8 +23,6 @@ const ItemNewsPage = ({ data, id }) => {
     },
   } = data;
   // console.log(publishedAt)
-  // const a = hook('2022-11-18').locale('fr')
-  // console.log(hook('2022-11-18'))
   return (
     <li className={styles.itemNews}>
       <div className={styles.itemNews__imgWrapper}>
@@ -33,9 +30,8 @@ const ItemNewsPage = ({ data, id }) => {
           // src={API_URL + thumbnail.url}
           src={API_URL + url}
           fill
-          sizes="(max-width: 2000px) 100vw,
-          (max-width: 2200px) 50vw,
-          33vw"
+          sizes="(max-width: 1920px) 100vw,
+          (max-width: 2200px) 50vw"
           alt="alt text needs here"
           quality={75}
           className={styles.itemNews__image}

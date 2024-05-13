@@ -1,6 +1,5 @@
-import styles from "./styles.module.scss";
-import { useState } from "react";
 import cn from "classnames";
+import styles from "./styles.module.scss";
 
 const MobileMenu = ({ handler, isOpen }) => {
   return (
@@ -11,7 +10,8 @@ const MobileMenu = ({ handler, isOpen }) => {
         className={cn(styles.menu__toggle)}
         onClick={handler}
         checked={isOpen}
-        readOnly
+        onChange={() => null}
+        // readOnly
       />
       <label className={cn(styles.menu__btn)} htmlFor="menu__toggle">
         <span className={styles.span}></span>
