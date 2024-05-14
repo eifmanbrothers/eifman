@@ -1,4 +1,11 @@
-// $primary: #3813be;
+$primary: #3813be;
+// XL-L-M-S
+$font-title-xl: 45px/50px "PT Sans", sans-serif;
+$font-title-m: 32px/35px "PT Sans", sans-serif;
+
+$font-text-xl: 21px/30px "PT Serif", sans-serif;
+$font-text-m: 17px/25px "PT Serif", sans-serif;
+
 // $font-title-xl: normal 700 44px /43px Gilroy;
 // $font-title-m: normal 700 72px /86px Gilroy;
 // $font-title-m: normal 700 36px /43px Gilroy;
@@ -8,8 +15,15 @@
 // $font-task-m: normal 400 16px /20px Gilroy;
 // $font-mob-nav-m: normal 700 16px /20px Gilroy;
 
-// :export {
-//   primary: $primary;
-//   font-title-xl: $font-title-xl;
-//   font-title-m: $font-title-m;
-// }
+:export {
+  primary: $primary;
+
+  font-title-xl: $font-title-xl;
+  font-title-m: $font-title-m;
+
+  font-text-xl: $font-text-xl;
+  font-text-m: $font-text-m;
+
+  //   font-title-xl: $font-title-xl;
+  //   font-title-m: $font-title-m;
+}

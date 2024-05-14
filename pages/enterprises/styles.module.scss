@@ -1,11 +1,12 @@
+@import "/styles/variables.module.scss";
+
 .enterprises {
   max-width: 960px;
   margin: 0 auto;
 }
 
 .enterprises__title {
-  font-family: "PT Serif", sans-serif;
-  font-size: 20px;
+  font: $font-title-xl;
 }
 
 .enterprises__list {
@@ -38,6 +39,10 @@
 @media screen and (max-width: 770px) {
   .enterprises {
     padding: 0 20px;
+  }
+
+  .enterprises__title {
+    font: $font-title-m;
   }
 
   .enterprises__imgWrapper {
