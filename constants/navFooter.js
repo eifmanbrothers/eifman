@@ -8,6 +8,13 @@ export const navList = [
   },
   {
     name: {
+      ru: "Борис Эйфман",
+      en: "Boris Eifman",
+    },
+    path: "/about/eifman",
+  },
+  {
+    name: {
       ru: "Афиша",
       en: "Schedule",
     },
