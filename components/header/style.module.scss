@@ -6,8 +6,6 @@
   grid-template-columns:
     minmax(min-content, max-content) min-content minmax(min-content, 1fr)
     min-content auto min-content;
-  // justify-content: space-between;
-  // align-content: center;
   grid-template-rows: min-content min-content;
   justify-items: end;
   margin: 0 auto 30px;
@@ -39,7 +37,6 @@
 
 @media screen and (max-width: 750px) {
   .header {
-    // position: fixed;
     align-items: top;
   }
 

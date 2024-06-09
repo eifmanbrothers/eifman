@@ -13,7 +13,7 @@
 }
 
 .performancePage__title {
-  display: none;
+  font: $font-title-xl;
 }
 
 .performances__title {
@@ -24,7 +24,7 @@
 }
 
 .performancePage__promo {
-  padding: 0 0 0 110px;
+  padding: 0 0 0 0;
 }
 
 .performancePage__promoContent {
@@ -67,7 +67,7 @@
   }
 
   .performancePage__title {
-    display: block;
+    // display: block;
     margin: 0 0 30px 0;
     font: $font-title-xl;
   }

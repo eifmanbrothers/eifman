@@ -14,7 +14,10 @@ const Eifman = () => {
         {...metaInfo.find((el) => el.page === "eifman")}
         locale={router.locale}
       />
-      <MenuOnPage place="eifman" locale={router.locale} />
+      {/* <MenuOnPage place="eifman" locale={router.locale} /> */}
+      <h1 className={styles.eifman__titleEifman}>
+        {router.locale === "ru" ? "Борис Эйфман" : "Boris Eifman"}
+      </h1>
       <section className={styles.eifman__promo}>
         <div className={styles.eifman__title}>
           <ReactMarkdown>{data.title[router.locale]}</ReactMarkdown>
@@ -30,15 +33,21 @@ const Eifman = () => {
       <ReactMarkdown className={styles.eifman__subtitle}>
         {data.subtitle[router.locale]}
       </ReactMarkdown>
+      <div className={styles.eifman__carusel}>
+        <myCarousel.React arrImg={data.arrImg} place="eifman" />
+      </div>
       <section className={styles.eifman__about}>
         <div className={styles.eifman__aboutContent}>
-          <Image
-            src={data.subtitleImage}
-            alt="Photo Boris Eifman"
-            width={360}
-            height={360}
-            className={styles.eifman__subImage}
-          />
+          <div className={styles.eifman__wrapperSubImage}>
+            <Image
+              src={data.subtitleImage}
+              alt="Photo Boris Eifman"
+              // width={728}
+              fill
+              // height={728}
+              className={styles.eifman__subImage}
+            />
+          </div>
           <div className={styles.eifman__aboutText}>
             <ReactMarkdown>{data.about[router.locale]}</ReactMarkdown>
           </div>
@@ -50,9 +59,6 @@ const Eifman = () => {
           {data.srcBobrikinaText[router.locale]}
         </cite>
       </blockquote>
-      <div className={styles.eifman__carusel}>
-        <myCarousel.React arrImg={data.arrImg} />
-      </div>
       <section className={styles.eifman__press}>
         <h3 className={styles.eifman__pressTitle}>
           {data.press.title[router.locale]}
