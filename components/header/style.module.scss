@@ -1,7 +1,6 @@
 .header {
   z-index: 100;
-  width: 100%;
-  max-width: 960px;
+  max-width: 1000px;
   display: grid;
   grid-template-columns:
     minmax(min-content, max-content) min-content minmax(min-content, 1fr)
@@ -28,8 +27,9 @@
   margin: 0 auto 0 20px;
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1040px) {
   .header {
+    margin: 0 0 30px 0;
     padding: 0 20px;
     box-sizing: border-box;
   }

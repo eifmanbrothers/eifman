@@ -1,20 +1,8 @@
 .nav {
   position: relative;
-  width: 100%;
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto 20px;
 }
-
-// .nav::before {
-//   position: absolute;
-//   left: -100vw;
-//   bottom: 0;
-//   content: "";
-//   height: 2px;
-//   width: 200vw;
-//   background-color: #3A3A3A;
-//   overflow: hidden;
-// }
 
 .nav__list {
   display: flex;
@@ -23,10 +11,10 @@
   margin: 0;
 }
 
-@media screen and (max-width: 995px) {
+@media screen and (max-width: 1040px) {
   .nav {
-    padding: 0 16px;
-    box-sizing: border-box;
+    margin: 0 0 20px 0;
+    padding: 0 20px;
   }
 }
 
