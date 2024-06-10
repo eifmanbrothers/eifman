@@ -20,7 +20,6 @@ const Header = ({ router }) => {
 
   useEffect(() => {
     const handleRouteChange = (url) => {
-      // console.log(url);
       if (url.includes("schedule")) setLoading(true);
       if (url.includes("tickets")) setLoading(true);
     };
@@ -67,8 +66,6 @@ const Header = ({ router }) => {
           <FadeLoader color="#fff" />
         </div>
       )}
-      {/* <Icon.ExclamationMark /> */}
-      {/* <Icon.ExclamationMark /> */}
       <NavMobile
         isOpen={isOpenMobMenu}
         router={router}

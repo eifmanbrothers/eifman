@@ -1,14 +1,12 @@
 import styles from "./styles.module.scss";
 import { useState } from "react";
 import { card, eventFullInfo } from "components";
-import getCoverForEvent from "helpers/getCoversForEvent";
 
 const Cards = ({ list, locale, covers = [] }) => {
   const [buyEvent, setBuyEvent] = useState({});
   const clickHandler = (c) => setBuyEvent(c);
   const closeHandler = () => {
     setBuyEvent({});
-    console.log("close");
   };
 
   list.sort((a, b) => {

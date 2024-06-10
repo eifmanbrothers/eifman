@@ -1,6 +1,6 @@
 import styles from "./styles.module.scss";
 import cn from "classnames";
-import { btn, NavItem, SocialLinks, SwitcherLang } from "components";
+import { NavItem, SocialLinks, SwitcherLang } from "components";
 import { navList } from "constants/navFooter";
 
 const NavMobile = ({ isOpen, router, handler }) => {

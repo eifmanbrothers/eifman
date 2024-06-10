@@ -1,6 +1,5 @@
 import styles from "./styles.module.scss";
 import useTranslation from "next-translate/useTranslation";
-// import { Owner } from "components";
 
 const Copyright = () => {
   const { t } = useTranslation();

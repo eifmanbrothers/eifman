@@ -1,7 +1,6 @@
 import styles from "./styles.module.scss";
 import Link from "next/link";
 import Image from "next/image";
-import ReactMarkdown from "react-markdown";
 import { NeededDate } from "components";
 import { useRouter } from "next/router";
 import { API_URL } from "configs/variables";
@@ -22,12 +21,11 @@ const ItemNewsPage = ({ data, id }) => {
       },
     },
   } = data;
-  // console.log(publishedAt)
+
   return (
     <li className={styles.itemNews}>
       <div className={styles.itemNews__imgWrapper}>
         <Image
-          // src={API_URL + thumbnail.url}
           src={API_URL + url}
           fill
           sizes="(max-width: 1920px) 100vw,

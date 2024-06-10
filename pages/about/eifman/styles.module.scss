@@ -2,6 +2,7 @@
 
 .eifman__titleEifman {
   font: $font-title-xl;
+  font-weight: 700;
   margin: 0 0 50px 0;
 }
 
@@ -89,7 +90,6 @@
 
 .eifman__pressItems {
   list-style: none;
-  // display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0;
@@ -99,13 +99,14 @@
 .eifman__pressItem {
   max-width: 730px;
   margin: 0 0 45px 0;
+  font-family: "PT serif";
+  font-size: 21px;
 }
 
 .eifman__pressQuote {
   margin: 0 0 15px;
   font-style: italic;
-  // text-align: center;
-  font-size: 17px;
+  font-size: 21px;
   font-style: italic;
   line-height: 24px;
 }
@@ -170,5 +171,9 @@
   .eifman__titleEifman {
     margin: 0 0 30px 0;
     font: $font-title-m;
+  }
+
+  .eifman__pressItem {
+    font-size: 17px;
   }
 }

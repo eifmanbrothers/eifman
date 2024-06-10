@@ -1,5 +1,4 @@
 import styles from "./styles.module.scss";
-import moment from "moment";
 import cn from "classnames";
 import getEventInfoBileter from "helpers/getEventInfoBileter";
 import getNameEventBileter from "helpers/getNameEventBileter";

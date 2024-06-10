@@ -43,7 +43,6 @@ import eventFullInfo from "./eventFullInfo";
 import addressEvent from "./addressEvent";
 import eventTime from "./eventTime";
 import MetaData from "./metaData";
-import Loader from "./loader";
 import Copyright from "./copyright";
 import Contacts from "./contacts";
 import Owner from "./owner";
@@ -102,7 +101,6 @@ export {
   addressEvent,
   eventTime,
   MetaData,
-  Loader,
   Copyright,
   Contacts,
   Owner,

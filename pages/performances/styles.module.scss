@@ -2,18 +2,19 @@
 
 .performances {
   width: 100%;
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto 100px;
 }
 
 .performancePage {
   width: 100%;
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto 100px;
 }
 
 .performancePage__title {
   font: $font-title-xl;
+  font-weight: 700;
 }
 
 .performances__title {
@@ -50,10 +51,15 @@
   object-fit: cover;
 }
 
-@media screen and (max-width: 1000px) {
-  .performancePage {
+@media screen and (max-width: 1040px) {
+  .performances {
     width: 100%;
-    max-width: 960px;
+    max-width: 1000px;
+    margin: 0 0 100px 0;
+    padding: 0 20px;
+  }
+
+  .performancePage {
     margin: 0 0 100px 0;
     padding: 0 20px;
   }

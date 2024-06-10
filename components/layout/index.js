@@ -1,5 +1,5 @@
 import styles from "./styles.module.scss";
-import { Header, Nav, Footer, Gallery, Loader, GalleryMob } from "components";
+import { Header, Nav, Footer, Gallery, GalleryMob } from "components";
 import { useRouter } from "next/router";
 import cn from "classnames";
 // import { useState, useEffect } from "react";
@@ -36,7 +36,6 @@ export default function Layout({ children }) {
       >
         {children}
       </main>
-      {/* {router.asPath === '/performances' && <Nav />} */}
       <Footer locale={router.locale} />
     </div>
   );

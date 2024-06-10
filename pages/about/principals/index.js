@@ -19,6 +19,9 @@ const Principals = ({ data }) => {
         locale={router.locale}
       />
       <MenuOnPage place="principals" locale={router.locale} />
+      <h1 className={styles.principals__title}>
+        {router.locale === "ru" ? "Руководство" : "Management"}
+      </h1>
       <figure className={styles.principals__director}>
         <Image
           priority={true}

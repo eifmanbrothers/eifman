@@ -1,6 +1,27 @@
+@import "/styles/variables.module.scss";
+
+.palace {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.palace__title {
+  max-width: 1000px;
+  font: $font-title-xl;
+  font-weight: 700;
+  margin: 0 auto 50px;
+}
+
+.palace__imageWrapper {
+  position: relative;
+  max-width: 1000px;
+  width: 100%;
+  min-height: 460px;
+  margin: 0 0 30px 0;
+}
+
 .palace__image {
-  display: block;
-  margin: 40px auto;
+  object-fit: cover;
 }
 
 .palace__text {
@@ -14,8 +35,23 @@
   }
 }
 
-@media screen and (max-width: 750px) {
-  .palace__text {
+@media screen and (max-width: 1040px) {
+  .palace__title {
+    font: $font-title-xl;
+    margin: 0 0 50px 0;
     padding: 0 20px;
+  }
+
+  .palace {
+    padding: 0 20px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  .palace__title {
+    font: $font-title-m;
+  }
+  .palace__text {
+    padding: 0;
   }
 }

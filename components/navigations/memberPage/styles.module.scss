@@ -1,16 +1,27 @@
 .nav {
+  display: none;
   margin: 0 0 20px 0;
 }
 
 .nav__link {
   color: #333;
-  font-family: "PT Serif", sans-serif;
-  font-size: 20px;
+  font: 15px/16px "PT Sans", sans-serif;
 }
 
 .nav__memberName {
   display: inline;
   margin-left: 5px;
-  font-family: "PT Serif", sans-serif;
-  font-size: 20px;
+  font: 15px/16px "PT Sans", sans-serif;
+}
+
+@media screen and (max-width: 1040px) {
+  .nav {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .nav {
+    display: block;
+  }
 }

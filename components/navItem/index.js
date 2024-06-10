@@ -15,7 +15,11 @@ const NavItem = ({ name, path, locale, place, submenu, column, handler }) => {
         [styles.navItem_active]: path === router.pathname,
       })}
     >
-      <Link href={isSubMenu ? path[locale] : path} onClick={handler}>
+      <Link
+        href={isSubMenu ? path[locale] : path}
+        onClick={handler}
+        className={styles.navItem__link}
+      >
         {name[locale]}
       </Link>
       {submenu ? (
