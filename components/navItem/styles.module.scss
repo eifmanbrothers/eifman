@@ -1,9 +1,13 @@
 .navItem {
   position: relative;
   margin-right: 20px;
-  font: 18px "PT Serif", serif;
+  font: 18px/23px "PT Sans", sans-serif;
   white-space: nowrap;
   padding: 0 0 15px 0;
+}
+
+.navItem__link {
+  font: 18px/23px "PT Sans", sans-serif;
 }
 
 .navItem:hover {
@@ -23,16 +27,13 @@
 
 .navItem__submenu {
   visibility: hidden;
-  // opacity: 0;
   position: absolute;
   left: 0;
   top: 0;
-  // transition: all 0.2s ease-in;
 }
 
 .navItem:hover .navItem__submenu {
   visibility: visible;
-  // opacity: 1;
 }
 
 .submenu {
@@ -45,6 +46,7 @@
 .navMobile {
   color: black;
   font: 20px/26px "PT Sans", sans-serif;
+  text-align: end;
 }
 
 @media screen and (max-width: 830px) {

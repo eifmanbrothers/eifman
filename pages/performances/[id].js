@@ -19,8 +19,6 @@ const PerformancePage = ({ data }) => {
   const currentData =
     data.reqLocation === firstData.locale ? firstData : secondData;
 
-  // console.log(1, currentData);
-  // console.log(2, firstData);
   return (
     <>
       <MetaData
@@ -44,8 +42,6 @@ const PerformancePage = ({ data }) => {
                 alt={currentData.name || "alt text needs here"}
                 src={API_URL + (firstData.image.data?.attributes.url || "")}
                 fill
-                // width={firstData.image.data?.attributes.width || 100}
-                // height={firstData.image.data?.attributes.height || 100}
               />
             </div>
           </div>

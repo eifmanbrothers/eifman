@@ -22,9 +22,9 @@ const Schedule = ({ data }) => {
     setList(data.filter((el) => el.PerfDate.slice(3, 10) === currentMonth));
   }, [currentMonth]);
 
-  const str = moment(currentMonth, "MM.YYYY")
-    .locale(router.locale)
-    .format("MMMM");
+  // const str = moment(currentMonth, "MM.YYYY")
+  //   .locale(router.locale)
+  //   .format("MMMM");
 
   return (
     <section className={styles.schedule}>
@@ -38,9 +38,6 @@ const Schedule = ({ data }) => {
         changeMonth={(month) => setCurrentMonth(month)}
         currentMonth={currentMonth}
       />
-      <h3 className={styles.schedule__subtitle}>
-        {str.replace(str[0], str[0].toUpperCase())}
-      </h3>
       <ListEventsBileter list={list} locale={router.locale} />
     </section>
   );

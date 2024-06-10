@@ -1,29 +1,41 @@
 .ticketsPage {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  display: inline-block;
+  margin: 0 0 50px 0;
 }
 
 .ticketsPage__list {
   display: flex;
+  min-width: 200px;
+  justify-content: space-between;
+  padding: 0 0 10px 0;
   list-style: none;
+  border-bottom: 1px solid rgba(#d3d3d3, 0.4);
 }
 
 .ticketsPage__item {
-  margin: 0 25px 0 0;
-  font: 15px/20px "PT Sans", sans-serif;
+  position: relative;
+  bottom: -11px;
+  padding: 0 20px;
+  font: 17px/25px "PT Sans", sans-serif;
 }
 
 .ticketsPage__item_active {
-  font-weight: bold;
+  padding: 0 20px 10px;
+  box-sizing: content-box;
+  border-bottom: 1px solid rgba(#fff, 1);
 }
 
 .ticketsPage__item:hover {
   cursor: pointer;
-  text-decoration: underline;
 }
 
 .ticketsPage__item_active:hover {
   cursor: default;
   text-decoration: none;
+}
+
+@media screen and (max-width: 620px) {
+  .ticketsPage {
+    margin: 0 0 0px 0;
+  }
 }

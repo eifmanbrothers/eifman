@@ -31,7 +31,9 @@ import errors from "./errors";
 import navigations from "./navigations";
 import ListEventsBileter from "./listEventsBileter";
 import ItemEvent from "./itemEvent";
+import ItemEventBileter from "./itemEventBileter";
 import DateEvent from "./dateEvent";
+import DateEventBileter from "./dateEventBileter";
 import infoEvent from "./infoEvent";
 import btn from "./btn";
 import card from "./card";
@@ -41,7 +43,6 @@ import eventFullInfo from "./eventFullInfo";
 import addressEvent from "./addressEvent";
 import eventTime from "./eventTime";
 import MetaData from "./metaData";
-import Loader from "./loader";
 import Copyright from "./copyright";
 import Contacts from "./contacts";
 import Owner from "./owner";
@@ -88,7 +89,9 @@ export {
   navigations,
   ListEventsBileter,
   ItemEvent,
+  ItemEventBileter,
   DateEvent,
+  DateEventBileter,
   infoEvent,
   btn,
   card,
@@ -98,7 +101,6 @@ export {
   addressEvent,
   eventTime,
   MetaData,
-  Loader,
   Copyright,
   Contacts,
   Owner,

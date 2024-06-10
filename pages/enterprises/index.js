@@ -15,7 +15,9 @@ const Enterprises = () => {
         {...metaInfo.find((el) => el.page === "enterprises")}
         locale={router.locale}
       />
-      <h1>{router.locale === "ru" ? "Проекты" : "Projects"}</h1>
+      <h1 className={styles.enterprises__title}>
+        {router.locale === "ru" ? "Проекты" : "Projects"}
+      </h1>
       <ul className={styles.enterprises__list}>
         {data.map((item) => (
           <li

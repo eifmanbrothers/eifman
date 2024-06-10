@@ -1,9 +1,9 @@
 {
-    "titlePage": "Афиша",
-    "startEvent": "Начало в",
-    "buyTicket": "КУПИТЬ",
-    "noTicket": "БИЛЕТОВ НЕТ",
-    "nameBtnBuyTicket": "Заказ билетов",
-    "nameBtnWithoutTickets": "Нет билетов",
-    "nameBtnAboutPerformance": "Подробнее о спектакле"
+  "titlePage": "Афиша",
+  "startEvent": "Начало в",
+  "buyTicket": "КУПИТЬ БИЛЕТ",
+  "noTicket": "БИЛЕТОВ НЕТ",
+  "nameBtnBuyTicket": "Заказ билетов",
+  "nameBtnWithoutTickets": "Нет билетов",
+  "nameBtnAboutPerformance": "Подробнее о спектакле"
 }

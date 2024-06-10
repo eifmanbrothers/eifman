@@ -32,7 +32,7 @@ const NewsPage = ({ data }) => {
         {t("common:nameBtnNewsPage")}
       </button>
       <section className={styles.newsPage__container}>
-        <h3 className={styles.newsPage__title}>{currentData.title}</h3>
+        <h1 className={styles.newsPage__title}>{currentData.title}</h1>
         <NeededDate
           date={currentData.date}
           time={currentData.publishedAt}
@@ -50,11 +50,10 @@ const NewsPage = ({ data }) => {
                 currentData.image?.data.attributes.alternativeText || "photo"
               }
               fill
-              // sizes="(min-width: 808px) 50vw, 100vw"
-              // width={firstData.image.data.attributes.width}
-              // height={firstData.image.data.attributes.height}
+              sizes="(max-width: 1920px) 100vw"
               className={styles.newsPage__image}
               priority
+              quality={100}
             />
           </div>
         )}

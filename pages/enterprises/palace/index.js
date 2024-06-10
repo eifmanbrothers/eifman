@@ -15,14 +15,18 @@ const Palace = () => {
         locale={router.locale}
       />
       <MenuOnPage place="dancePalace" locale={router.locale} />
-      <section>
-        <Image
-          src={data.image}
-          alt="Dance Palace"
-          width={537}
-          height={358}
-          className={styles.palace__image}
-        />
+      <h1 className={styles.palace__title}>{data.title[router.locale]}</h1>
+      <section className={styles.palace}>
+        <div className={styles.palace__imageWrapper}>
+          <Image
+            src={data.image}
+            alt="Dance Palace"
+            // width={537}
+            fill
+            // height={358}
+            className={styles.palace__image}
+          />
+        </div>
         <ReactMarkdown className={styles.palace__text}>
           {data.text[router.locale]}
         </ReactMarkdown>

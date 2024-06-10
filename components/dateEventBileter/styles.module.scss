@@ -1,0 +1,47 @@
+.dateEventBileter {
+  border-right: 1px solid rgba(#fff, 0.3);
+  min-width: 85px;
+}
+
+.dateEventBileter__date {
+  display: inline;
+  margin: 0 10px 0 0;
+  font: 18px/30px "PT Serif";
+}
+
+.dateEventBileter__day {
+  display: inline;
+  font: 18px/30px "PT Serif";
+}
+
+.dateEventBileter__time {
+  display: block;
+  font: 18px/30px "PT Serif";
+  margin: 0;
+}
+
+// .dateEvent__month {
+//   margin: 0;
+//   font: 15px "PT Sans", sans-serif;
+// }
+
+// .dateEvent__day {
+//   margin: 0;
+//   font: 15px "PT Sans", sans-serif;
+// }
+
+// @media screen and (max-width: 770px) {
+//   .dateEvent {
+//     min-width: 100px;
+//   }
+// }
+@media screen and (max-width: 630px) {
+  .dateEventBileter {
+    margin: 0 0 5px 0;
+    border-right: 0px solid rgba(#fff, 0.3);
+  }
+  .dateEventBileter__time {
+    display: inline;
+    margin: 0 0 0 10px;
+  }
+}

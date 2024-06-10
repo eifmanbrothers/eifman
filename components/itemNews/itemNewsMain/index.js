@@ -4,9 +4,9 @@ import { NeededDate } from "components";
 import { useRouter } from "next/router";
 
 const ItemNewsMain = ({ data, id }) => {
-  // console.log(data)
   const router = useRouter();
   const { date, title, publishedAt } = data;
+
   return (
     <li className={styles.itemNews}>
       <NeededDate

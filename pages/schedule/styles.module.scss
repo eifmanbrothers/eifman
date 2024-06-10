@@ -5,11 +5,8 @@
 }
 
 .schedule__title {
-  margin: 0 0 40px 0;
-}
-.schedule__subtitle {
-  font: 22px/20px "PT Sans", sans-serif;
-  margin: 40px 0 40px 0;
+  font: 45px/50px "PT Sans", sans-serif;
+  margin: 40px 0 50px 0;
 }
 
 @media screen and (max-width: 1000px) {
@@ -22,5 +19,13 @@
 @media screen and (max-width: 770px) {
   .schedule__title {
     padding: 0 40px 0 0;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .schedule__title {
+    padding: 0 60px 0 0;
+    margin: 30px 0 50px 0;
+    font: 32px/35px "PT Sans", sans-serif;
   }
 }

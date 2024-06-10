@@ -1,5 +1,4 @@
 import styles from "./styles.module.scss";
-import moment from "moment";
 import "moment/locale/ru";
 
 const DateEvent = ({ date, locale }) => {

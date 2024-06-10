@@ -1,18 +1,12 @@
 .eventImagineMob {
-  // width: 265px;
-  // height: 320px;
 }
 
 .eventImagineMob__link {
-  // width: 100%;
-  // display: block;
-  //   display: none;
 }
 
 .eventImagineMob__imgWrapper {
   position: relative;
   margin: 0;
-  width: 100%;
   width: 265px;
   height: 320px;
 }
@@ -35,10 +29,6 @@
   bottom: -40px;
   font: 22px/25px "PT Sans", sans-serif;
 }
-
-// .eventImagineMob__caption_perfPage {
-//   bottom: -20px;
-// }
 
 .musagette {
   margin: 0 0 0 0;
@@ -95,5 +85,12 @@
 @media screen and (max-width: 820px) {
   .eventImagineMob__caption_perfPage {
     font: 16px/18px "PT Sans", sans-serif;
+  }
+}
+
+@media screen and (max-width: 369px) {
+  .eventImagineMob__imgWrapper {
+    width: 265px;
+    height: 320px;
   }
 }

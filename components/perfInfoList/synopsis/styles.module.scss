@@ -1,6 +1,17 @@
 .synopsis {
-  max-width: 600px;
-  margin: 20px auto;
-  text-align: justify;
-  font: 15px/20px "PT Sans", sans-serif;
+  max-width: 730px;
+  font: 21px/30px "PT Serif", sans-serif;
+  p {
+    strong {
+      font: 18px/30px "PT Serif", sans-serif;
+      text-transform: uppercase;
+      color: rgba(#fff, 0.6);
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .synopsis {
+    font: 17px/25px "PT Serif", sans-serif;
+  }
 }

@@ -1,13 +1,20 @@
+@import "/styles/variables.module.scss";
+
 .ensemble {
   width: 100%;
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto 100px;
 }
 
 .member {
   width: 100%;
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
+}
+
+.member__title {
+  font: $font-title-xl;
+  font-weight: 700;
 }
 
 .member__content {
@@ -42,10 +49,37 @@
   }
 }
 
+@media screen and (max-width: 1040px) {
+  .member {
+    margin: 0;
+  }
+  .member__title {
+    padding: 0 20px;
+  }
+}
+
 @media screen and (max-width: 995px) {
   .ensemble {
     padding: 0 16px;
     box-sizing: border-box;
     margin: 0 0 100px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .member__title {
+    font: $font-title-m;
+  }
+
+  .member__content {
+    flex-direction: column;
+    margin: 0 0 20px 0;
+    padding: 0 20px;
+  }
+
+  .member__avatar {
+    width: 335px;
+    height: 442px;
+    margin: 0 20px 30px 0;
   }
 }

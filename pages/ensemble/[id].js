@@ -40,6 +40,7 @@ const Member = ({ data }) => {
       <Line />
       <section className={styles.member}>
         <navigations.MemberPage nameMember={fullName} />
+        <h1 className={styles.member__title}>{fullName}</h1>
         <div className={styles.member__content}>
           <Image
             priority={true}

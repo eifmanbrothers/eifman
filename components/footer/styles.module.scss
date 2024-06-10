@@ -1,4 +1,4 @@
-@import "/styles/variables.module";
+@import "/styles/variables.module.scss";
 
 .footer {
   width: 100%;
@@ -7,19 +7,11 @@
   background: #141414;
 }
 
-// .footer__container {
-//   max-width: 960px;
-//   margin: 0 auto;
-// }
-
 .footer__content {
   display: flex;
   justify-content: space-between;
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
-}
-
-.footer__links {
 }
 
 @media screen and (max-width: 995px) {

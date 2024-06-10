@@ -5,7 +5,6 @@ import { Copyright, Contacts, NavFooter, SocialLinks, Owner } from "components";
 const Footer = ({ locale }) => {
   const { t } = useTranslation();
 
-  // console.log(router.asPath)
   return (
     <footer className={styles.footer}>
       <section className={styles.footer__content}>

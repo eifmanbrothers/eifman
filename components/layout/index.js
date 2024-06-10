@@ -1,5 +1,7 @@
-import { Header, Nav, Footer, Gallery, Loader, GalleryMob } from "components";
+import styles from "./styles.module.scss";
+import { Header, Nav, Footer, Gallery, GalleryMob } from "components";
 import { useRouter } from "next/router";
+import cn from "classnames";
 // import { useState, useEffect } from "react";
 
 export default function Layout({ children }) {
@@ -29,8 +31,11 @@ export default function Layout({ children }) {
       {router.asPath === "/" && <Gallery />}
       {router.asPath === "/" && <GalleryMob router={router} />}
       {router.asPath !== "/performances" && <Nav />}
-      <main>{children}</main>
-      {/* {router.asPath === '/performances' && <Nav />} */}
+      <main
+        className={cn({ [styles.main]: router.asPath === "/about/eifman" })}
+      >
+        {children}
+      </main>
       <Footer locale={router.locale} />
     </div>
   );

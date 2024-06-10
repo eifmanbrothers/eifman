@@ -1,9 +1,9 @@
 {
-    "titlePage": "Schedule",
-    "startEvent": "Starts at",
-    "buyTicket": "BUY",
-    "noTicket": "NO TICKETS",
-    "nameBtnBuyTicket": "Ticket purchasing",
-    "nameBtnWithoutTickets": "No tickets",
-    "nameBtnAboutPerformance": "About the production"
+  "titlePage": "Schedule",
+  "startEvent": "Starts at",
+  "buyTicket": "BUY TICKET",
+  "noTicket": "NO TICKETS",
+  "nameBtnBuyTicket": "Ticket purchasing",
+  "nameBtnWithoutTickets": "No tickets",
+  "nameBtnAboutPerformance": "About the production"
 }

@@ -1,9 +1,6 @@
 .introduction {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: justify;
-  font: 15px/20px "PT Sans", sans-serif;
-
+  max-width: 730px;
+  font: 21px/30px "PT Serif", sans-serif;
   blockquote {
     margin: 0;
   }
@@ -11,4 +8,15 @@
 
 .introduction > p {
   text-align: end;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 820px) {
+}
+
+@media screen and (max-width: 540px) {
+  .introduction {
+    font: 17px/25px "PT Serif", sans-serif;
+  }
 }
