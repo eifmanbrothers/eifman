@@ -18,7 +18,6 @@ function MyApp({ Component, pageProps }) {
       {/* <Script src={srcScript} /> */}
       {isTicketsPage && (
         <Script
-          // onLoad={() => router.reload()}
           strategy="beforeInteractive"
           src={router.locale === "ru" ? srcScript : srcScriptEn}
         />

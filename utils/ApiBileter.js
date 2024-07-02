@@ -21,9 +21,6 @@ class Api {
           ? `&locale=${locale}&filters[PerfDate][$contains]=${period}&sort=PerfDate:asc`
           : `&filters[PerfDate][$contains]=${period}&sort=PerfDate:asc`
       }`,
-      // `${API_URL}/api/events?populate[hall][populate][0]=country,city,address,theatre,stage&populate[images]=data&populate=performance${
-      //   locale ? `&locale=${locale}` : ""
-      // }`,
       {
         method: "GET",
         headers: this.headers,
@@ -32,15 +29,6 @@ class Api {
   }
 
   getDataBileter(period) {
-    // console.log(
-    //   `${this.address}/42d9de71f65cd840b11c96e24de087a5/afisha/get-afisha?json=1${period}`
-    // );
-    // console.log(
-    //   `${this.address}/42d9de71f65cd840b11c96e24de087a5/afisha?json=1${period}`
-    //   // =>https://apit.bileter.ru/42d9de71f65cd840b11c96e24de087a5/afisha?json=1&from=2024-07-02&to=2025-03-31
-    // );
-    // https://wdt.bileter.ru/42d9de71f65cd840b11c96e24de087a5/afisha/get-afisha?json=1&date_from=2024-07-1&date_to=2024-07-31&abonement=ShowAll&lang=ru
-    // https://apit.bileter.ru/42d9de71f65cd840b11c96e24de087a5/afisha/get-afisha?json=1&date_from=2024-07-02&date_to=2025-03-31
     return fetch(
       `${this.address}/42d9de71f65cd840b11c96e24de087a5/afisha/get-afisha?json=1${period}`,
       {
@@ -50,9 +38,20 @@ class Api {
     ).then(handlerResponse);
   }
   getDataBileterMonth(period) {
+    // console.log(
+    //   `${
+    //     this.address
+    //   }/42d9de71f65cd840b11c96e24de087a5/afisha/get-afisha?json=1${
+    //     period && `&month=${period}`
+    //   }`
+    // );
+    //  &date_from=2024-07-02&date_to=2025-03-31
     return fetch(
-      `${this.address}/42d9de71f65cd840b11c96e24de087a5/afisha?json=1${
-        period && `&month=${period}`
+      // `${this.address}/42d9de71f65cd840b11c96e24de087a5/afisha/get-afisha?json=1&date_from=2024-08`,
+      `${
+        this.address
+      }/42d9de71f65cd840b11c96e24de087a5/afisha/get-afisha?json=1${
+        period && `&date_from=${period}`
       }`,
       {
         method: "GET",
@@ -60,23 +59,10 @@ class Api {
       }
     ).then(handlerResponse);
   }
-  // getDataBileter(period) {
-  //   return fetch(
-  //     `${this.address}/42d9de71f65cd840b11c96e24de087a5/afisha?json=1${
-  //       period ? period : ""
-  //     }`,
-  //     {
-  //       method: "GET",
-  //       headers: this.headers,
-  //     }
-  //   ).then(handlerResponse);
-  // }
 
   getTickets(locale, period) {
-    // console.log(222, period);
     return Promise.all([
       this.getDataBileterMonth(period.bileter),
-      // this.getDataLocal(locale),
       this.getDataLocal(locale, period.local),
       this.getCovers(locale),
     ]);
@@ -91,5 +77,3 @@ const api = new Api({
 });
 
 export default api;
-// &month=2022-01
-// &to=2023-12-31

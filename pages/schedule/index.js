@@ -1,16 +1,14 @@
 import styles from "./styles.module.scss";
 import { useEffect, useState } from "react";
-import moment from "moment";
 import { useRouter } from "next/router";
 import useTranslation from "next-translate/useTranslation";
 import api from "utils/ApiBileter";
 import getThreeMonths from "helpers/getThreeMonth";
-import getTicketsListBileter from "helpers/getTicketsListBileter";
+// import getTicketsListBileter from "helpers/getTicketsListBileter";
 import { ListEventsBileter, navigations, MetaData } from "components";
 import { metaInfo } from "constants/metaInfo";
 
 const Schedule = ({ data }) => {
-  // console.log(123, data);
   const [allMonths, setAllMonths] = useState(
     Array.from(new Set(data.map((el) => el.PerfDate.slice(3, 10)))) || []
   );
@@ -22,10 +20,6 @@ const Schedule = ({ data }) => {
   useEffect(() => {
     setList(data.filter((el) => el.PerfDate.slice(3, 10) === currentMonth));
   }, [currentMonth]);
-
-  // const str = moment(currentMonth, "MM.YYYY")
-  //   .locale(router.locale)
-  //   .format("MMMM");
 
   return (
     <section className={styles.schedule}>
