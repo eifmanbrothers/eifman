@@ -15,7 +15,6 @@ function MyApp({ Component, pageProps }) {
       {/* <errors.SiteDev locale={router.locale} /> */}
       <Script src="/index.js" type="text/javascript" />
       <Component {...pageProps} />
-      {/* <Script src={srcScript} /> */}
       {isTicketsPage && (
         <Script
           strategy="beforeInteractive"

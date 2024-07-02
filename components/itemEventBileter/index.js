@@ -33,6 +33,13 @@ const ItemEventBileter = (props) => {
       <btn.BuyTicket
         isTicket={HasTickets}
         btnName={HasTickets ? t("tickets:buyTicket") : t("tickets:noTicket")}
+        // btnName={
+        //   HasTickets
+        //     ? t("tickets:buyTicket")
+        //     : locale === "ru"
+        //     ? "нет билетов"
+        //     : "no tickets"
+        // }
         id={IdPerformance}
       />
     </li>
