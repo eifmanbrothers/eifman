@@ -10,6 +10,7 @@ import { ListEventsBileter, navigations, MetaData } from "components";
 import { metaInfo } from "constants/metaInfo";
 
 const Schedule = ({ data }) => {
+  // console.log(123, data);
   const [allMonths, setAllMonths] = useState(
     Array.from(new Set(data.map((el) => el.PerfDate.slice(3, 10)))) || []
   );
@@ -48,6 +49,7 @@ export default Schedule;
 export async function getServerSideProps() {
   const res = await api.getDataBileter(getThreeMonths());
   return {
-    props: { data: getTicketsListBileter(res) },
+    // props: { data: getTicketsListBileter(res) },
+    props: { data: res },
   };
 }

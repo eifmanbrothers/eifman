@@ -10,7 +10,7 @@ module.exports = () => {
     0
   );
   const threeMonth = moment(lastDayCurrentMonth).add(TO_MONTHS, "M");
-  return `&from=${currentDate.format("YYYY-MM-DD")}&to=${threeMonth.format(
+  return `&date_from=${currentDate.format(
     "YYYY-MM-DD"
-  )}`;
+  )}&date_to=${threeMonth.format("YYYY-MM-DD")}`;
 };

@@ -6,6 +6,7 @@ export default (data) => {
   // console.log(1, covers);
   const { data: eventsLocal } = dataLocal;
   const monthsBileter = Object.keys(dataBileter);
+
   const arrAllEventsBileter = monthsBileter.reduce((obj, el) => {
     const eventsMonth = Object.entries(dataBileter[el]);
     eventsMonth.forEach((element) => {
