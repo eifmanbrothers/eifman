@@ -8,7 +8,6 @@ class Api {
   }
 
   getPrincipal(locale) {
-    // console.log(locale)
     return fetch(`${this.address}/api/principal?locale=${locale}`, {
       method: "GET",
       headers: this.headres,
@@ -16,7 +15,6 @@ class Api {
   }
 
   getPresenter(locale) {
-    // console.log(locale)
     return fetch(`${this.address}/api/presenter?locale=${locale}`, {
       method: "GET",
       headers: this.headres,
@@ -24,7 +22,6 @@ class Api {
   }
 
   getPartners(locale) {
-    // console.log(locale)
     return fetch(
       `${this.address}/api/partners?locale=${locale}&populate=logo`,
       {
@@ -35,7 +32,6 @@ class Api {
   }
 
   getOfficial(locale) {
-    // console.log(locale)
     return fetch(`${this.address}/api/official?locale=${locale}`, {
       method: "GET",
       headers: this.headres,
@@ -43,11 +39,20 @@ class Api {
   }
 
   getVacancies(locale) {
-    // console.log(locale)
     return fetch(`${this.address}/api/vacancies?locale=${locale}`, {
       method: "GET",
       headers: this.headres,
     }).then(handlerResponse);
+  }
+
+  getDance(locale) {
+    return fetch(
+      `${this.address}/api/dance-academy-theatre?locale=${locale}&populate=images`,
+      {
+        method: "GET",
+        headers: this.headres,
+      }
+    ).then(handlerResponse);
   }
 }
 
