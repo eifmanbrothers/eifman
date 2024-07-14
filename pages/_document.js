@@ -5,7 +5,7 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <link
+        {/* <link
           href={srcStyle.href}
           rel={srcStyle.rel}
           type={srcStyle.type}
@@ -16,7 +16,7 @@ export default function Document() {
           rel={srcStyleTheatre.rel}
           type={srcStyleTheatre.type}
           media={srcStyleTheatre.media}
-        />
+        /> */}
         <link
           rel="icon"
           href="https://eifmanballet.com/favicon.ico"

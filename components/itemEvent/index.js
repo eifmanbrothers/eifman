@@ -1,7 +1,6 @@
 import styles from "./styles.module.scss";
 import moment from "moment";
 import "moment/locale/ru";
-import cn from "classnames";
 import useTranslation from "next-translate/useTranslation";
 import { DateEvent, infoEvent, btn } from "components";
 
@@ -21,7 +20,7 @@ const ItemEvent = (props) => {
   const regex = /\./g;
   const date = moment(PerfDate.replace(regex, "-"), "DD-MM-YYYY hh:mm:ss");
   const time = date.format("HH:mm");
-  //   console.log(PushkinCard);
+
   return (
     <li className={styles.itemEvent}>
       <DateEvent date={date} locale={locale} />

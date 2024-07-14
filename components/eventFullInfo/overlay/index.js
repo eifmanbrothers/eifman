@@ -32,7 +32,7 @@ const Overlay = (props) => {
 
   const isLocalData = typeof currentTheatre === "string";
   let path = getPathForPerformance(name, locale);
-  // console.log(props);
+
   return (
     <div
       className={cn(styles.overlay, {
@@ -96,15 +96,11 @@ const Overlay = (props) => {
           </Link>
         ) : (
           <button
+            data-performance_id={IdPerformance}
             disabled={!HasTickets}
-            id={`perf${IdPerformance}`}
-            className={cn(
-              styles.overlay__btn,
-              "with_buy bileter_afisha_showhall",
-              {
-                [styles.overlay__btn_blocked]: !HasTickets,
-              }
-            )}
+            className={cn(styles.overlay__btn, "wb-button", {
+              [styles.overlay__btn_blocked]: !HasTickets,
+            })}
           >
             {HasTickets
               ? t("tickets:nameBtnBuyTicket")
@@ -119,3 +115,6 @@ const Overlay = (props) => {
 };
 
 export default Overlay;
+
+// <button class="styles_overlay__btn__5ngoW wb-button-root" data-performance_id="19482939">Заказ билетов</button>
+// <button data-performance_id="19482939" class="styles_buyTicket__YbUk6 wb-button">КУПИТЬ БИЛЕТ</button>

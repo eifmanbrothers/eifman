@@ -10,7 +10,6 @@ import { list, MetaData } from "components";
 import { metaInfo } from "constants/metaInfo";
 import getTicketsList from "helpers/getTicketsList";
 import getCoversForEvent from "helpers/getCoversForEvent";
-import getNextYear from "helpers/getNextYear";
 import getMonthForBileter from "helpers/getMonthForBileter";
 import { FadeLoader } from "react-spinners";
 
@@ -20,7 +19,6 @@ const Tickets = ({ allData }) => {
   const [data, setDate] = useState(allData);
   const [countMonth, setCountMonth] = useState(0);
   const [isReq, setIsReq] = useState(true);
-  // console.log(data);
 
   const changeMonth = (evt) => {
     if (evt.target.name === "inc") {
@@ -28,18 +26,16 @@ const Tickets = ({ allData }) => {
       setCountMonth(countMonth + 1);
     }
     if (evt.target.name === "dec") {
-      // console.log(countMonth);
       setIsReq(true);
       countMonth ? setCountMonth(countMonth - 1) : null;
     }
-    // console.log(countMonth);
   };
   const date = moment(new Date());
   const month = date
     .add(countMonth, "month")
     .locale(router.locale)
     .format("MMMM YYYY");
-  // console.log(month);
+
   useEffect(() => {
     api
       .getTickets(router.locale, getMonthForBileter(countMonth))
@@ -88,10 +84,8 @@ const Tickets = ({ allData }) => {
 };
 
 export async function getServerSideProps({ locale }) {
-  // console.log(locale);
   const res = await api.getTickets(locale, getMonthForBileter());
-  // const res = await api.getTickets(locale, getNextYear());
-  // console.log(nextYear);
+
   return {
     props: { allData: getCoversForEvent(getTicketsList(res), res[2].data) },
   };
