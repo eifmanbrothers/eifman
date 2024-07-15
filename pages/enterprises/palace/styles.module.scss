@@ -10,6 +10,7 @@
   max-width: 1000px;
   font: $font-title-xl;
   font-weight: 700;
+  margin: 0 auto 50px;
 }
 
 .palace__imageWrapper {
@@ -25,11 +26,9 @@
 }
 
 .palace__text {
-  max-width: 630px;
-  font: 15px/20px "PT Sans", sans-serif;
-  text-align: justify;
-  margin: 0 auto 70px;
-
+  max-width: 730px;
+  font: 21px/30px "PT Sans", sans-serif;
+  margin: 50px 0 70px 0;
   p:first-of-type {
     margin-top: 0;
   }

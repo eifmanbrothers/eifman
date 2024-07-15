@@ -3,7 +3,6 @@ import { MenuOnPage, MetaData, myCarousel } from "components";
 import { useRouter } from "next/router";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import { metaInfo } from "constants/metaInfo";
-
 import api from "utils/ApiPrincipals";
 import { getLinks } from "helpers/getArrImages";
 
