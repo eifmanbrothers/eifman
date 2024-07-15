@@ -1,3 +1,12 @@
+@import "/styles/variables.module.scss";
+
+.workshops__title {
+  max-width: 1000px;
+  font: $font-title-xl;
+  font-weight: 700;
+  margin: 0 auto 50px;
+}
+
 .workshop__content {
   max-width: 960px;
   margin: 40px auto;

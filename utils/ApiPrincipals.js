@@ -54,6 +54,36 @@ class Api {
       }
     ).then(handlerResponse);
   }
+
+  getPalace(locale) {
+    return fetch(
+      `${this.address}/api/dance-palace?locale=${locale}&populate=image`,
+      {
+        method: "GET",
+        headers: this.headres,
+      }
+    ).then(handlerResponse);
+  }
+
+  getWorkshops(locale) {
+    return fetch(
+      `${this.address}/api/workshop?locale=${locale}&populate=images`,
+      {
+        method: "GET",
+        headers: this.headres,
+      }
+    ).then(handlerResponse);
+  }
+
+  getAcademy(locale) {
+    return fetch(
+      `${this.address}/api/academy?locale=${locale}&populate=images`,
+      {
+        method: "GET",
+        headers: this.headres,
+      }
+    ).then(handlerResponse);
+  }
 }
 
 const api = new Api({

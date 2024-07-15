@@ -3,11 +3,14 @@ import { MenuOnPage, MetaData } from "components";
 import { useRouter } from "next/router";
 import { metaInfo } from "constants/metaInfo";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
-import data from "constants/enterprises/dancePalace";
+import api from "utils/ApiPrincipals";
+import { API_URL } from "configs/variables";
 import Image from "next/image";
 
-const Palace = () => {
+const Palace = ({ allData }) => {
   const router = useRouter();
+  const { data } = allData;
+
   return (
     <>
       <MetaData
@@ -15,24 +18,28 @@ const Palace = () => {
         locale={router.locale}
       />
       <MenuOnPage place="dancePalace" locale={router.locale} />
-      <h1 className={styles.palace__title}>{data.title[router.locale]}</h1>
+      <h1 className={styles.palace__title}>{data?.attributes.title}</h1>
       <section className={styles.palace}>
         <div className={styles.palace__imageWrapper}>
           <Image
-            src={data.image}
+            src={API_URL + data?.attributes.image.data.attributes.url}
             alt="Dance Palace"
-            // width={537}
             fill
-            // height={358}
             className={styles.palace__image}
           />
         </div>
         <ReactMarkdown className={styles.palace__text}>
-          {data.text[router.locale]}
+          {data?.attributes.text}
         </ReactMarkdown>
       </section>
     </>
   );
 };
+
+export async function getServerSideProps(context) {
+  const { locale } = context;
+  const res = await api.getPalace(locale);
+  return { props: { allData: res } };
+}
 
 export default Palace;

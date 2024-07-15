@@ -17,6 +17,7 @@ const Dance = ({ allData }) => {
         locale={router.locale}
       />
       <MenuOnPage place="dance" locale={router.locale} />
+      <h1 className={styles.dance__title}>{data?.attributes.title}</h1>
       <div className={styles.dance__content}>
         <myCarousel.React arrImg={arrayImagesLinks} place="dance" />
         <ReactMarkdown className={styles.dance__text}>

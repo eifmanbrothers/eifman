@@ -6,8 +6,6 @@ import Image from "next/image";
 import { API_URL } from "configs/variables";
 
 const React = ({ arrImg, place }) => {
-  // console.log(arrImg)
-
   return (
     <Carousel
       autoPlay={false}

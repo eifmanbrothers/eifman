@@ -1,5 +1,14 @@
+@import "/styles/variables.module.scss";
+
+.academy__title {
+  max-width: 1000px;
+  font: $font-title-xl;
+  font-weight: 700;
+  margin: 0 auto 50px;
+}
+
 .academy__content {
-  max-width: 960px;
+  max-width: 1000px;
   margin: 40px auto;
 }
 
