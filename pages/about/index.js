@@ -8,7 +8,9 @@ import { MenuOnPage, NavBottomPage, MetaData } from "components";
 
 const About = ({ allData }) => {
   const router = useRouter();
-  if (!!allData) return <p style={{ textAlign: "center" }}>server error</p>;
+
+  if (!!!allData.data)
+    return <p style={{ textAlign: "center" }}>server error</p>;
 
   const {
     data: {
