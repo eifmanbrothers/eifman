@@ -1,3 +1,5 @@
+@import "/styles/variables.module.scss";
+
 .about__imgWrapper {
   position: relative;
   width: 100%;
@@ -10,8 +12,13 @@
 }
 
 .about__content {
-  max-width: 630px;
+  max-width: 1000px;
+  font: $font-text-xl;
   margin: 0 auto;
+}
+
+.about__text {
+  max-width: 730px;
 }
 
 .about__video {
@@ -33,5 +40,9 @@
     margin: 0;
     padding: 0 20px;
     box-sizing: border-box;
+  }
+
+  .about__content {
+    font: $font-text-m;
   }
 }

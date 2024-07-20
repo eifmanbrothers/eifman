@@ -2,7 +2,6 @@ import styles from "./styles.module.scss";
 import { Header, Nav, Footer, Gallery, GalleryMob } from "components";
 import { useRouter } from "next/router";
 import cn from "classnames";
-// import { useState, useEffect } from "react";
 
 export default function Layout({ children }) {
   const router = useRouter();

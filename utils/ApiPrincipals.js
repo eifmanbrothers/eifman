@@ -84,6 +84,12 @@ class Api {
       }
     ).then(handlerResponse);
   }
+  getAbout(locale) {
+    return fetch(`${this.address}/api/about?locale=${locale}`, {
+      method: "GET",
+      headers: this.headres,
+    }).then(handlerResponse);
+  }
 }
 
 const api = new Api({

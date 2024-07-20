@@ -1,14 +1,21 @@
 import styles from "./styles.module.scss";
-import data from "constants/about";
+import api from "utils/ApiPrincipals";
 import { useRouter } from "next/router";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import Image from "next/image";
 import { metaInfo } from "constants/metaInfo";
 import { MenuOnPage, NavBottomPage, MetaData } from "components";
 
-const About = () => {
+const About = ({ allData }) => {
   const router = useRouter();
-  const { text, link, image } = data;
+  if (!!allData) return <p style={{ textAlign: "center" }}>server error</p>;
+
+  const {
+    data: {
+      attributes: { text, linkVideo, linkImage },
+    },
+  } = allData;
+
   return (
     <div className={styles.about}>
       <MetaData
@@ -18,19 +25,27 @@ const About = () => {
       <MenuOnPage place="about" locale={router.locale} />
       <div className={styles.about__imgWrapper}>
         <Image
-          src={image}
+          src={linkImage}
           fill
           className={styles.about__image}
           alt="Theatre Ballet"
         />
       </div>
       <section className={styles.about__content}>
-        <ReactMarkdown>{text[router.locale]}</ReactMarkdown>
-        <iframe src={link} className={styles.about__video} />
+        <div className={styles.about__text}>
+          <ReactMarkdown>{text}</ReactMarkdown>
+        </div>
+        <iframe src={linkVideo} className={styles.about__video} />
       </section>
       <NavBottomPage locale={router.locale} />
     </div>
   );
 };
+
+export async function getServerSideProps(context) {
+  const { locale } = context;
+  const res = await api.getAbout(locale);
+  return { props: { allData: res } };
+}
 
 export default About;

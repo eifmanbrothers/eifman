@@ -1,3 +1,5 @@
+@import "/styles/variables.module.scss";
+
 .ticketsPage {
   display: inline-block;
   margin: 0 0 50px 0;
@@ -15,12 +17,12 @@
 .ticketsPage__item {
   position: relative;
   bottom: -11px;
-  padding: 0 20px;
+  padding: 0 15px;
   font: 17px/25px "PT Sans", sans-serif;
 }
 
 .ticketsPage__item_active {
-  padding: 0 20px 10px;
+  padding: 0 15px 10px;
   box-sizing: content-box;
   border-bottom: 1px solid rgba(#fff, 1);
 }
