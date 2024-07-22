@@ -3,8 +3,9 @@
 .about__imgWrapper {
   position: relative;
   width: 100%;
+  max-width: 1000px;
   height: 490px;
-  margin: 0 0 50px 0;
+  margin: 0 auto 50px;
 }
 
 .about__image {
@@ -30,8 +31,6 @@
 
 @media screen and (max-width: 670px) {
   .about__imgWrapper {
-    position: relative;
-    width: 100%;
     min-height: 100%;
     margin: 0;
   }
