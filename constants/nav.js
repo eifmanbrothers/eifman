@@ -112,6 +112,16 @@ export const navList = [
       },
       {
         name: {
+          en: "Crime and Punishment",
+          ru: "Преступление и наказание",
+        },
+        path: {
+          en: "/performances/35",
+          ru: "/performances/36",
+        },
+      },
+      {
+        name: {
           en: "Up & Down",
           ru: "Up & Down",
         },
