@@ -31,6 +31,11 @@ export default (name, locale) => {
         path = locale === "ru" ? "22" : "21";
       }
       break;
+    case "Преступление и наказание":
+      {
+        path = locale === "ru" ? "36" : "35";
+      }
+      break;
 
     default:
       path = "set-current-name-for-path-helpers-get-path";
