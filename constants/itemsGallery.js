@@ -1,6 +1,6 @@
 import seagull from "../images/events/seagull.png";
 import upAndDown from "../images/events/upAndDown.png";
-import prestuplenie from "../images/events/prestuplenie.png";
+import prestuplenie from "../images/events/prestuplenie2.png";
 import jiselle from "../images/events/jiselle.png";
 import roden from "../images/events/roden.png";
 import onegin from "../images/events/onegin.png";
