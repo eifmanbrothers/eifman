@@ -1,5 +1,6 @@
 import seagull from "../images/events/seagull.png";
 import upAndDown from "../images/events/upAndDown.png";
+import prestuplenie from "../images/events/prestuplenie2.png";
 import jiselle from "../images/events/jiselle.png";
 import roden from "../images/events/roden.png";
 import onegin from "../images/events/onegin.png";
@@ -31,21 +32,37 @@ export const items = [
     image: seagull,
     place: "chayka",
   },
+  // {
+  //   id: {
+  //     en: 19,
+  //     ru: 20,
+  //   },
+  //   name: {
+  //     en: "Up & Down",
+  //     ru: "Up & Down",
+  //   },
+  //   imageAlt: {
+  //     en: "Photo ballet up-and-down",
+  //     ru: "Фотография спектакля Вверх и вниз",
+  //   },
+  //   image: upAndDown,
+  //   place: "down",
+  // },
   {
     id: {
-      en: 19,
-      ru: 20,
+      en: 35,
+      ru: 36,
     },
     name: {
-      en: "Up & Down",
-      ru: "Up & Down",
+      en: "Crime and Punishment",
+      ru: "Преступление и наказание",
     },
     imageAlt: {
-      en: "Photo ballet up-and-down",
-      ru: "Фотография спектакля Вверх и вниз",
+      en: "Photo ballet Crime and Punishment",
+      ru: "Фотография спектакля Преступление и наказание",
     },
-    image: upAndDown,
-    place: "down",
+    image: prestuplenie,
+    place: "prestuplenie",
   },
   {
     id: {
@@ -161,6 +178,22 @@ export const items = [
   },
   {
     id: {
+      en: 19,
+      ru: 20,
+    },
+    name: {
+      en: "Up & Down",
+      ru: "Up & Down",
+    },
+    imageAlt: {
+      en: "Photo ballet up-and-down",
+      ru: "Фотография спектакля Вверх и вниз",
+    },
+    image: upAndDown,
+    place: "down",
+  },
+  {
+    id: {
       en: 21,
       ru: 22,
     },
@@ -239,6 +272,7 @@ export const items = [
     image: donKihot,
     place: "donKihot",
   },
+
   {
     id: {
       en: 27,
