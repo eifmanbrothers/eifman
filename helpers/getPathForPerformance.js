@@ -36,6 +36,11 @@ export default (name, locale) => {
         path = locale === "ru" ? "36" : "35";
       }
       break;
+    case "Красная Жизель/Red Giselle":
+      {
+        path = locale === "ru" ? "6" : "5";
+      }
+      break;
 
     default:
       path = "set-current-name-for-path-helpers-get-path";

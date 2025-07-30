@@ -53,4 +53,10 @@ export default [
     en: "Vipusk 2023",
     ru: "Выпускные концерты Академии танца Бориса Эйфмана 2023",
   },
+  {
+    id: 10,
+    inputData: "Красная Жизель/Red Giselle",
+    en: "Red Giselle",
+    ru: "Красная Жизель",
+  },
 ];

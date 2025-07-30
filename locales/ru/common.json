@@ -1,12 +1,12 @@
 {
   "namePage": "Главная страница",
   "nameButtonBuy": "купить билеты",
-  "spanButtonBuy": "на спектакли в Санкт-Петербурге",
+  "spanButtonBuy": "",
   "nameLinkMemberPage": "Труппа",
   "nameLinkPerformancePage": "Репертуар",
   "nameBtnNewsPage": "Новости",
   "photoMember": "Фотография",
   "nameLinkToAllNews": "Все новости",
   "organization": "Санкт-Петербургский государственный академический театр балета Бориса Эйфмана",
-  "schedulePage": "Афиша - спектакли в Санкт-Петербурге"
+  "schedulePage": "Афиша"
 }

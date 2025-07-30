@@ -53,4 +53,24 @@ export default [
       stage: "Основная сцена",
     },
   },
+  {
+    id: 4,
+    inputData: "г. Москва, Большая Дмитровка, 17",
+    en: {
+      country: "Russia",
+      city: "Moscow",
+      address: "Vedenskaya 3",
+      theatre:
+        "The Moscow State Stanislavsky and Nemirovich-Danchenko Music Theatre",
+      stage: "Main stage",
+    },
+    ru: {
+      country: "Россия",
+      city: "Москва",
+      address: "ул.Введенская, 3",
+      theatre:
+        "Московский академический Музыкальный театр им. К. С. Станиславского и Вл. И. Немировича-Данченко",
+      stage: "Основная сцена",
+    },
+  },
 ];

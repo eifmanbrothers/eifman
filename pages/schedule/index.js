@@ -20,7 +20,7 @@ const Schedule = ({ data }) => {
   useEffect(() => {
     setList(data.filter((el) => el.PerfDate.slice(3, 10) === currentMonth));
   }, [currentMonth]);
-
+  // console.log(data);
   return (
     <section className={styles.schedule}>
       <MetaData

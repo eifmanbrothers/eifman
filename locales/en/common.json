@@ -1,12 +1,12 @@
 {
   "namePage": "Main Page",
   "nameButtonBuy": "buy Tickets",
-  "spanButtonBuy": "for shows in St. Petersburg",
+  "spanButtonBuy": "",
   "nameLinkMemberPage": "Ensemble",
   "nameLinkPerformancePage": "Repertoire",
   "nameBtnNewsPage": "News",
   "photoMember": "Photo",
   "nameLinkToAllNews": "All news",
   "organization": "St. Petersburg Eifman Ballet",
-  "schedulePage": "Playbill - performances in St. Petersburg"
+  "schedulePage": "Playbill"
 }
