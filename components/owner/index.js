@@ -3,7 +3,8 @@ import Link from "next/link";
 
 const Owner = () => {
   return (
-    <Link href="mailto:dr@eifmanballet.com" className={styles.owner}></Link>
+    <></>
+    // <Link href="mailto:dr@eifmanballet.com" className={styles.owner}></Link>
   );
 };
 

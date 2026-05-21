@@ -54,6 +54,7 @@ import NavBottomPage from "./navBottomPage";
 import PerfInfo from "./perfInfo";
 import perfInfoList from "./perfInfoList";
 import NavMobile from "./navMobile";
+import CookieBanner from "./cookieBanner";
 
 export {
   Header,
@@ -112,4 +113,5 @@ export {
   PerfInfo,
   perfInfoList,
   NavMobile,
+  CookieBanner,
 };

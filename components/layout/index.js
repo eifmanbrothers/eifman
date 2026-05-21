@@ -1,5 +1,5 @@
 import styles from "./styles.module.scss";
-import { Header, Nav, Footer, Gallery, GalleryMob } from "components";
+import { Header, Nav, Footer, Gallery, GalleryMob, CookieBanner } from "components";
 import { useRouter } from "next/router";
 import cn from "classnames";
 
@@ -36,6 +36,7 @@ export default function Layout({ children }) {
         {children}
       </main>
       <Footer locale={router.locale} />
+      <CookieBanner />
     </div>
   );
 }

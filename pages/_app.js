@@ -14,6 +14,11 @@ function MyApp({ Component, pageProps }) {
     <Layout>
       {/* <errors.SiteDev locale={router.locale} /> */}
       <Script src="/index.js" type="text/javascript" />
+      <Script async 
+        src="https://culturaltracking.ru/static/js/spxl.js?pixelId=38627" 
+        strategy="afterInteractive"
+        data-pixel-id="38627"
+      />
       <Component {...pageProps} />
       {isTicketsPage && (
         <Script
