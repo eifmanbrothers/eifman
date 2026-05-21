@@ -22,6 +22,10 @@ const MetaData = ({
         content={description?.[locale] || description}
       ></meta>
       <meta name="author" content="dr"></meta>
+      <meta 
+        name="proculture-verification" 
+        content="d0b899c1548f5fab3b4c4de341e964e0"
+      ></meta>
     </Head>
   );
 };
