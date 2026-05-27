@@ -13,7 +13,7 @@ const Copyright = () => {
 
       <p className={styles.copyright__rules}>
         <a href="./rules.pdf" target="_blank" rel="noopener noreferrer">
-          ПРАВИЛА ПРИОБРЕТЕНИЯ ЭЛЕКТРОННОГО БИЛЕТА
+          Правила приобретения и возврата электронных билетов
         </a>
       </p>
     </div>
