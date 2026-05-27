@@ -12,7 +12,9 @@ const Copyright = () => {
       <p className={styles.copyright__org}>{t("common:organization")}</p>
 
       <p className={styles.copyright__rules}>
-        <a href="./rules.pdf">ПРАВИЛА ПРИОБРЕТЕНИЯ ЭЛЕКТРОННОГО БИЛЕТА</a>
+        <a href="./rules.pdf" target="_blank" rel="noopener noreferrer">
+          ПРАВИЛА ПРИОБРЕТЕНИЯ ЭЛЕКТРОННОГО БИЛЕТА
+        </a>
       </p>
     </div>
   );
