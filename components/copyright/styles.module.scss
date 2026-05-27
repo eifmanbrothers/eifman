@@ -12,8 +12,20 @@
   padding: 0 50px 0 0;
 }
 
+.copyright__rules {
+  margin-top: 110px;
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 830px) {
   .copyright {
     max-width: 100%;
   }
+
+  .copyright__rules {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+  }
+
 }

@@ -10,6 +10,10 @@ const Copyright = () => {
         &#169;2005-{new Date().getFullYear()}
       </p>
       <p className={styles.copyright__org}>{t("common:organization")}</p>
+
+      <p className={styles.copyright__rules}>
+        <a href="./rules.pdf">ПРАВИЛА ПРИОБРЕТЕНИЯ ЭЛЕКТРОННОГО БИЛЕТА</a>
+      </p>
     </div>
   );
 };
