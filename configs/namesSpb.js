@@ -13,7 +13,7 @@ export default [
   },
   {
     id: 3,
-    inputData: '"Страсти по Мольеру, или Маска Дон Жуана"',
+    inputData: "Страсти по Мольеру, или Маска Дон Жуана",
     en: "Molière Passion, or The Mask of Don Juan",
     ru: "Страсти по Мольеру, или Маска Дон Жуана",
   },
